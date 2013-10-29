@@ -1,0 +1,1128 @@
+ID#,SERIES,Name,YEAR,MON,DAY,SITE,LAT,LONG,HOB,TYPE,PUR,YIELD,VENT,DEVIC
+1,Trinity        ,Trinity                ,1945,JUL,16,NM     ,33.67530,-106.47470,30,AS-T   ,WR ,21, ,    IP 
+2,Alberta        ,Little Boy             ,1945,AUG,5,-JP    ,34.39140,132.45810,580,A-AD   ,C  ,15, ,       
+3,Alberta        ,Fat Man                ,1945,AUG,9,-JP    ,32.77020,129.86570,503,A-AD   ,C  ,21, ,       
+4,Crossroads     ,Able                   ,1946,JUN,30,BK     ,11.58000,165.50000,158,A-AD   ,WE ,21, ,    IP 
+5,Crossroads     ,Baker                  ,1946,JUL,24,BK     ,11.58330,165.50000,-27,UW     ,WE ,21, ,    IP 
+6,Sandstone      ,X-ray                  ,1948,APR,14,EN     ,11.67000,162.24000,60,AS-T   ,WR ,37, ,       
+7,Sandstone      ,Yoke                   ,1948,APR,30,EN     ,11.62000,162.33000,60,AS-T   ,WR ,49, ,       
+8,Sandstone      ,Zebra                  ,1948,MAY,14,EN     ,11.56000,162.35000,60,AS-T   ,WR ,18, ,       
+9,Ranger         ,Able                   ,1951,JAN,27,NTS-FF ,36.80000,-115.95000,320,A-AD   ,WR ,1, ,       
+10,Ranger         ,Baker                  ,1951,JAN,28,NTS-FF ,36.80000,-115.95000,330,A-AD   ,WR ,8, ,       
+11,Ranger         ,Easy                   ,1951,FEB,1,NTS-FF ,36.80000,-115.95000,330,A-AD   ,WR ,1, ,       
+12,Ranger         ,Baker-2                ,1951,FEB,2,NTS-FF ,36.80000,-115.95000,340,A-AD   ,WR ,8, ,       
+13,Ranger         ,Fox                    ,1951,FEB,6,NTS-FF ,36.80000,-115.95000,440,A-AD   ,WR ,22, ,       
+14,Greenhouse     ,Dog                    ,1951,APR,7,EN     ,11.55580,162.35440,91,AS-T   ,WR ,81, ,       
+15,Greenhouse     ,Easy                   ,1951,APR,20,EN     ,11.66890,162.24030,91,AS-T   ,WR ,47, ,       
+16,Greenhouse     ,George                 ,1951,MAY,8,EN     ,11.62690,162.31470,62,AS-T   ,WR ,225, ,       
+17,Greenhouse     ,Item                   ,1951,MAY,24,EN     ,11.67300,162.24860,62,AS-T   ,WR ,45.5, ,    BF 
+18,Buster         ,Able                   ,1951,OCT,22,NTS-YF ,37.08390,-116.02390,30,AS-T   ,WR ,0.05, ,       
+19,Buster         ,Baker                  ,1951,OCT,28,NTS-YF ,37.08500,-116.02000,340,A-AD   ,WR ,3.5, ,       
+20,Buster         ,Charlie                ,1951,OCT,30,NTS-YF ,37.08500,-116.02030,350,A-AD   ,WR ,14, ,       
+21,Buster         ,Dog                    ,1951,NOV,1,NTS-YF ,37.08470,-116.01970,430,A-AD   ,WR ,21, ,       
+22,Buster         ,Easy                   ,1951,NOV,5,NTS-YF ,37.09190,-116.02440,400,A-AD   ,WR ,31, ,       
+23,Jangle         ,Sugar                  ,1951,NOV,19,NTS-YF ,37.13170,-116.03860,1.1,AS     ,WE ,1.2, ,       
+24,Jangle         ,Uncle                  ,1951,NOV,29,NTS-YF ,37.16970,-116.04250,-10,CR     ,WE ,1.2, ,       
+25,Tumbler        ,Able                   ,1952,APR,1,NTS-FF ,36.79830,-115.93560,240,A-AD   ,WE ,1, ,       
+26,Tumbler        ,Baker                  ,1952,APR,15,NTS-YF ,37.08420,-116.01940,340,A-AD   ,WE ,1, ,       
+27,Tumbler        ,Charlie                ,1952,APR,22,NTS-YF ,37.08440,-116.02030,1050,A-AD   ,WR ,31, ,       
+28,Snapper        ,Dog                    ,1952,MAY,1,NTS-YF ,37.08420,-116.02030,320,A-AD   ,WR ,19, ,       
+29,Snapper        ,Easy                   ,1952,MAY,7,NTS-YF ,37.05310,-116.10560,90,AS-T   ,WR ,12, ,       
+30,Snapper        ,Fox                    ,1952,MAY,25,NTS-YF ,37.09560,-116.10560,90,AS-T   ,WR ,11, ,       
+31,Snapper        ,George                 ,1952,JUN,1,NTS-YF ,37.04810,-116.02110,90,AS-T   ,WR ,15, ,       
+32,Snapper        ,How                    ,1952,JUN,5,NTS-YF ,37.13860,-116.11780,90,AS-T   ,WR ,14, ,       
+33,Ivy            ,Ivy Mike,1952,OCT,31,EN     ,11.23720,162.19640,10,AS     ,WR ,10400, ,    TN 
+34,Ivy            ,King                   ,1952,NOV,15,EN     ,11.56220,162.35250,450,A-AD   ,WR ,500, ,    FS 
+35,Upshot-Knothole,Annie                  ,1953,MAR,17,NTS-YF ,37.04780,-116.02110,90,AS-T   ,WR ,16, ,       
+36,Upshot-Knothole,Nancy                  ,1953,MAR,24,NTS-YF ,37.09560,-116.10280,90,AS-T   ,WR ,24, ,       
+37,Upshot-Knothole,Ruth                   ,1953,MAR,31,NTS-YF ,37.08280,-116.02390,90,AS-T   ,WR ,0.2, ,       
+38,Upshot-Knothole,Dixie                  ,1953,APR,6,NTS-YF ,37.08470,-116.01800,1830,A-AD   ,WR ,11, ,       
+39,Upshot-Knothole,Ray                    ,1953,APR,11,NTS-YF ,37.09890,-116.09250,30,AS-T   ,WR ,0.2, ,       
+40,Upshot-Knothole,Badger                 ,1953,APR,18,NTS-YF ,37.13830,-116.11780,90,AS-T   ,WR ,23, ,       
+41,Upshot-Knothole,Simon                  ,1953,APR,25,NTS-YF ,37.05310,-116.10280,90,AS-T   ,WR ,43, ,       
+42,Upshot-Knothole,Encore                 ,1953,MAY,8,NTS-FF ,36.80000,-115.92890,740,A-AD   ,WE ,27, ,       
+43,Upshot-Knothole,Harry                  ,1953,MAY,19,NTS-YF ,37.04030,-116.02530,90,AS-T   ,WR ,32, ,       
+44,Upshot-Knothole,Grable                 ,1953,MAY,25,NTS-FF ,36.79310,-115.91470,160,A      ,WR ,15, ,       
+45,Upshot-Knothole,Climax                 ,1953,JUN,4,NTS-YF ,37.08750,-116.01830,410,A-AD   ,WR ,61, ,       
+46,Castle         ,Castle Bravo,1954,FEB,28,BK     ,11.69080,165.27360,2,AS     ,WR ,15000, ,    TN 
+47,Castle         ,Romeo                  ,1954,MAR,26,BK     ,11.69080,165.27300,4.3,AW-BG  ,WR ,11000, ,       
+48,Castle         ,Koon                   ,1954,APR,6,BK     ,11.49670,165.36750,2.9,AS     ,WR ,110, ,       
+49,Castle         ,Union                  ,1954,APR,25,BK     ,11.66640,165.38720,4,AW-BG  ,WR ,6900, ,       
+50,Castle         ,Yankee                 ,1954,MAY,4,BK     ,11.66560,165.38690,4.3,AW-BG  ,WR ,13500, ,       
+51,Castle         ,Nectar                 ,1954,MAY,13,EN     ,11.67050,162.19640,4.3,AW-BG  ,WR ,1690, ,       
+52,Teapot         ,Wasp                   ,1955,FEB,18,NTS-YF ,37.08670,-116.02190,230,A-AD   ,WE ,1, ,       
+53,Teapot         ,Moth                   ,1955,FEB,22,NTS-YF ,37.04780,-116.02110,90,AS-T   ,WR ,2, ,       
+54,Teapot         ,Tesla                  ,1955,MAR,1,NTS-YF ,37.12550,-116.04750,90,AS-T   ,WR ,7, ,       
+55,Teapot         ,Turk                   ,1955,MAR,7,NTS-YF ,37.13830,-116.11750,150,AS-T   ,WR ,43, ,       
+56,Teapot         ,Hornet                 ,1955,MAR,12,NTS-YF ,37.04030,-116.02530,90,AS-T   ,WR ,4, ,       
+57,Teapot         ,Bee                    ,1955,MAR,22,NTS-YF ,37.09470,-116.02390,150,AS-T   ,WR ,8, ,       
+58,Teapot         ,Ess                    ,1955,MAR,23,NTS-YF ,37.16830,-116.04390,-20,CR     ,WE ,1, ,       
+59,Teapot         ,Apple-1                ,1955,MAR,29,NTS-YF ,37.09560,-116.10280,150,AS-T   ,WR ,14, ,       
+60,Teapot         ,Wasp Prime             ,1955,MAR,29,NTS-YF ,37.08670,-116.05780,230,A-AD   ,WR ,3, ,       
+61,Teapot         ,HA (High Altitude)     ,1955,APR,6,NTS-YF ,37.02860,-116.05780,11160,A-AD   ,WE ,3, ,       
+62,Teapot         ,Post                   ,1955,APR,9,NTS-YF ,37.12220,-116.03440,90,AS-T   ,WR ,2, ,       
+63,Teapot         ,MET (Military Effects T,1955,APR,15,NTS-FF ,36.79810,-115.92890,120,AS-T   ,WE ,22, ,       
+64,Teapot         ,Apple-2                ,1955,MAY,5,NTS-YF ,37.05310,-116.10250,150,AS-T   ,WR ,29, ,       
+65,Wigwam         ,Wigwam                 ,1955,MAY,14,-PAC   ,28.73330,-126.26670,-610,UW     ,WE ,30, ,       
+66,Teapot         ,Zucchini               ,1955,MAY,15,NTS-YF ,37.09470,-116.02390,150,AS-T   ,WR ,28, ,       
+67,Project 56     ,Project 56 No. 1       ,1955,NOV,1,NTS-FF ,36.90000,-115.95000,0,AS     ,SE ,0, ,       
+68,Project 56     ,Project 56 No. 2       ,1955,NOV,3,NTS-FF ,36.90000,-115.95000,0,AS     ,SE ,0, ,       
+69,Project 56     ,Project 56 No. 3       ,1955,NOV,5,NTS-FF ,36.90000,-115.95000,0,AS     ,SE ,0, ,       
+70,Project 56     ,Project 56 No. 4       ,1956,JAN,18,NTS-FF ,36.90000,-115.95000,0,AS     ,SE ,0.01, ,       
+71,Redwing        ,Lacrosse               ,1956,MAY,4,EN     ,11.55780,162.35500,5,AS     ,WR ,40, ,       
+72,Redwing        ,Cherokee               ,1956,MAY,20,BK     ,11.66830,165.39420,1320,A-AD   ,WR ,3800, ,       
+73,Redwing        ,Zuni                   ,1956,MAY,27,BK     ,11.49670,165.36920,3,AS     ,WR ,3500, ,       
+74,Redwing        ,Yuma                   ,1956,MAY,27,EN     ,11.62000,162.33000,60,AS-T   ,WR ,0.19, ,       
+75,Redwing        ,Erie                   ,1956,MAY,30,EN     ,11.54440,162.36440,90,AS-T   ,WR ,14.9, ,       
+76,Redwing        ,Seminole               ,1956,JUN,6,EN     ,11.67640,162.22220,2,AS     ,WR ,13.7, ,       
+77,Redwing        ,Flathead               ,1956,JUN,11,BK     ,11.60000,165.45140,4.5,AW-BG  ,WR ,365, ,       
+78,Redwing        ,Blackfoot              ,1956,JUN,11,EN     ,11.55110,162.35860,60,AS-T   ,WR ,8, ,       
+79,Redwing        ,Kickapoo               ,1956,JUN,13,EN     ,11.62000,162.33000,90,AS-T   ,WR ,1.49, ,       
+80,Redwing        ,Osage                  ,1956,JUN,16,EN     ,11.54670,162.36080,210,A-AD   ,WR ,1.7, ,       
+81,Redwing        ,Inca                   ,1956,JUN,21,EN     ,11.63000,162.35000,60,AS-T   ,WR ,15.2, ,       
+82,Redwing        ,Dakota                 ,1956,JUN,25,BK     ,11.60280,165.45140,       ,AW-BG  ,WR ,1100, ,       
+83,Redwing        ,Mohawk                 ,1956,JUL,2,EN     ,11.63000,162.31000,90,AS-T   ,WR ,360, ,       
+84,Redwing        ,Apache                 ,1956,JUL,8,EN     ,11.67140,162.20030,       ,AW-BG  ,WR ,1850, ,       
+85,Redwing        ,Navajo                 ,1956,JUL,10,BK     ,11.66330,165.38720,6,AW-BG  ,WR ,4500, ,       
+86,Redwing        ,Tewa                   ,1956,JUL,20,BK     ,11.67390,165.33940,4.5,AW-BG  ,WR ,5000, ,       
+87,Redwing        ,Huron                  ,1956,JUL,21,EN     ,11.67190,162.36920,       ,AW-BG  ,WR ,250, ,       
+88,Project 57     ,Project 57 No. 1       ,1957,APR,24,NAFR   ,37.20000,-116.10000,       ,AS     ,SE ,0, ,       
+89,Plumbbob       ,Boltzmann              ,1957,MAY,28,NTS-YF ,37.09470,-116.02360,150,AS-T   ,WR ,12, ,       
+90,Plumbbob       ,Franklin               ,1957,JUN,2,NTS-YF ,37.04780,-116.02110,90,AS-T   ,WR ,0.14, ,       
+91,Plumbbob       ,Lassen                 ,1957,JUN,5,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,0.0005, ,       
+92,Plumbbob       ,Wilson                 ,1957,JUN,18,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,10, ,       
+93,Plumbbob       ,Priscilla              ,1957,JUN,24,NTS-FF ,36.79810,-115.92890,210,A-B    ,WR ,37, ,       
+94,Plumbbob       ,Coulomb-A              ,1957,JUL,1,NTS-YF ,37.04000,-116.03000,0,AS     ,SE ,0, ,       
+95,Plumbbob       ,Hood                   ,1957,JUL,5,NTS-YF ,37.13470,-116.04080,460,A-B    ,WR ,74, ,       
+96,Plumbbob       ,Diablo                 ,1957,JUL,15,NTS-YF ,37.15030,-116.10860,150,AS-T   ,WR ,17, ,       
+97,Plumbbob       ,John                   ,1957,JUL,19,NTS-YF ,37.16060,-116.05310,9140,A-R    ,WE ,2, ,       
+98,Plumbbob       ,Kepler                 ,1957,JUL,24,NTS-YF ,37.09500,-116.10300,150,AS-T   ,WR ,10, ,       
+99,Plumbbob       ,Owens                  ,1957,JUL,25,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,9.7, ,       
+100,Plumbbob       ,Pascal-A               ,1957,JUL,26,NTS-YF ,37.05180,-116.03340,-150,UG-S   ,SE ,0.01, ,       
+101,Plumbbob       ,Stokes                 ,1957,AUG,7,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,19, ,       
+102,Plumbbob       ,Saturn                 ,1957,AUG,10,NTS-RM ,37.19390,-116.03330,-39.01,UG-T   ,SE ,0, ,       
+103,Plumbbob       ,Shasta                 ,1957,AUG,18,NTS-YF ,37.12800,-116.10640,150,AS-T   ,WR ,17, ,       
+104,Plumbbob       ,Doppler                ,1957,AUG,23,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,11, ,       
+105,Plumbbob       ,Pascal-B               ,1957,AUG,27,NTS-YF ,37.04910,-116.03400,-150,UG-S   ,SE ,0.01, ,       
+106,Plumbbob       ,Franklin Prime         ,1957,AUG,30,NTS-YF ,37.08670,-116.02360,230,A-B    ,WR ,4.7, ,       
+107,Plumbbob       ,Smoky                  ,1957,AUG,31,NTS-YF ,37.18720,-116.06780,210,AS-T   ,WR ,44, ,       
+108,Plumbbob       ,Galileo                ,1957,SEP,2,NTS-YF ,37.05310,-116.10250,150,AS-T   ,WR ,11, ,       
+109,Plumbbob       ,Wheeler                ,1957,SEP,6,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,0.197, ,       
+110,Plumbbob       ,Coulomb-B              ,1957,SEP,6,NTS-YF ,37.04300,-116.02600,0,AS     ,SE ,0.3, ,       
+111,Plumbbob       ,Laplace                ,1957,SEP,8,NTS-YF ,37.08670,-116.02360,230,A-B    ,WR ,1, ,       
+112,Plumbbob       ,Fizeau                 ,1957,SEP,14,NTS-YF ,37.03360,-116.03140,150,AS-T   ,WR ,11, ,       
+113,Plumbbob       ,Newton                 ,1957,SEP,16,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,12, ,       
+114,Plumbbob       ,Rainier                ,1957,SEP,19,NTS-RM ,37.19580,-116.20310,-272.8,UG-T   ,WR ,1.7, ,       
+115,Plumbbob       ,Whitney                ,1957,SEP,23,NTS-YF ,37.13830,-116.11750,150,AS-T   ,WR ,19, ,       
+116,Plumbbob       ,Charleston             ,1957,SEP,28,NTS-YF ,37.13470,-116.04080,460,A-B    ,WR ,12, ,       
+117,Plumbbob       ,Morgan                 ,1957,OCT,7,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,8, ,       
+118,Project 58     ,Pascal-C               ,1957,DEC,6,NTS-YF ,37.04990,-116.03090,-80,UG-S   ,SE ,0.01, ,       
+119,Project 58     ,Coulomb-C              ,1957,DEC,9,NTS-YF ,37.04000,-116.03000,0,AS     ,SE ,0.5, ,       
+120,Project 58A    ,Venus                  ,1958,FEB,22,NTS-RM ,37.11300,-116.11500,-30.48,UG-T   ,SE ,0.0005, ,       
+121,Project 58A    ,Uranus                 ,1958,MAR,14,NTS-RM ,37.11300,-116.11500,-34.75,UG-T   ,SE ,0.0005, ,       
+122,Hardtack I     ,Yucca                  ,1958,APR,28,-PAC   ,12.61670,168.02500,26210,A-B    ,WE ,1.7, ,       
+123,Hardtack I     ,Cactus                 ,1958,MAY,5,EN     ,11.55640,162.35420,1,AS     ,WR ,18, ,       
+124,Hardtack I     ,Fir                    ,1958,MAY,11,BK     ,11.69080,165.27360,3,AW-BG  ,WR ,1360, ,       
+125,Hardtack I     ,Butternut              ,1958,MAY,11,EN     ,11.54110,162.35060,3,AW-BG  ,WR ,81, ,       
+126,Hardtack I     ,Koa                    ,1958,MAY,12,EN     ,11.67500,162.20560,0.81,AS     ,WR ,1370, ,       
+127,Hardtack I     ,Wahoo                  ,1958,MAY,16,EN     ,11.34470,162.17890,-150,UW     ,WE ,9, ,       
+128,Hardtack I     ,Holly                  ,1958,MAY,20,EN     ,11.54390,162.35610,4,AW-BG  ,WR ,5.9, ,       
+129,Hardtack I     ,Nutmeg                 ,1958,MAY,21,BK     ,11.49610,165.37080,3,AW-BG  ,WR ,25.1, ,       
+130,Hardtack I     ,Yellowwood             ,1958,MAY,26,EN     ,11.66030,162.22530,3,AW-BG  ,WR ,330, ,       
+131,Hardtack I     ,Magnolia               ,1958,MAY,26,EN     ,11.54280,162.35390,4,AW-BG  ,WR ,57, ,       
+132,Hardtack I     ,Tobacco                ,1958,MAY,30,EN     ,11.66330,162.23000,2.7,AW-BG  ,WR ,11.6, ,       
+133,Hardtack I     ,Sycamore               ,1958,MAY,31,BK     ,11.69080,165.27360,3,AW-BG  ,WR ,92, ,       
+134,Hardtack I     ,Rose                   ,1958,JUN,2,EN     ,11.54110,162.35170,4.5,AW-BG  ,WR ,15, ,       
+135,Hardtack I     ,Umbrella               ,1958,JUN,8,EN     ,11.38080,162.21920,-50,UW     ,WE ,8, ,       
+136,Hardtack I     ,Maple                  ,1958,JUN,10,BK     ,11.68720,165.41500,3,AW-BG  ,WR ,213, ,       
+137,Hardtack I     ,Aspen                  ,1958,JUN,14,BK     ,11.69080,165.27330,3,AW-BG  ,WR ,319, ,       
+138,Hardtack I     ,Walnut                 ,1958,JUN,14,EN     ,11.66030,162.22530,2,AW-BG  ,WR ,1450, ,       
+139,Hardtack I     ,Linden                 ,1958,JUN,18,EN     ,11.54420,162.35640,2.5,AW-BG  ,WR ,11, ,       
+140,Hardtack I     ,Redwood                ,1958,JUN,27,BK     ,11.68720,165.41500,3,AW-BG  ,WR ,412, ,       
+141,Hardtack I     ,Elder                  ,1958,JUN,27,EN     ,11.66330,162.23000,2.7,AW-BG  ,WR ,880, ,       
+142,Hardtack I     ,Oak                    ,1958,JUN,28,EN     ,11.60780,162.10780,1.8,AW-BG  ,WR ,8900, ,       
+143,Hardtack I     ,Hickory                ,1958,JUN,29,BK     ,11.49610,162.37080,3,AW-BG  ,WR ,14, ,       
+144,Hardtack I     ,Sequoia                ,1958,JUL,1,EN     ,11.54420,162.35640,2,AW-BG  ,WR ,5.2, ,       
+145,Hardtack I     ,Cedar                  ,1958,JUL,2,BK     ,11.69080,165.27360,3.4,AW-BG  ,WR ,220, ,       
+146,Hardtack I     ,Dogwood                ,1958,JUL,5,EN     ,11.66330,162.23000,3,AW-BG  ,WR ,397, ,       
+147,Hardtack I     ,Poplar                 ,1958,JUL,12,BK     ,11.68810,165.26440,3,AW-BG  ,WR ,9300, ,       
+148,Hardtack I     ,Scaevola               ,1958,JUL,14,EN     ,11.55000,162.36000,6,AW-BG  ,SE ,0, ,       
+149,Hardtack I     ,Pisonia                ,1958,JUL,17,EN     ,11.55000,162.31000,2,AW-BG  ,WR ,255, ,       
+150,Hardtack I     ,Juniper                ,1958,JUL,22,BK     ,11.49610,165.37080,3,AW-BG  ,WR ,65, ,       
+151,Hardtack I     ,Olive                  ,1958,JUL,22,EN     ,11.66330,162.23000,3,AW-BG  ,WR ,202, ,       
+152,Hardtack I     ,Pine                   ,1958,JUL,26,EN     ,11.65610,162.21970,3,AW-BG  ,WR ,2000, ,       
+153,Newsreel       ,Teak                   ,1958,AUG,1,JO     ,16.74390,-169.53330,76800,AH-R   ,WE ,3800, ,       
+154,Hardtack I     ,Quince                 ,1958,AUG,6,EN     ,11.55000,162.36000,1,AS     ,WR ,0, ,       
+155,Newsreel       ,Orange                 ,1958,AUG,12,JO     ,16.35830,-169.53560,43000,AH-R   ,WE ,3800, ,       
+156,Hardtack I     ,Fig                    ,1958,AUG,18,EN     ,11.55000,162.36000,0.5,AS     ,WR ,0.02, ,       
+157,Argus          ,Argus I                ,1958,AUG,27,-SATL  ,38.50000,-11.50000,200000,AX-R   ,WE ,1.5, ,       
+158,Argus          ,Argus II               ,1958,AUG,30,-SATL  ,49.50000,-8.20000,240000,AX-R   ,WE ,1.5, ,       
+159,Argus          ,Argus III              ,1958,SEP,6,-SATL  ,48.50000,-9.70000,540000,AX-R   ,WE ,1.5, ,       
+160,Hardtack II    ,Otero                  ,1958,SEP,12,NTS-YF ,37.05000,-116.03190,-150,UG-S   ,SE ,0.038, ,       
+161,Hardtack II    ,Bernalillo             ,1958,SEP,17,NTS-YF ,37.04940,-116.03300,-150,UG-S   ,SE ,0.015, ,       
+162,Hardtack II    ,Eddy                   ,1958,SEP,19,NTS-YF ,37.08670,-116.02360,150,A-B    ,WR ,0.083, ,       
+163,Hardtack II    ,Luna                   ,1958,SEP,21,NTS-YF ,37.04920,-116.03360,-150,UG-S   ,SE ,0.0015, ,       
+164,Hardtack II    ,Mercury                ,1958,SEP,23,NTS-RM ,37.19310,-116.20060,-55.78,UG-T   ,SE ,0.01, ,       
+165,Hardtack II    ,Valencia               ,1958,SEP,26,NTS-YF ,37.04970,-116.02970,-150,UG-S   ,SE ,0.002, ,       
+166,Hardtack II    ,Mars                   ,1958,SEP,28,NTS-RM ,37.19310,-116.20060,-42.67,UG-T   ,SE ,0.013, ,       
+167,Hardtack II    ,Mora                   ,1958,SEP,29,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,2, ,       
+168,Hardtack II    ,Hidalgo                ,1958,OCT,5,NTS-YF ,37.08670,-116.02360,110,A-B    ,SE ,0.077, ,       
+169,Hardtack II    ,Colfax                 ,1958,OCT,5,NTS-YF ,37.04890,-116.03420,-150,UG-S   ,SE ,0.0055, ,       
+170,Hardtack II    ,Tamalpais              ,1958,OCT,8,NTS-RM ,37.19530,-116.20030,-124.05,UG-T   ,WR ,0.072, ,       
+171,Hardtack II    ,Quay                   ,1958,OCT,10,NTS-YF ,37.09470,-116.02360,30,AS-T   ,WR ,0.079, ,       
+172,Hardtack II    ,Lea                    ,1958,OCT,13,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,1.4, ,       
+173,Hardtack II    ,Neptune                ,1958,OCT,14,NTS-RM ,37.19390,-116.19970,-30.02,UG-T   ,SE ,0.115, ,       
+174,Hardtack II    ,Hamilton               ,1958,OCT,15,NTS-FF ,36.80220,-115.93220,20,AS-T   ,WR ,0.0012, ,       
+175,Hardtack II    ,Logan                  ,1958,OCT,16,NTS-RM ,37.18420,-116.20110,-283.58,UG-T   ,WR ,5, ,       
+176,Hardtack II    ,Dona Ana               ,1958,OCT,16,NTS-YF ,37.08670,-116.02360,150,A-B    ,WR ,0.037, ,       
+177,Hardtack II    ,Vesta                  ,1958,OCT,17,NTS-YF ,37.12250,-116.03470,0,AS     ,SE ,0.024, ,       
+178,Hardtack II    ,Rio Arriba             ,1958,OCT,18,NTS-YF ,37.04110,-116.02580,20,AS-T   ,WR ,0.09, ,       
+179,Hardtack II    ,San Juan               ,1958,OCT,20,NTS-YF ,37.04470,-116.02970,20,UG-S   ,SE ,0, ,       
+180,Hardtack II    ,Socorro                ,1958,OCT,22,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,6, ,       
+181,Hardtack II    ,Wrangell               ,1958,OCT,22,NTS-FF ,36.79810,-115.92890,460,A-B    ,WR ,0.115, ,       
+182,Hardtack II    ,Oberon                 ,1958,OCT,22,NTS-YF ,37.20000,-116.10000,8,AS-T   ,SE ,0, ,       
+183,Hardtack II    ,Rushmore               ,1958,OCT,22,NTS-YF ,37.13470,-116.04080,150,A-B    ,WR ,0.188, ,       
+184,Hardtack II    ,Catron                 ,1958,OCT,24,NTS-YF ,37.04310,-116.02690,20,AS-T   ,SE ,0.021, ,       
+185,Hardtack II    ,Juno                   ,1958,OCT,24,NTS-YF ,37.12330,-116.03780,0,AS     ,SE ,0.0017, ,       
+186,Hardtack II    ,Ceres                  ,1958,OCT,26,NTS-YF ,37.18140,-116.06860,10,AS-T   ,SE ,0.0007, ,       
+187,Hardtack II    ,Sanford                ,1958,OCT,26,NTS-FF ,36.79810,-115.92890,460,A-B    ,WR ,4.9, ,       
+188,Hardtack II    ,De Baca                ,1958,OCT,26,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,2.2, ,       
+189,Hardtack II    ,Chavez                 ,1958,OCT,27,NTS-YF ,37.05000,-116.00000,16,AS-T   ,SE ,0.0006, ,       
+190,Hardtack II    ,Evans                  ,1958,OCT,29,NTS-RM ,37.19470,-116.20470,-256.03,UG-T   ,WR ,0.055, ,       
+191,Hardtack II    ,Mazama                 ,1958,OCT,29,NTS-YF ,37.10000,-116.05000,15,AS-T   ,WR ,0, ,       
+192,Hardtack II    ,Humboldt               ,1958,OCT,29,NTS-YF ,37.04780,-116.02470,10,AS-T   ,WR ,0.0078, ,       
+193,Hardtack II    ,Santa Fe               ,1958,OCT,30,NTS-YF ,37.08670,-116.02360,460,A-B    ,WR ,1.3, ,       
+194,Hardtack II    ,Ganymede               ,1958,OCT,30,NTS-YF ,37.10000,-116.05000,0,AS     ,SE ,0, ,       
+195,Hardtack II    ,Blanca                 ,1958,OCT,30,NTS-RM ,37.18580,-116.20190,-254.51,UG-T   ,WR ,22, ,       
+196,Hardtack II    ,Titania                ,1958,OCT,30,NTS-YF ,37.17720,-116.06920,10,AS-T   ,SE ,0.0002, ,       
+197,Nougat         ,Antler                 ,1961,SEP,15,NTS-RM ,37.18794,-116.20775,-402.03,UG-T   ,WR ,2.6,V,210 kCi
+198,Nougat         ,Shrew                  ,1961,SEP,16,NTS-YF ,37.04844,-116.03281,-98.07,UG-S   ,WR ,      ,V,<490 Ci
+199,Nougat         ,Boomer                 ,1961,OCT,1,NTS-YF ,37.04834,-116.03451,-100.64,UG-S   ,WR ,      ,V,<2.5 kC
+200,Nougat         ,Chena                  ,1961,OCT,10,NTS-RM ,37.19428,-116.20703,-255.42,UG-T   ,WR ,      ,V,760 Ci 
+201,Nougat         ,Mink                   ,1961,OCT,29,NTS-YF ,37.04856,-116.03108,-192.1,UG-S   ,WR ,      ,V,       
+202,Nougat         ,Fisher                 ,1961,DEC,3,NTS-YF ,37.04586,-116.02767,-363.72,UG-S   ,WR ,13.4,V,<500 Ci
+203,Nougat         ,Gnome                  ,1961,DEC,10,-NM    ,32.26360,-103.86580,-360,UG-S   ,PR ,3,V,       
+204,Nougat         ,Mad                    ,1961,DEC,13,NTS-YF ,37.12661,-116.04875,-219.15,UG-S   ,WR ,0.5,V,       
+205,Nougat         ,Ringtail               ,1961,DEC,17,NTS-YF ,37.04317,-116.02531,-362.99,UG-S   ,WR ,20,V,<10 Ci 
+206,Nougat         ,Feather                ,1961,DEC,22,NTS-RM ,37.19494,-116.20828,-247.5,UG-T   ,WR ,0.15,V,380 Ci 
+207,Nougat         ,Stoat                  ,1962,JAN,9,NTS-YF ,37.04464,-116.03506,-302.33,UG-S   ,WR ,5.1,V,8 Ci   
+208,Nougat         ,Agouti                 ,1962,JAN,18,NTS-YF ,37.04725,-116.03436,-260.95,UG-S   ,WR ,6.4, ,       
+209,Nougat         ,Dormouse               ,1962,JAN,30,NTS-YF ,37.04683,-116.03947,-363.14,UG-S   ,WR ,10,V,       
+210,Nougat         ,Stillwater             ,1962,FEB,8,NTS-YF ,37.12725,-116.05267,-181.36,UG-S   ,WR ,3.07,V,       
+211,Nougat         ,Armadillo              ,1962,FEB,9,NTS-YF ,37.04358,-116.03894,-239.69,UG-S   ,WR ,7.1,V,<120 Ci
+212,Nougat         ,Hard Hat               ,1962,FEB,15,NTS-15 ,37.22500,-116.05800,-287.43,UG-S   ,WE ,5.7,V,       
+213,Nougat         ,Chinchilla I           ,1962,FEB,19,NTS-YF ,37.04906,-116.02953,-150.08,UG-S   ,WR ,1.9,V,2 Ci   
+214,Nougat         ,Codsaw                 ,1962,FEB,19,NTS-YF ,37.12744,-116.03711,-212.14,UG-S   ,WR ,2,V,       
+215,Nougat         ,Cimarron               ,1962,FEB,23,NTS-YF ,37.12886,-116.04831,-304.8,UG-S   ,WR ,11.9,V,750 Ci 
+216,Nougat         ,Platypus               ,1962,FEB,24,NTS-YF ,37.04833,-116.03192,-57.84,CR     ,WR ,      ,V,       
+217,Nougat         ,Danny Boy              ,1962,MAR,5,NTS-18 ,37.11110,-116.36490,-30,UG-S   ,WE ,0.43,V,850 kCi
+218,Nougat         ,Ermine                 ,1962,MAR,6,NTS-YF ,37.04839,-116.03367,-73.15,UG-S   ,SE ,      ,V,       
+219,Nougat         ,Brazos                 ,1962,MAR,8,NTS-YF ,37.12217,-116.04889,-256.34,UG-S   ,WR ,8.4,V,1.1 kCi
+220,Nougat         ,Hognose                ,1962,MAR,15,NTS-YF ,37.04397,-116.03103,-240.33,UG-S   ,WR ,8,V,       
+221,Nougat         ,Hoosic                 ,1962,MAR,28,NTS-YF ,37.12431,-116.03389,-186.84,UG-S   ,WR ,3.4,V,10 kCi 
+222,Nougat         ,Chinchilla II          ,1962,MAR,31,NTS-YF ,37.04692,-116.03689,-136.67,UG-S   ,WR ,2,V,<10 Ci 
+223,Nougat         ,Dormouse Prime         ,1962,APR,5,NTS-YF ,37.04450,-116.02353,-261.03,UG-S   ,WR ,10.6,V,       
+224,Nougat         ,Passaic                ,1962,APR,6,NTS-YF ,37.11767,-116.04400,-233.48,UG-S   ,WR ,9,V,600 Ci 
+225,Nougat         ,Hudson                 ,1962,APR,12,NTS-YF ,37.12717,-116.04486,-150.88,UG-S   ,WR ,1,V,500 Ci 
+226,Nougat         ,Platte                 ,1962,APR,14,NTS-RM ,37.22203,-116.15744,-170.69,UG-T   ,WR ,1.85,V,1.9 MCi
+227,Nougat         ,Dead                   ,1962,APR,21,NTS-YF ,37.11900,-116.03150,-193.24,UG-S   ,WR ,3,V,40 kCi 
+228,Dominic I      ,Adobe                  ,1962,APR,25,LI-CH  ,1.60000,-157.30000,884,A-AD   ,WR ,190, ,       
+229,Dominic I      ,Aztec                  ,1962,APR,27,LI-CH  ,1.60000,-157.30000,796,A-AD   ,WR ,410, ,       
+230,Nougat         ,Black                  ,1962,APR,27,NTS-YF ,37.11844,-116.03778,-217.63,UG-S   ,WR ,5,V,150 Ci 
+231,Dominic I      ,Arkansas               ,1962,MAY,2,LI-CH  ,1.60000,-157.30000,1533,A-AD   ,WR ,1090, ,       
+232,Dominic I      ,Questa                 ,1962,MAY,4,LI-CH  ,1.60000,-157.30000,1594,A-AD   ,WR ,670, ,       
+233,Dominic I      ,Frigate Bird           ,1962,MAY,6,-PAC   ,4.83330,-149.41670,3350,A-R    ,WR ,600, ,       
+234,Nougat         ,Paca                   ,1962,MAY,7,NTS-YF ,37.04656,-116.02500,-258.32,UG-S   ,WR ,8,V,<10 Ci 
+235,Dominic I      ,Yukon                  ,1962,MAY,8,LI-CH  ,1.60000,-157.30000,878,A-AD   ,WR ,100, ,       
+236,Dominic I      ,Mesilla                ,1962,MAY,9,LI-CH  ,1.60000,-157.30000,747,A-AD   ,WR ,100, ,       
+237,Nougat         ,Arikaree               ,1962,MAY,10,NTS-YF ,37.12759,-116.04830,-166.73,UG-S   ,WR ,      ,V,2 kCi  
+238,Dominic I      ,Muskegon               ,1962,MAY,11,LI-CH  ,1.60000,-157.30000,913,A-AD   ,WR ,50, ,       
+239,Dominic I      ,Swordfish              ,1962,MAY,11,-PAC   ,31.24500,-124.21170,-198,UW     ,WE ,      , ,       
+240,Dominic I      ,Encino                 ,1962,MAY,12,LI-CH  ,1.60000,-157.30000,1679,A-AD   ,WR ,500, ,       
+241,Nougat         ,Aardvark               ,1962,MAY,12,NTS-YF ,37.06519,-116.03039,-434.04,UG-S   ,WR ,40,V,<10 Ci 
+242,Dominic I      ,Swanee                 ,1962,MAY,14,LI-CH  ,1.60000,-157.30000,896,A-AD   ,WR ,97, ,       
+243,Nougat         ,Eel                    ,1962,MAY,19,NTS-YF ,37.12483,-116.05200,-217.63,UG-S   ,WR ,4.5,V,1.9 MCi
+244,Dominic I      ,Chetco                 ,1962,MAY,19,LI-CH  ,1.60000,-157.30000,2105,A-AD   ,WR ,73, ,       
+245,Nougat         ,White                  ,1962,MAY,25,NTS-YF ,37.12483,-116.05200,-192.63,UG-S   ,WR ,8,V,1.6 kCi
+246,Dominic I      ,Tanana                 ,1962,MAY,25,LI-CH  ,1.60000,-157.30000,2752,A-AD   ,WR ,2.6, ,       
+247,Dominic I      ,Nambe                  ,1962,MAY,27,LI-CH  ,1.60000,-157.30000,2176,A-AD   ,WR ,43, ,       
+248,Nougat         ,Raccoon                ,1962,JUN,1,NTS-YF ,37.04561,-116.03447,-164.25,UG-S   ,WR ,3, ,       
+249,Nougat         ,Packrat                ,1962,JUN,6,NTS-YF ,37.04572,-116.03928,-261.98,UG-S   ,WR ,13,V,       
+250,Dominic I      ,Alma                   ,1962,JUN,8,LI-CH  ,1.50000,-157.20000,2702,A-AD   ,WR ,782, ,       
+251,Dominic I      ,Truckee                ,1962,JUN,9,LI-CH  ,1.60000,-157.30000,2125,A-AD   ,WR ,210, ,       
+252,Dominic I      ,Yeso                   ,1962,JUN,10,LI-CH  ,1.50000,-157.20000,2537,A-AD   ,WR ,3000, ,       
+253,Dominic I      ,Harlem                 ,1962,JUN,12,LI-CH  ,1.50000,-157.20000,4160,A-AD   ,WR ,1200, ,       
+254,Nougat         ,Des Moines             ,1962,JUN,13,NTS-RM ,37.22222,-116.16214,-185.93,UG-T   ,WR ,2.9,V,11 MCi 
+255,Dominic I      ,Rinconada              ,1962,JUN,15,LI-CH  ,1.50000,-157.20000,2775,A-AD   ,WR ,800, ,       
+256,Dominic I      ,Dulce                  ,1962,JUN,17,LI-CH  ,1.60000,-157.30000,2771,A-AD   ,WR ,52, ,       
+257,Dominic I      ,Petit                  ,1962,JUN,19,LI-CH  ,1.60000,-157.30000,4570,A-AD   ,WR ,2.2, ,       
+258,Nougat         ,Daman I                ,1962,JUN,21,NTS-YF ,37.04306,-116.03025,-260.4,UG-S   ,WR ,11,V,       
+259,Dominic I      ,Otowi                  ,1962,JUN,22,LI-CH  ,1.60000,-157.30000,2746,A-AD   ,WR ,81.5, ,       
+260,Dominic I      ,Bighorn                ,1962,JUN,27,LI-CH  ,1.30000,-157.30000,3600,A-AD   ,WR ,7650, ,       
+261,Nougat         ,Haymaker               ,1962,JUN,27,NTS-YF ,37.04158,-116.03525,-408.56,UG-S   ,WR ,67,V,<150 Ci
+262,Nougat         ,Marshmallow            ,1962,JUN,28,NTS-16 ,37.00911,-116.20106,-310.9,UG-T   ,WE ,      ,V,35 kCi 
+263,Dominic I      ,Bluestone              ,1962,JUN,30,LI-CH  ,1.50000,-157.30000,1518,A-AD   ,WR ,1270, ,       
+264,Nougat         ,Sacramento             ,1962,JUN,30,NTS-YF ,37.11742,-116.04742,-149.05,UG-S   ,WR ,4,V,       
+265,Storax         ,Sedan                  ,1962,JUL,6,NTS-YF ,37.17700,-116.04540,-190,CR     ,PR ,104,V,15 MTC 
+266,Sunbeam        ,Little Feller II       ,1962,JUL,7,NTS-18 ,37.12000,-116.30000,1,AS     ,WE ,      , ,       
+267,Fishbowl       ,Starfish Prime         ,1962,JUL,9,JO     ,17.20000,-169.10000,399000,AX-R   ,WE ,1400, ,       
+268,Dominic I      ,Sunset                 ,1962,JUL,10,LI-CH  ,1.60000,-157.30000,1500,A-AD   ,WR ,1000, ,       
+269,Dominic I      ,Pamlico                ,1962,JUL,11,LI-CH  ,1.40000,-157.30000,4370,A-AD   ,WR ,3880, ,       
+270,Sunbeam        ,Johnnie Boy            ,1962,JUL,11,NTS-18 ,37.12240,-116.33300,-0.6,CR     ,WE ,0.5,V,       
+271,Storax         ,Merrimac               ,1962,JUL,13,NTS-YF ,37.05506,-116.03339,-413.31,UG-S   ,WR ,20,V,22 kCi 
+272,Sunbeam        ,Small Boy              ,1962,JUL,14,NTS-FF ,36.80000,-115.95000,3,AS-T   ,WE ,0.6, ,       
+273,Sunbeam        ,Little Feller I        ,1962,JUL,17,NTS-18 ,37.11000,-116.31000,12,AS     ,WE ,      , ,       
+274,Storax         ,Wichita                ,1962,JUL,27,NTS-YF ,37.12972,-116.05647,-150.27,UG-S   ,WR ,3.5,V,760 Ci 
+275,Storax         ,York                   ,1962,AUG,24,NTS-YF ,37.11864,-116.03947,-226.47,UG-S   ,WR ,5,V,120 kCi
+276,Storax         ,Bobac                  ,1962,AUG,24,NTS-YF ,37.04614,-116.02383,-206.03,UG-S   ,WR ,2.5,V,       
+277,Storax         ,Raritan                ,1962,SEP,6,NTS-YF ,37.13031,-116.04474,-157.28,UG-S   ,WR ,2,V,1.2 kCi
+278,Storax         ,Hyrax                  ,1962,SEP,14,NTS-YF ,37.04394,-116.02111,-216.69,UG-S   ,WR ,5,V,       
+279,Storax         ,Peba                   ,1962,SEP,20,NTS-YF ,37.05506,-116.02928,-241.38,UG-S   ,WR ,11, ,       
+280,Storax         ,Allegheny              ,1962,SEP,29,NTS-YF ,37.11670,-116.03280,-210.92,UG-S   ,WR ,1,V,1.5 kCi
+281,Dominic I      ,Androscoggin           ,1962,OCT,2,JO     ,14.00000,-172.00000,3130,A-AD   ,WR ,75, ,       
+282,Storax         ,Mississippi            ,1962,OCT,5,NTS-YF ,37.13942,-116.05033,-493.78,UG-S   ,WR ,115,V,4.9 kCi
+283,Dominic I      ,Bumping                ,1962,OCT,6,JO     ,15.00000,-169.00000,3050,A-AD   ,WR ,11.3, ,       
+284,Storax         ,Roanoke                ,1962,OCT,12,NTS-YF ,37.12275,-116.05081,-154.53,UG-S   ,WR ,7,V,1.2 kCi
+285,Storax         ,Wolverine              ,1962,OCT,12,NTS-YF ,37.04878,-116.03256,-73.43,UG-S   ,WR ,      ,V,<100 Ci
+286,Dominic I      ,Chama                  ,1962,OCT,18,JO     ,14.00000,-169.00000,3650,A-AD   ,WR ,1590, ,       
+287,Storax         ,Tioga                  ,1962,OCT,18,NTS-YF ,37.12855,-116.04024,-59.44,UG-S   ,WR ,      , ,       
+288,Storax         ,Bandicoot              ,1962,OCT,19,NTS-YF ,37.03953,-116.02114,-241.3,UG-S   ,WR ,12.5,V,3 MCi  
+289,Fishbowl       ,Checkmate              ,1962,OCT,20,JO     ,16.00000,-169.50000,147000,AX-R   ,WE ,      , ,       
+290,Fishbowl       ,Bluegill 3 Prime       ,1962,OCT,26,JO     ,16.90000,-169.20000,48200,AH-R   ,WE ,400, ,       
+291,Storax         ,Santee                 ,1962,OCT,27,NTS-YF ,37.14931,-116.05350,-319.43,UG-S   ,WR ,5,V,4 kCi  
+292,Dominic I      ,Calamity               ,1962,OCT,27,JO     ,15.00000,-169.00000,3590,A-AD   ,WR ,800, ,       
+293,Dominic I      ,Housatonic             ,1962,OCT,30,JO     ,13.50000,-172.00000,3700,A-AD   ,WR ,8300, ,       
+294,Fishbowl       ,Kingfish               ,1962,NOV,1,JO     ,16.60000,-169.40000,96300,AX-R   ,WE ,400, ,       
+295,Fishbowl       ,Tightrope              ,1962,NOV,4,JO     ,17.10000,-169.10000,21000,A-R    ,WE ,      , ,       
+296,Storax         ,St. Lawrence           ,1962,NOV,9,NTS-YF ,37.16382,-116.07329,-166.42,UG-S   ,WR ,      ,V,6 kCi  
+297,Storax         ,Gundi                  ,1962,NOV,15,NTS-YF ,37.04175,-116.02387,-241.44,UG-S   ,WR ,      , ,       
+298,Storax         ,Anacostia              ,1962,NOV,27,NTS-YF ,37.12281,-116.02900,-227.69,UG-S   ,PR ,5.2,V,6.8 kCi
+299,Storax         ,Taunton                ,1962,DEC,4,NTS-YF ,37.12808,-116.05001,-227.84,UG-S   ,WR ,      ,V,4 kCi  
+300,Storax         ,Madison                ,1962,DEC,12,NTS-RM ,37.16867,-116.20608,-245.36,UG-T   ,WR ,      ,V,20 kCi 
+301,Storax         ,Numbat                 ,1962,DEC,12,NTS-YF ,37.04611,-116.01561,-231.95,UG-S   ,WR ,11,V,       
+302,Storax         ,Manatee                ,1962,DEC,14,NTS-YF ,37.12424,-116.03996,-58.52,UG-S   ,WR ,      ,V,1.8 kCi
+303,Storax         ,Casselman              ,1963,FEB,8,NTS-YF ,37.14886,-116.05189,-302.97,UG-S   ,WR ,6,V,6.3 kCi
+304,Storax         ,Hatchie                ,1963,FEB,8,NTS-YF ,37.12596,-116.03865,-60.96,UG-S   ,WR ,      , ,       
+305,Storax         ,Ferret                 ,1963,FEB,8,NTS-YF ,37.05834,-116.02926,-325.69,UG-S   ,WR ,      , ,       
+306,Storax         ,Acushi                 ,1963,FEB,8,NTS-YF ,37.04614,-116.02108,-260.87,UG-S   ,WR ,9, ,       
+307,Storax         ,Chipmunk               ,1963,FEB,15,NTS-YF ,37.04901,-116.03175,-59.38,UG-S   ,SE ,      , ,       
+308,Storax         ,Kaweah                 ,1963,FEB,21,NTS-YF ,37.12031,-116.04572,-227.08,UG-S   ,PR ,3,V,40 kCi 
+309,Storax         ,Carmel                 ,1963,FEB,21,NTS-YF ,37.15481,-116.07989,-163.37,UG-S   ,WR ,      ,V,7.2 kCi
+310,Storax         ,Jerboa                 ,1963,MAR,1,NTS-YF ,37.04457,-116.02650,-301.16,UG-S   ,WR ,      , ,       
+311,Storax         ,Toyah                  ,1963,MAR,15,NTS-YF ,37.12583,-116.04478,-130.76,UG-S   ,WR ,      ,V,1.2 kCi
+312,Storax         ,Gerbil                 ,1963,MAR,29,NTS-YF ,37.04172,-116.01839,-279.5,UG-S   ,WR ,11, ,       
+313,Storax         ,Ferret Prime           ,1963,APR,5,NTS-YF ,37.03733,-116.02392,-241.55,UG-S   ,WR ,7, ,       
+314,Storax         ,Coypu                  ,1963,APR,10,NTS-YF ,37.04881,-116.03031,-74.6,UG-S   ,SE ,      , ,       
+315,Storax         ,Cumberland             ,1963,APR,11,NTS-YF ,37.15668,-116.07096,-227.08,UG-S   ,WR ,6,V,8.5 kCi
+316,Storax         ,Kootanai               ,1963,APR,24,NTS-YF ,37.12060,-116.03628,-181.97,UG-S   ,WR ,      ,V,410 Ci 
+317,Storax         ,Paisano                ,1963,APR,24,NTS-YF ,37.12053,-116.03618,-56.69,UG-S   ,WR ,      , ,       
+318,Storax         ,Gundi Prime            ,1963,MAY,9,NTS-YF ,37.04940,-116.01559,-271.73,UG-S   ,WR ,8, ,       
+319,Roller Coaster ,Double Tracks          ,1963,MAY,15,NAFR   ,37.20000,-116.10000,0,AS     ,ST ,0, ,       
+320,Storax         ,Harkee                 ,1963,MAY,17,NTS-YF ,37.04391,-116.03236,-241.42,UG-S   ,WR ,      , ,       
+321,Storax         ,Tejon                  ,1963,MAY,17,NTS-YF ,37.04834,-116.01563,-74.6,UG-S   ,SE ,      , ,       
+322,Storax         ,Stones                 ,1963,MAY,22,NTS-YF ,37.11106,-116.03906,-394.72,UG-S   ,WR ,20,V,5.8 kCi
+323,Roller Coaster ,Clean Slate I          ,1963,MAY,25,NAFR   ,37.20000,-116.10000,0,AS     ,ST ,0, ,       
+324,Storax         ,Pleasant               ,1963,MAY,29,NTS-YF ,37.12807,-116.04246,-210.31,UG-S   ,WR ,2,V,760 Ci 
+325,Roller Coaster ,Clean Slate II         ,1963,MAY,31,NAFR   ,37.15400,-116.07700,0,AS     ,ST ,0, ,       
+326,Storax         ,Yuba                   ,1963,JUN,5,NTS-RM ,37.19658,-116.20917,-242.41,UG-T   ,WR ,3.1,V,110 Ci 
+327,Storax         ,Hutia                  ,1963,JUN,6,NTS-YF ,37.04503,-116.03636,-134.57,UG-S   ,WR ,3, ,       
+328,Storax         ,Apshapa                ,1963,JUN,6,NTS-YF ,37.12465,-116.03998,-89.92,UG-S   ,WR ,      ,V,4 Ci   
+329,Roller Coaster ,Clean Slate III        ,1963,JUN,9,NAFR   ,37.20000,-116.10000,0,AS     ,ST ,0, ,       
+330,Storax         ,Mataco                 ,1963,JUN,14,NTS-YF ,37.04611,-116.01836,-195.56,UG-S   ,WR ,3, ,       
+331,Storax         ,Kennebec               ,1963,JUN,25,NTS-YF ,37.13140,-116.06806,-226.16,UG-S   ,WR ,4,V,30 Ci  
+332,Niblick        ,Pekan                  ,1963,AUG,12,NTS-YF ,37.04169,-116.01564,-302.27,UG-S   ,WR ,8,V,1.1 MCi
+333,Niblick        ,Satsop                 ,1963,AUG,15,NTS-YF ,37.15408,-116.07664,-224.94,UG-S   ,WR ,3, ,       
+334,Niblick        ,Kohocton            ,1963,AUG,23,NTS-YF ,37.12497,-116.03539,-254.51,UG-S   ,WR ,      ,V,3 kCi  
+335,Niblick        ,Natches             ,1963,AUG,23,NTS-YF ,37.12500,-116.03600,       ,UG-S   ,WR ,      , ,       
+336,Niblick        ,Ahtanum                ,1963,SEP,13,NTS-YF ,37.16336,-116.08064,-225.55,UG-S   ,WR ,1,V,35 Ci  
+337,Niblick        ,Bilby                  ,1963,SEP,13,NTS-YF ,37.06042,-116.02167,-714.3,UG-S   ,WR ,249,V,1 Ci   
+338,Niblick        ,Carp                   ,1963,SEP,27,NTS-YF ,37.03731,-116.01569,-329.55,UG-S   ,WR ,0.08,V,1.1 kCi
+339,Niblick        ,Narraguagus            ,1963,SEP,27,NTS-YF ,37.15478,-116.07336,-150.27,UG-S   ,WR ,0.08,V,160 Ci 
+340,Niblick        ,Grunion                ,1963,OCT,11,NTS-YF ,37.03733,-116.02117,-261.31,UG-S   ,WR ,8,V,4 kCi  
+341,Niblick        ,Tornillo               ,1963,OCT,11,NTS-YF ,37.11872,-116.03386,-149.05,UG-S   ,PR ,0.38,V,520 Ci 
+342,Niblick        ,Clearwater             ,1963,OCT,16,NTS-RM ,37.19817,-116.22950,-548.03,UG-S   ,WR ,60,V,4.6 kCi
+343,Niblick        ,Mullet                 ,1963,OCT,17,NTS-YF ,37.13081,-116.06696,-60.35,UG-S   ,SE ,      , ,       
+344,Niblick        ,Shoal                  ,1963,OCT,26,-NV    ,39.20020,-118.38030,-370,UG-S   ,VU ,12,V,110 Ci 
+345,Niblick        ,Anchovy                ,1963,NOV,14,NTS-YF ,37.03953,-116.01842,-260.25,UG-S   ,WR ,9,V,<230 kC
+346,Niblick        ,Mustang                ,1963,NOV,15,NTS-YF ,37.13231,-116.04689,-165.81,UG-S   ,WR ,2,V,100 Ci 
+347,Niblick        ,Greys                  ,1963,NOV,22,NTS-YF ,37.11933,-116.04517,-300.84,UG-S   ,WR ,20,V,<460 Ci
+348,Niblick        ,Barracuda           ,1963,DEC,4,NTS-YF ,37.04400,-116.01300,-263.3,UG-S   ,WR ,      ,V,100 Ci 
+349,Niblick        ,Sardine            ,1963,DEC,4,NTS-YF ,37.03958,-116.02939,-262,UG-S   ,WR ,8,V,30 Ci  
+350,Niblick        ,Eagle                  ,1963,DEC,12,NTS-YF ,37.13103,-116.04389,-164.59,UG-S   ,WR ,5.3,V,760 Ci 
+351,Niblick        ,Tuna                   ,1963,DEC,20,NTS-YF ,37.05279,-116.03338,-414.35,UG-S   ,WR ,      ,V,<0.1 Ci
+352,Niblick  ,Fore              ,1964,JAN ,16, NTS-YF,37.14228,-116.04911,-490.42, UG-S , WR  ,38,V,1.2 kCi 
+353,Niblick  ,Oconto            ,1964,JAN ,23, NTS-YF,37.12642,-116.03633,-264.69, UG-S , WR  ,10.5,V,30 kCi  
+354,Niblick  ,Club              ,1964,JAN ,30, NTS-YF,37.13621,-116.07066,-180.44, UG-S , WR  ,2,V,590 Ci  
+355,Niblick  ,Solendon          ,1964,FEB ,12, NTS-YF,37.05661,-116.02924,-150.17, UG-S , WR  ,    ,V,10 Ci   
+356,Niblick  ,Bunker            ,1964,FEB ,13, NTS-YF,37.13202,-116.03234,-226.77, UG-S , WR  ,1.5,V,<420 Ci 
+357,Niblick  ,Bonefish          ,1964,FEB ,18, NTS-YF,37.05938,-116.03332,-300.76, UG-S , WR  ,5,V,19 Ci   
+358,Niblick  ,Mackerel          ,1964,FEB ,18, NTS-YF,37.09563,-116.05072,-333.71, UG-S , WR  ,    , ,        
+359,Niblick  ,Klickitat         ,1964,FEB ,20, NTS-YF,37.15089,-116.04011,-492.56, UG-S , PR  ,70,V,<10 Ci  
+360,Niblick  ,Handicap          ,1964,MAR ,12, NTS-YF,37.12993,-116.03634,-143.26, UG-S , WR  ,0.2,V,300 Ci  
+361,Niblick  ,Pike              ,1964,MAR ,13, NTS-YF,37.05047,-116.01147,-114.5, UG-S , WR  ,2,V,120 kCi 
+362,Niblick  ,Hook              ,1964,APR ,14, NTS-YF,37.12892,-116.02983,-203.67, UG-S , WR  ,3,V,<350 Ci 
+363,Niblick  ,Sturgeon          ,1964,APR ,15, NTS-YF,37.04392,-116.01836,-149.77, UG-S , WR  ,2,V,230 Ci  
+364,Niblick  ,Bogey             ,1964,APR ,17, NTS-YF,37.11949,-116.03389,-118.84, UG-S , WR  ,    ,V,<60 Ci  
+365,Niblick  ,Turf              ,1964,APR ,24, NTS-YF,37.14958,-116.05539,-506.88, UG-S , WR  ,38,V,<200 Ci 
+366,Niblick  ,Pipefish          ,1964,APR ,29, NTS-YF,37.03956,-116.02664,-261.92, UG-S , WR  ,15, ,        
+367,Niblick  ,Driver            ,1964,MAY ,7, NTS-YF,37.12026,-116.04029,-148.19, UG-S , WR  ,    ,V,37 Ci   
+368,Niblick  ,Backswing         ,1964,MAY ,14, NTS-YF,37.11733,-116.03894,-163.37, UG-S , WR  ,8,V,37 Ci   
+369,Niblick  ,Minnow            ,1964,MAY ,15, NTS-YF,37.04169,-116.01222,-241.34, UG-S , WR  ,6, ,        
+370,Niblick  ,Ace               ,1964,JUN ,11, NTS-YF,37.14861,-116.07600,-262.74, UG-S , PR  ,3,V,9 Ci    
+371,Niblick  ,Bitterling        ,1964,JUN ,12, NTS-YF,37.03894,-116.01225,-192.6, UG-S , WR  ,0.5, ,        
+372,Niblick  ,Duffer            ,1964,JUN ,18, NTS-YF,37.16599,-116.03841,-445.71, UG-S , WR  ,0.15,V,<41 Ci  
+373,Niblick  ,Fade              ,1964,JUN ,25, NTS-YF,37.11114,-116.02878,-205.16, UG-S , WR  ,6,V,35 Ci   
+374,Niblick  ,Dub               ,1964,JUN ,30, NTS-YF,37.17442,-116.05639,-258.56, UG-S , PR  ,11.7,V,29 Ci   
+375,Whetstone,Bye               ,1964,JUL ,16, NTS-YF,37.18219,-116.04536,-389.26, UG-S , WR  ,20,V,<390 Ci 
+376,Whetstone,Links             ,1964,JUL ,23, NTS-YF,37.11376,-116.03201,-119.8, UG-S , WR  ,    ,V,<7 Ci   
+377,Whetstone,Trogon            ,1964,JUL ,24, NTS-YF,37.04608,-116.01219,-193.03, UG-S , WR  ,    , ,        
+378,Whetstone,Alva              ,1964,AUG ,19, NTS-YF,37.15900,-116.08308,-166.04, UG-S , WR  ,4.4,V,6.4 kCi 
+379,Whetstone,Canvasback        ,1964,AUG ,22, NTS-YF,37.06533,-116.01544,-447.66, UG-S , WR  ,18,V,2 kCi   
+380,Whetstone,Player            ,1964,AUG ,27, NTS-YF,37.11736,-116.04066,-91.44, UG-S , SE  ,    , ,        
+381,Whetstone,Haddock           ,1964,AUG ,28, NTS-YF,37.06703,-116.02228,-363.66, UG-S , WR  ,    , ,        
+382,Whetstone,Guanay            ,1964,SEP ,4, NTS-YF,37.01758,-116.02269,-260.97, UG-S , WR  ,12, ,        
+383,Whetstone,Spoon             ,1964,SEP ,11, NTS-YF,37.11400,-116.02500,-179.68, UG-S , WR  ,0.2,V,390 Ci  
+384,Whetstone,Auk               ,1964,OCT ,2, NTS-YF,37.07792,-116.00850,-452.38, UG-S , WR  ,12, ,        
+385,Whetstone,Par               ,1964,OCT ,9, NTS-YF,37.15133,-116.07700,-403.86, UG-S , PR  ,38,V,610 Ci  
+386,Whetstone,Barbel            ,1964,OCT ,16, NTS-YF,37.03950,-116.01567,-258.9, UG-S , WR  ,7,V,290 Ci  
+387,Whetstone,Turnstone         ,1964,OCT ,16, NTS-YF,37.03300,-116.02600,         , UG-S , WR  ,    , ,        
+388,Whetstone,Salmon            ,1964,OCT ,22, -MS   ,31.14210,-89.56990,-830, UG-S , VU  ,5.3, ,        
+389,Whetstone,Garden            ,1964,OCT ,23, NTS-YF,37.11703,-116.03115,-149.66, UG-S , WR  ,    , ,        
+390,Whetstone,Forest            ,1964,OCT ,31, NTS-YF,37.10722,-116.03225,-380.73, UG-S , WR  ,    ,V,5 Ci    
+391,Whetstone,Handcar           ,1964,NOV ,5, NTS-YF,37.17436,-116.06703,-402.95, UG-S , PR  ,12,V,70 Ci   
+392,Whetstone,Crepe             ,1964,DEC ,5, NTS-YF,37.11442,-116.05344,-404.2, UG-S , WR  ,20,V,250 Ci  
+393,Whetstone,Drill (Source-Lowe,1964,DEC ,5, NTS-YF,37.13428,-116.06975,-219.46, UG-S , WR  ,3.4,V,61 kCi  
+394,Whetstone,Drill (Target-Uppe,1964,DEC ,5, NTS-YF,37.13428,-116.06975,         , UG-S , WR  ,    , ,        
+395,Whetstone,Parrot            ,1964,DEC ,16, NTS-YF,37.03483,-116.01228,-180.32, UG-S , WR  ,1.3,V,230 kCi 
+396,Whetstone,Cassowary         ,1964,DEC ,16, NTS-YF,37.03956,-116.02389,-150.14, UG-S , WR  ,    , ,        
+397,Whetstone,Hoopoe            ,1964,DEC ,16, NTS-YF,37.04800,-116.03400,         , UG-S , SE  ,    , ,        
+398,Whetstone,Mudpack           ,1964,DEC ,16, NTS-YF,37.17781,-116.06700,-151.79, UG-S , WE  ,2.7,V,<54 Ci  
+399,Whetstone,Sulky             ,1964,DEC ,18, NTS-18,37.08250,-116.34250,-27.28, UG-S , PR  ,0.092,V,130 kCi 
+400,Whetstone,Wool              ,1965,JAN ,14, NTS-YF,37.11900,-116.02478,-215.13, UG-S , WR  ,7,V,200 Ci  
+401,Whetstone,Tern              ,1965,JAN ,29, NTS-YF,37.04499,-116.01323,-210.65, UG-S , WR  ,0.5,V,170 Ci  
+402,Whetstone,Cashmere          ,1965,FEB ,4, NTS-YF,37.13075,-116.06158,-232.18, UG-S , WR  ,4,V,8 Ci    
+403,Whetstone,Alpaca            ,1965,FEB ,12, NTS-YF,37.16453,-116.07656,-224.61, UG-S , WR  ,0.33,V,40 kCi  
+404,Whetstone,Merlin            ,1965,FEB ,16, NTS-YF,37.05164,-116.02381,-296.14, UG-S , WR  ,10.1,V,        
+405,Whetstone,Wishbone          ,1965,FEB ,18, NTS-FF,36.81700,-115.95000,-179.22, UG-S , WE  ,5,V,6.9 kCi 
+406,Whetstone,Seersucker        ,1965,FEB ,19, NTS-YF,37.11728,-116.03098,-142.34, UG-S , WR  ,    ,V,<410 Ci 
+407,Whetstone,Wagtail           ,1965,MAR ,3, NTS-YF,37.06450,-116.03719,-749.59, UG-S , WR  ,51,V,13 Ci   
+408,Whetstone,Suede             ,1965,MAR ,20, NTS-YF,37.11543,-116.02649,-143.52, UG-S , WR  ,0.2,V,1.3 kCi 
+409,Whetstone,Cup               ,1965,MAR ,26, NTS-YF,37.14761,-116.04289,-536.75, UG-S , WR  ,38,V,4.7 kCi 
+410,Whetstone,Kestrel           ,1965,APR ,5, NTS-YF,37.02581,-116.02264,-446.87, UG-S , WR  ,7,V,230 Ci  
+411,Whetstone,Palanquin         ,1965,APR ,14, NTS-PM,37.28039,-116.52356,-85.34, CR   , PR  ,4.3,V,11 MCi  
+412,Whetstone,Gum Drop          ,1965,APR ,21, NTS-16,37.00800,-116.20300,-304.8, UG-T , WE  ,20,V,1.9 kCi 
+413,Whetstone,Chenille          ,1965,APR ,22, NTS-YF,37.11142,-116.03049,-140.74, UG-S , WR  ,1,V,<110 Ci 
+414,Whetstone,Muscovy           ,1965,APR ,23, NTS-YF,37.01742,-115.99533,-180.29, UG-S , WR  ,0.6, ,        
+415,Whetstone,Tee               ,1965,MAY ,7, NTS-YF,37.14036,-116.06664,-190.2, UG-S , WE  ,7,V,1.6 kCi 
+416,Whetstone,Buteo             ,1965,MAY ,12, NTS-PM,37.24270,-116.43090,-695.55, UG-S , WR  ,    , ,        
+417,Whetstone,Cambric           ,1965,MAY ,14, NTS-FF,36.82338,-115.96684,-294.28, UG-S , WR  ,0.75, ,        
+418,Whetstone,Scaup             ,1965,MAY ,14, NTS-YF,37.05883,-116.01053,-427.02, UG-S , WR  ,12, ,        
+419,Whetstone,Tweed             ,1965,MAY ,21, NTS-YF,37.11856,-116.02769,-281.07, UG-S , WR  ,15,V,600 Ci  
+420,Whetstone,Petrel            ,1965,JUN ,11, NTS-YF,37.04281,-116.01703,-180.75, UG-S , WR  ,1.3, ,        
+421,Whetstone,Organdy           ,1965,JUN ,11, NTS-YF,37.11578,-116.02326,-169.47, UG-S , WR  ,0.5,V,130 Ci  
+422,Whetstone,Diluted Waters    ,1965,JUN ,16, NTS-FF,36.81806,-115.95606,-190.5, UG-S , WE  ,4,V,30 kCi  
+423,Whetstone,Tiny Tot          ,1965,JUN ,17, NTS-15,37.22342,-116.05697,-110.95, UG-T , WE  ,    ,V,7 Ci    
+424,Flintlock,Izzer             ,1965,JUL ,16, NTS-YF,37.11500,-116.03217,-163.68, UG-S , WR  ,    ,V,        
+425,Flintlock,Pongee            ,1965,JUL ,22, NTS-YF,37.13179,-116.06686,-135.03, UG-S , WR  ,    ,V,6 Ci    
+426,Flintlock,Bronze            ,1965,JUL ,23, NTS-YF,37.09786,-116.03300,-530.96, UG-S , WR  ,67,V,1.7 kCi 
+427,Flintlock,Mauve             ,1965,AUG ,6, NTS-YF,37.01767,-116.03983,-321, UG-S , WR  ,18, ,        
+428,Flintlock,Ticking           ,1965,AUG ,21, NTS-YF,37.11263,-116.02602,-210.31, UG-S , WR  ,0.25,V,2.6 kCi 
+429,Flintlock,Centaur           ,1965,AUG ,27, NTS-YF,37.13731,-116.07008,-171.91, UG-S , WR  ,1,V,57 Ci   
+430,Flintlock,Moa               ,1965,SEP ,1, NTS-YF,37.03700,-116.01500,         , UG-S , WR  ,2.5, ,        
+431,Flintlock,Screamer          ,1965,SEP ,1, NTS-YF,37.02300,-116.00897,-301.9, UG-S , WE  ,9,V,63 kCi  
+432,Flintlock,Elkhart           ,1965,SEP ,17, NTS-YF,37.11103,-116.03461,-219.46, UG-S , WR  ,6,V,560 Ci  
+433,Flintlock,Long Shot         ,1965,OCT ,29, AK    ,51.43810,179.18260,-700, UG-S , VU  ,80, ,        
+434,Flintlock,Sepia             ,1965,NOV ,12, NTS-YF,37.04997,-116.02208,-241.19, UG-S , WR  ,7,V,        
+435,Flintlock,Kermet            ,1965,NOV ,23, NTS-YF,37.16189,-116.07092,-198.12, UG-S , WR  ,0.5,V,18 Ci   
+436,Flintlock,Corduroy          ,1965,DEC ,3, NTS-YF,37.16475,-116.05233,-681.53, UG-S , WR  ,120,V,1.2 kCi 
+437,Flintlock,Emerson           ,1965,DEC ,16, NTS-YF,37.14084,-116.06318,-259.87, UG-S , WR  ,3,V,0.6 Ci  
+438,Flintlock,Buff              ,1965,DEC ,16, NTS-YF,37.07260,-116.02910,-500.41, UG-S , WR  ,51, ,        
+439,Flintlock,Maxwell           ,1966,JAN ,13, NTS-YF,37.11622,-116.02753,-183.09, UG-S , WR  ,    ,V,3 Ci    
+440,Flintlock,Lampblack         ,1966,JAN ,18, NTS-YF,37.09169,-116.01869,-561.48, UG-S , WR  ,38, ,        
+441,Flintlock,Sienna            ,1966,JAN ,18, NTS-YF,37.03733,-116.01843,-275.01, UG-S , WR  ,4,V,        
+442,Flintlock,Dovekie           ,1966,JAN ,21, NTS-YF,37.03172,-116.01575,-333.05, UG-S , WR  ,7, ,        
+443,Flintlock,Reo               ,1966,JAN ,22, NTS-YF,37.15721,-116.03869,-213.36, UG-S , WR  ,0.15,V,10 Ci   
+444,Flintlock,Plaid II          ,1966,FEB ,3, NTS-YF,37.12631,-116.06947,-270.05, UG-S , WR  ,3.5,V,7 Ci    
+445,Flintlock,Rex               ,1966,FEB ,24, NTS-PM,37.27183,-116.43383,-671.69, UG-S , WR  ,19,V,310 Ci  
+446,Flintlock,Red Hot           ,1966,MAR ,5, NTS-RM,37.17450,-116.20836,-405.38, UG-T , WE  ,2,V,1 MCi   
+447,Flintlock,Finfoot           ,1966,MAR ,7, NTS-YF,37.03739,-116.02939,-195.54, UG-S , WR  ,5,V,        
+448,Flintlock,Cinnamon          ,1966,MAR ,7, NTS-YF,37.03500,-116.03200,         , UG-S , SE  ,    , ,        
+449,Flintlock,Clymer            ,1966,MAR ,12, NTS-YF,37.14367,-116.05253,-397.09, UG-S , WR  ,3,V,450 Ci  
+450,Flintlock,Purple            ,1966,MAR ,18, NTS-YF,37.00925,-116.00908,-332.79, UG-S , WR  ,7, ,        
+451,Flintlock,Templar           ,1966,MAR ,24, NTS-YF,37.11333,-116.03136,-151, UG-S , PR  ,0.37,V,        
+452,Flintlock,Lime              ,1966,APR ,1, NTS-YF,37.10269,-116.01994,-561.44, UG-S , WR  ,    , ,        
+453,Flintlock,Stutz             ,1966,APR ,6, NTS-YF,37.13953,-116.14086,-225.34, UG-S , WR  ,5,V,1 Ci    
+454,Flintlock,Tomato            ,1966,APR ,7, NTS-YF,37.01742,-115.99222,-226.31, UG-S , WR  ,6, ,        
+455,Flintlock,Duryea            ,1966,APR ,14, NTS-PM,37.24267,-116.43086,-544.25, UG-S , WR  ,70,V,2 Ci    
+456,Flintlock,Fenton            ,1966,APR ,23, NTS-YF,37.16054,-116.08287,-167.64, UG-S , WR  ,1.4,V,1.7 kCi 
+457,Flintlock,Pin Stripe        ,1966,APR ,25, NTS-FF,36.88744,-115.94072,-295.66, UG-S , WE  ,5,V,210 kCi 
+458,Flintlock,Ochre             ,1966,APR ,29, NTS-YF,37.04367,-116.02249,-126.14, UG-S , SE  ,    , ,        
+459,Flintlock,Traveler          ,1966,MAY ,4, NTS-YF,37.13706,-116.13714,-196.76, UG-S , WR  ,20,V,170 Ci  
+460,Flintlock,Cyclamen          ,1966,MAY ,5, NTS-YF,37.05061,-116.03786,-304.97, UG-S , WR  ,12, ,        
+461,Flintlock,Chartreuse        ,1966,MAY ,6, NTS-PM,37.34800,-116.32194,-666.75, UG-S , WR  ,73, ,        
+462,Flintlock,Tapestry          ,1966,MAY ,12, NTS-YF,37.13428,-116.07111,-247.19, UG-S , WR  ,10,V,8.6 kCi 
+463,Flintlock,Piranha           ,1966,MAY ,13, NTS-YF,37.08686,-116.03344,-548.72, UG-S , WR  ,120, ,        
+464,Flintlock,Dumont            ,1966,MAY ,19, NTS-YF,37.11114,-116.05792,-670.77, UG-S , WR  ,200,V,35 Ci   
+465,Flintlock,Discus Thrower    ,1966,MAY ,27, NTS-YF,37.17839,-116.09775,-337.06, UG-S , WE  ,22, ,        
+466,Flintlock,Pile Driver       ,1966,JUN ,2, NTS-15,37.22710,-116.05550,-462.69, UG-S , WE  ,62,V,37 kCi  
+467,Flintlock,Tan               ,1966,JUN ,3, NTS-YF,37.06840,-116.03530,-560.68, UG-S , WR  ,160, ,        
+468,Flintlock,Puce              ,1966,JUN ,10, NTS-YF,37.05942,-116.03881,-485.55, UG-S , WR  ,    , ,        
+469,Flintlock,Double Play       ,1966,JUN ,15, NTS-16,37.00970,-116.20240,-327.7, UG-S , WE  ,    ,V,840 kCi 
+470,Flintlock,Kankakee          ,1966,JUN ,15, NTS-YF,37.17153,-116.04886,-455.25, UG-S , WR  ,200,V,160 Ci  
+471,Flintlock,Vulcan            ,1966,JUN ,25, NTS-YF,37.15531,-116.07217,-322.11, UG-S , PR  ,25,V,250 Ci  
+472,Flintlock,Halfbeak          ,1966,JUN ,30, NTS-PM,37.31581,-116.29897,-819.3, UG-S , WR  ,365, ,        
+473,Latchkey ,Saxon             ,1966,JUL ,28, NTS-YF,37.14033,-116.09886,-153.04, UG-S , PR  ,1.2,V,0.5 Ci  
+474,Latchkey ,Rovena            ,1966,AUG ,10, NTS-YF,37.16867,-116.04772,-195.25, UG-S , WR  ,1,V,2 Ci    
+475,Latchkey ,Tangerine         ,1966,AUG ,12, NTS-YF,37.04631,-116.02932,-87.88, UG-S , SE  ,    , ,        
+476,Latchkey ,Derringer         ,1966,SEP ,12, NTS-FF,36.87694,-115.95061,-255.12, UG-S , WE  ,7.8,V,12 kCi  
+477,Latchkey ,Daiquiri          ,1966,SEP ,23, NTS-YF,37.02094,-116.03639,-561.15, UG-S , WR  ,    , ,        
+478,Latchkey ,Newark            ,1966,SEP ,29, NTS-YF,37.16867,-116.04606,-228.63, UG-S , WR  ,4,V,290 Ci  
+479,Latchkey ,Khaki             ,1966,OCT ,15, NTS-YF,37.04707,-116.01698,-232.55, UG-S , WR  ,    , ,        
+480,Latchkey ,Simms             ,1966,NOV ,5, NTS-YF,37.16994,-116.04722,-198.15, UG-S , PR  ,2.3,V,11 Ci   
+481,Latchkey ,Ajax              ,1966,NOV ,11, NTS-YF,37.13444,-116.04983,-238.45, UG-S , WR  ,5,V,1 Ci    
+482,Latchkey ,Cerise            ,1966,NOV ,18, NTS-YF,37.04278,-116.01033,-211.09, UG-S , WR  ,7, ,        
+483,Latchkey ,Vigil             ,1966,NOV ,22, NTS-YF,37.16938,-116.04831,-93.68, UG-S , SE  ,    ,V,        
+484,Latchkey ,Sterling          ,1966,DEC ,3, -MS   ,31.14210,-89.56990,-830, UG-S , VU  ,0.38, ,        
+485,Latchkey ,Sidecar           ,1966,DEC ,13, NTS-YF,37.03479,-116.00680,-240.27, UG-S , WR  ,1,V,        
+486,Latchkey ,New Point         ,1966,DEC ,13, NTS-FF,36.87725,-115.93789,-243.84, UG-S , WE  ,7,V,3 Ci    
+487,Latchkey ,Greeley           ,1966,DEC ,20, NTS-PM,37.30206,-116.40831,-1214.63, UG-S , WR  ,870, ,        
+488,Latchkey ,Rivet I           ,1967,JAN ,18, NTS-YF,37.16512,-116.04655,-152.1, UG-S , WR  ,0.15, ,        
+489,Latchkey ,Nash              ,1967,JAN ,19, NTS-YF,37.14367,-116.13519,-363.78, UG-S , WR  ,39,V,69 kCi  
+490,Latchkey ,Bourbon           ,1967,JAN ,20, NTS-YF,37.09986,-116.00383,-559.72, UG-S , WR  ,41, ,        
+491,Latchkey ,Rivet II          ,1967,JAN ,26, NTS-YF,37.16480,-116.04806,-197.78, UG-S , WR  ,0.8,V,0.1 Ci  
+492,Latchkey ,Ward              ,1967,FEB ,8, NTS-YF,37.16753,-116.04714,-257.25, UG-S , WR  ,11, ,        
+493,Latchkey ,Persimmon         ,1967,FEB ,23, NTS-YF,37.01753,-116.01586,-299.11, UG-S , WR  ,4, ,        
+494,Latchkey ,Agile             ,1967,FEB ,23, NTS-YF,37.12686,-116.06639,-731.52, UG-S , WR  ,200, ,        
+495,Latchkey ,Rivet III         ,1967,MAR ,2, NTS-YF,37.16586,-116.04869,-271.27, UG-S , WR  ,2.5,V,        
+496,Latchkey ,Mushroom          ,1967,MAR ,3, NTS-YF,37.03948,-116.01019,-179.55, UG-S , WR  ,0.6,V,0.4 Ci  
+497,Latchkey ,Fizz              ,1967,MAR ,10, NTS-YF,37.04613,-116.02978,-117.73, UG-S , SE  ,    , ,        
+498,Latchkey ,Oakland           ,1967,APR ,4, NTS-YF,37.16198,-116.08223,-165.35, UG-S , WR  ,    ,V,100 Ci  
+499,Latchkey ,Heilman           ,1967,APR ,6, NTS-YF,37.13733,-116.13268,-152.7, UG-S , WR  ,    ,V,8 Ci    
+500,Latchkey ,Fawn              ,1967,APR ,7, NTS-YF,37.05439,-116.02222,-271.06, UG-S , WR  ,1, ,        
+501,Latchkey ,Chocolate         ,1967,APR ,21, NTS-YF,37.01928,-116.03742,-240.45, UG-S , WR  ,7, ,        
+502,Latchkey ,Effendi           ,1967,APR ,27, NTS-YF,37.13878,-116.06319,-219.29, UG-S , WR  ,0.8, ,        
+503,Latchkey ,Mickey            ,1967,MAY ,10, NTS-YF,37.07786,-115.99531,-499.63, UG-S , WR  ,22, ,        
+504,Latchkey ,Commodore         ,1967,MAY ,20, NTS-YF,37.13039,-116.06394,-746.46, UG-S , WR  ,250,V,<1 Ci   
+505,Latchkey ,Scotch            ,1967,MAY ,23, NTS-PM,37.27508,-116.36997,-977.39, UG-S , WR  ,155, ,        
+506,Latchkey ,Absinthe          ,1967,MAY ,26, NTS-YF,37.04502,-116.01905,-118.65, UG-S , SE  ,    , ,        
+507,Latchkey ,Knickerbocker     ,1967,MAY ,26, NTS-PM,37.24794,-116.48017,-630.63, UG-S , WR  ,76,V,110 Ci  
+508,Latchkey ,Switch            ,1967,JUN ,22, NTS-YF,37.12556,-116.02867,-301.75, UG-S , PR  ,3.1,V,<1 Ci   
+509,Latchkey ,Midi Mist         ,1967,JUN ,26, NTS-RM,37.20211,-116.20783,-374.9, UG-T , WE  ,20,V,4.5 kCi 
+510,Latchkey ,Umber             ,1967,JUN ,29, NTS-YF,37.02856,-116.02261,-310.24, UG-S , WE  ,10,V,26 kCi  
+511,Crosstie ,Vito              ,1967,JUL ,14, NTS-YF,37.16525,-116.04493,-90.83, UG-S , SE  ,    , ,        
+512,Crosstie ,Stanley           ,1967,JUL ,27, NTS-YF,37.14872,-116.04853,-483.72, UG-S , WR  ,22,V,37 Ci   
+513,Crosstie ,Gibson            ,1967,AUG ,4, NTS-YF,37.02439,-116.01237,-240.76, UG-S , WR  ,1.5, ,        
+514,Crosstie ,Washer            ,1967,AUG ,10, NTS-YF,37.15669,-116.04728,-467.41, UG-S , WR  ,    ,V,0.5 Ci  
+515,Crosstie ,Bordeaux          ,1967,AUG ,18, NTS-YF,37.01217,-116.03647,-332.02, UG-S , WR  ,18, ,        
+516,Crosstie ,Lexington         ,1967,AUG ,24, NTS-YF,37.16273,-116.07416,-227.69, UG-S , WR  ,0.8,V,1.1 kCi 
+517,Crosstie ,Door Mist         ,1967,AUG ,31, NTS-RM,37.17756,-116.20894,-435.86, UG-T , WE  ,20,V,690 kCi 
+518,Crosstie ,Yard              ,1967,SEP ,7, NTS-YF,37.15317,-116.05278,-520.6, UG-S , WR  ,22,V,0.3 Ci  
+519,Crosstie ,Gilroy            ,1967,SEP ,15, NTS-YF,37.03487,-116.02085,-240.63, UG-S , WR  ,    ,V,        
+520,Crosstie ,Marvel            ,1967,SEP ,21, NTS-YF,37.16600,-116.03842,-174.35, UG-S , PR  ,2.2,V,27 Ci   
+521,Crosstie ,Zaza              ,1967,SEP ,27, NTS-YF,37.09878,-116.05322,-667, UG-S , WR  ,160, ,        
+522,Crosstie ,Lanpher           ,1967,OCT ,18, NTS-YF,37.11558,-116.05761,-714.2, UG-S , WR  ,160,V,5 Ci    
+523,Crosstie ,Sazerac           ,1967,OCT ,25, NTS-YF,37.03161,-116.02636,-301.34, UG-S , WR  ,9,V,0.1 Ci  
+524,Crosstie ,Cognac            ,1967,OCT ,25, NTS-YF,37.04980,-116.03958,-240.39, UG-S , WR  ,    ,V,        
+525,Crosstie ,Worth             ,1967,OCT ,25, NTS-YF,37.15634,-116.04859,-197, UG-S , WR  ,    ,V,40 Ci   
+526,Crosstie ,Cobbler           ,1967,NOV ,8, NTS-YF,37.09181,-116.03581,-667.12, UG-S , WR  ,20, ,        
+527,Crosstie ,Polka             ,1967,DEC ,6, NTS-YF,37.15927,-116.05295,-195.01, UG-S , WR  ,0.2,V,380 Ci  
+528,Crosstie ,Gasbuggy          ,1967,DEC ,10, -NM   ,36.67780,-107.20830,-1290, UG-S , PR  ,29, ,        
+529,Crosstie ,Stilt             ,1967,DEC ,15, NTS-YF,37.03669,-116.00200,-332.43, UG-S , WR  ,2, ,        
+530,Crosstie ,Hupmobile         ,1968,JAN ,18, NTS-YF,37.14558,-116.06567,-246.89, UG-S , WE  ,7.4,V,120 kCi 
+531,Crosstie ,Staccato          ,1968,JAN ,19, NTS-YF,37.15640,-116.05390,-443.48, UG-S , WR  ,50,V,8 Ci    
+532,Crosstie ,Faultless         ,1968,JAN ,19, -NV   ,38.63430,-116.21530,-980, UG-S , WR  ,1000, ,        
+533,Crosstie ,Brush             ,1968,JAN ,24, NTS-YF,37.04279,-116.01393,-118.3, UG-S , WR  ,    ,V,        
+534,Crosstie ,Cabriolet         ,1968,JAN ,26, NTS-PM,37.28086,-116.51444,-51.82, CR   , PR  ,2.3,V,220 kCi 
+535,Crosstie ,Mallet            ,1968,JAN ,31, NTS-YF,37.00102,-116.00915,-240.27, UG-S , WR  ,4, ,        
+536,Crosstie ,Torch             ,1968,FEB ,21, NTS-YF,37.04163,-116.00195,-240.55, UG-S , WR  ,    , ,        
+537,Crosstie ,Knox              ,1968,FEB ,21, NTS-YF,37.11656,-116.05369,-644.8, UG-S , WR  ,200,V,160 Ci  
+538,Crosstie ,Dorsal Fin        ,1968,FEB ,29, NTS-RM,37.18461,-116.21144,-410.06, UG-T , WE  ,20, ,        
+539,Crosstie ,Russet            ,1968,MAR ,5, NTS-YF,36.96992,-116.05580,-119.79, UG-S , WR  ,    ,V,29 Ci   
+540,Crosstie ,Buggy-A           ,1968,MAR ,12, NTS-30,37.00750,-116.36997,-50.29, CR   , PR  ,1.08,V,1.2 MCi 
+541,Crosstie ,Buggy-B           ,1968,MAR ,12, NTS-30,37.00764,-116.37045,-50.29, CR   , PR  ,1.08, ,        
+542,Crosstie ,Buggy-C           ,1968,MAR ,12, NTS-30,37.00778,-116.37093,-50.29, CR   , PR  ,1.08, ,        
+543,Crosstie ,Buggy-D           ,1968,MAR ,12, NTS-30,37.00793,-116.37141,-50.29, CR   , PR  ,1.08, ,        
+544,Crosstie ,Buggy-E           ,1968,MAR ,12, NTS-30,37.00808,-116.37189,-50.29, CR   , PR  ,1.08, ,        
+545,Crosstie ,Pommard           ,1968,MAR ,14, NTS-YF,37.04772,-116.01081,-209.1, UG-S , WR  ,1.5, ,        
+546,Crosstie ,Stinger           ,1968,MAR ,22, NTS-PM,37.33261,-116.31067,-667.76, UG-S , WR  ,120, ,        
+547,Crosstie ,Milk Shake        ,1968,MAR ,25, NTS-FF,36.87172,-115.93114,-264.57, UG-S , WE  ,10,V,30 Ci   
+548,Crosstie ,Bevel             ,1968,APR ,4, NTS-YF,37.05231,-116.02088,-240.75, UG-S , WR  ,    , ,        
+549,Crosstie ,Noor              ,1968,APR ,10, NTS-YF,37.15439,-116.07886,-381.81, UG-S , WR  ,20,V,1 Ci    
+550,Crosstie ,Throw             ,1968,APR ,10, NTS-YF,37.15700,-116.08300,         , UG-S , WR  ,2, ,        
+551,Crosstie ,Shuffle           ,1968,APR ,18, NTS-YF,37.15253,-116.03700,-493.47, UG-S , WR  ,20,V,19 Ci   
+552,Crosstie ,Scroll            ,1968,APR ,23, NTS-PM,37.33772,-116.37558,-228.6, UG-S , VU  ,6,V,18 kCi  
+553,Crosstie ,Boxcar            ,1968,APR ,26, NTS-PM,37.29542,-116.45569,-1160.89, UG-S , WR  ,1300, ,        
+554,Crosstie ,Hatchet           ,1968,MAY ,3, NTS-YF,37.02854,-116.01988,-240.53, UG-S , WR  ,2, ,        
+555,Crosstie ,Crock             ,1968,MAY ,8, NTS-YF,37.15733,-116.03492,-181.76, UG-S , WR  ,1,V,140 Ci  
+556,Crosstie ,Clarksmobile      ,1968,MAY ,17, NTS-YF,37.12006,-116.05883,-472.65, UG-S , WR  ,20, ,        
+557,Crosstie ,Adze              ,1968,MAY ,28, NTS-YF,37.00863,-115.99539,-240.03, UG-S , WR  ,    ,V,        
+558,Crosstie ,Wembley           ,1968,JUN ,5, NTS-YF,37.03484,-116.01606,-238.09, UG-S , WR  ,1.5, ,        
+559,Crosstie ,Tub-A             ,1968,JUN ,6, NTS-YF,37.16700,-116.04300,-188.98, UG-S , WR  ,    , ,        
+560,Crosstie ,Tub-B             ,1968,JUN ,6, NTS-YF,37.16500,-116.04400,         , UG-S , WR  ,    , ,        
+561,Crosstie ,Tub-C             ,1968,JUN ,6, NTS-YF,37.16500,-116.04200,         , UG-S , WR  ,    , ,        
+562,Crosstie ,Tub-D             ,1968,JUN ,6, NTS-YF,37.16700,-116.04600,-273, UG-S , WR  ,    ,V,1.6 kCi 
+563,Crosstie ,Tub-F             ,1968,JUN ,6, NTS-YF,37.16700,-116.04300,         , UG-S , WR  ,    , ,        
+564,Crosstie ,Rickey            ,1968,JUN ,15, NTS-PM,37.26492,-116.31464,-683.28, UG-S , WR  ,200, ,        
+565,Crosstie ,Funnel            ,1968,JUN ,25, NTS-YF,37.04635,-116.03021,-118.7, UG-S , WR  ,    ,V,        
+566,Crosstie ,Sevilla           ,1968,JUN ,25, NTS-YF,37.04158,-115.99235,-358.65, UG-S , WR  ,    ,V,        
+567,Crosstie ,Chateaugay        ,1968,JUN ,28, NTS-PM,37.24550,-116.48286,-607.02, UG-S , WR  ,58, ,        
+568,Bowline  ,Spud              ,1968,JUL ,17, NTS-YF,37.00096,-115.99888,-240.29, UG-S , WR  ,1.5, ,        
+569,Bowline  ,Tanya             ,1968,JUL ,30, NTS-YF,37.13322,-116.08225,-381, UG-S , WR  ,20,V,140 Ci  
+570,Bowline  ,Imp               ,1968,AUG ,9, NTS-YF,37.16179,-116.07719,-178.46, UG-S , WR  ,0.35,V,4.2 kCi 
+571,Bowline  ,Rack              ,1968,AUG ,15, NTS-YF,37.12373,-116.04822,-199.72, UG-S , WR  ,1,V,10 Ci   
+572,Bowline  ,Diana Moon        ,1968,AUG ,27, NTS-FF,36.87722,-115.93108,-242.01, UG-S , WE  ,9,V,12 kCi  
+573,Bowline  ,Sled              ,1968,AUG ,29, NTS-PM,37.25033,-116.34689,-728.88, UG-S , WR  ,200, ,        
+574,Bowline  ,Noggin            ,1968,SEP ,6, NTS-YF,37.13606,-116.04717,-581.99, UG-S , WR  ,120,V,16 Ci   
+575,Bowline  ,Knife A           ,1968,SEP ,12, NTS-YF,37.03178,-116.01164,-331.8, UG-S , WR  ,20, ,        
+576,Bowline  ,Stoddard          ,1968,SEP ,17, NTS-YF,37.11986,-116.12747,-467.87, UG-S , PR  ,31,V,16 Ci   
+577,Bowline  ,Hudson Seal       ,1968,SEP ,24, NTS-RM,37.20480,-116.20640,-344.42, UG-T , WE  ,20, ,        
+578,Bowline  ,Welder            ,1968,OCT ,3, NTS-YF,37.04653,-116.02974,-117.66, UG-S , SE  ,    , ,        
+579,Bowline  ,Knife C           ,1968,OCT ,3, NTS-YF,37.02592,-115.99283,-301.44, UG-S , WR  ,3, ,        
+580,Bowline  ,Vat               ,1968,OCT ,10, NTS-YF,37.13331,-116.04231,-194.92, UG-S , WR  ,1, ,        
+581,Bowline  ,Hula              ,1968,OCT ,29, NTS-YF,37.11326,-116.04093,-198.46, UG-S , WR  ,0.25,V,7 Ci    
+582,Bowline  ,Bit-A             ,1968,OCT ,31, NTS-YF,37.04703,-116.02947,-148.31, UG-S , SE  ,1, ,        
+583,Bowline  ,Bit-B             ,1968,OCT ,31, NTS-YF,37.04703,-116.02947,         , UG-S , SE  ,    , ,        
+584,Bowline  ,File              ,1968,OCT ,31, NTS-YF,37.01709,-116.03573,-228.95, UG-S , WR  ,7, ,        
+585,Bowline  ,Crew              ,1968,NOV ,4, NTS-YF,37.13048,-116.08651,-603.5, UG-S , WR  ,22, ,        
+586,Bowline  ,Crew-2nd          ,1968,NOV ,4, NTS-YF,37.13000,-116.08700,         , UG-S , WR  ,    , ,        
+587,Bowline  ,Crew-3rd          ,1968,NOV ,4, NTS-YF,37.13000,-116.08700,         , UG-S , WR  ,    , ,        
+588,Bowline  ,Auger             ,1968,NOV ,15, NTS-YF,37.04766,-115.99984,-240.62, UG-S , WR  ,1, ,        
+589,Bowline  ,Knife B           ,1968,NOV ,15, NTS-YF,37.02614,-116.03325,-362.94, UG-S , WR  ,8, ,        
+590,Bowline  ,Ming Vase         ,1968,NOV ,20, NTS-16,37.00983,-116.20642,-307.94, UG-T , WE  ,16, ,        
+591,Bowline  ,Tinderbox         ,1968,NOV ,22, NTS-YF,37.13992,-116.04225,-439.52, UG-S , WR  ,3,V,2 Ci    
+592,Bowline  ,Schooner          ,1968,DEC ,8, NTS-PM,37.34342,-116.56586,-111.22, CR   , PR  ,30,V,3.7 MCi 
+593,Bowline  ,Bay Leaf          ,1968,DEC ,12, NTS-YF,37.04704,-116.03020,-130.16, UG-S , SE  ,    , ,        
+594,Bowline  ,Tyg-A             ,1968,DEC ,12, NTS-YF,37.12082,-116.08056,-228.3, UG-S , WR  ,20,V,6.8 kCi 
+595,Bowline  ,Tyg-B             ,1968,DEC ,12, NTS-YF,37.11800,-116.08000,-251, UG-S , WR  ,3,V,        
+596,Bowline  ,Tyg-C             ,1968,DEC ,12, NTS-YF,37.11800,-116.07800,-228.3, UG-S , WR  ,2,V,        
+597,Bowline  ,Tyg-D             ,1968,DEC ,12, NTS-YF,37.12100,-116.07900,         , UG-S , WR  ,1, ,        
+598,Bowline  ,Tyg-E             ,1968,DEC ,12, NTS-YF,37.12000,-116.07700,         , UG-S , WR  ,3, ,        
+599,Bowline  ,Tyg-F             ,1968,DEC ,12, NTS-YF,37.11900,-116.08300,         , UG-S , WR  ,4, ,        
+600,Bowline  ,Scissors          ,1968,DEC ,12, NTS-YF,37.00393,-116.03926,-240.58, UG-S , WR  ,1,V,        
+601,Bowline  ,Benham            ,1968,DEC ,19, NTS-PM,37.23147,-116.47358,-1402.08, UG-S , WR  ,1150, ,        
+602,Bowline  ,Packard           ,1969,JAN ,15, NTS-YF,37.14792,-116.06567,-246.89, UG-S , WE  ,10,V,7 Ci    
+603,Bowline  ,Wineskin          ,1969,JAN ,15, NTS-RM,37.20914,-116.22539,-518.16, UG-S , WR  ,40, ,        
+604,Bowline  ,Shave             ,1969,JAN ,22, NTS-YF,37.01549,-115.99430,-240.75, UG-S , WR  ,2, ,        
+605,Bowline  ,Vise              ,1969,JAN ,30, NTS-YF,37.05331,-116.02925,-454.06, UG-S , WR  ,20, ,        
+606,Bowline  ,Biggin            ,1969,JAN ,30, NTS-YF,37.13331,-116.04026,-242.32, UG-S , WR  ,    , ,        
+607,Bowline  ,Nipper            ,1969,FEB ,4, NTS-YF,37.00267,-116.00914,-240.73, UG-S , WR  ,    , ,        
+608,Bowline  ,Winch             ,1969,FEB ,4, NTS-YF,37.00944,-116.04230,-240.63, UG-S , WR  ,0.6, ,        
+609,Bowline  ,Cypress           ,1969,FEB ,12, NTS-RM,37.16906,-116.21072,-359.66,UG-T   , WE  ,15, ,        
+610,Bowline  ,Valise            ,1969,MAR ,18, NTS-YF,37.13914,-116.04084,-90.25, UG-S , SE  ,    ,V,        
+611,Bowline  ,Chatty            ,1969,MAR ,18, NTS-YF,37.16228,-116.07588,-194.77, UG-S , WR  ,0.8,V,0.7 Ci  
+612,Bowline  ,Barsac            ,1969,MAR ,20, NTS-YF,37.02200,-116.03019,-304.13, UG-S , WR  ,10,V,43 Ci   
+613,Bowline  ,Coffer            ,1969,MAR ,21, NTS-YF,37.13322,-116.08667,-464.82, UG-S , WR  ,26,V,10 Ci   
+614,Bowline  ,Gourd-Amber       ,1969,APR ,24, NTS-YF,37.16397,-116.07964,-181.3, UG-S , WR  ,0.8, ,        
+615,Bowline  ,Gourd-Brown       ,1969,APR ,24, NTS-YF,37.16000,-116.08200,         , UG-S , WR  ,    , ,        
+616,Bowline  ,Thistle           ,1969,APR ,30, NTS-YF,37.09028,-116.00564,-560.47, UG-S , WR  ,38, ,        
+617,Bowline  ,Blenton           ,1969,APR ,30, NTS-YF,37.08150,-116.01394,-557.73, UG-S , WR  ,51,V,        
+618,Bowline  ,Purse             ,1969,MAY ,7, NTS-PM,37.28289,-116.50064,-598.75, UG-S , WR  ,90, ,        
+619,Bowline  ,Aliment           ,1969,MAY ,15, NTS-YF,37.01187,-115.98508,-240.51, UG-S , WR  ,2, ,        
+620,Bowline  ,Ipecac-A          ,1969,MAY ,27, NTS-YF,37.01499,-116.00218,-124.18, UG-S , SE  ,    ,V,        
+621,Bowline  ,Ipecac-B          ,1969,MAY ,27, NTS-YF,37.01500,-116.00100,         , UG-S , SE  ,    , ,        
+622,Bowline  ,Torrido           ,1969,MAY ,27, NTS-YF,37.07511,-115.99531,-514.72, UG-S , WR  ,22, ,        
+623,Bowline  ,Tapper            ,1969,JUN ,12, NTS-YF,37.00883,-116.03031,-303, UG-S , WR  ,10, ,        
+624,Bowline  ,Bowl-1            ,1969,JUN ,26, NTS-YF,37.16248,-116.07862,-198.12, UG-S , WR  ,2, ,        
+625,Bowline  ,Bowl-2            ,1969,JUN ,26, NTS-YF,37.16100,-116.08000,         , UG-S , WR  ,3, ,        
+626,Mandrel  ,Ildrim            ,1969,JUL ,16, NTS-YF,37.11943,-116.05512,-410.26, UG-S , WR  ,20, ,        
+627,Mandrel  ,Hutch             ,1969,JUL ,16, NTS-YF,37.13953,-116.08744,-548.64, UG-S , WR  ,120,V,1.1 kCi 
+628,Mandrel  ,Spider-A          ,1969,AUG ,14, NTS-YF,37.16024,-116.06361,-207.26, UG-S , WR  ,1,V,2 Ci    
+629,Mandrel  ,Spider-B          ,1969,AUG ,14, NTS-YF,37.15800,-116.06500,-213, UG-S , WR  ,1, ,        
+630,Mandrel  ,Pliers            ,1969,AUG ,27, NTS-YF,37.02150,-116.03808,-238.87, UG-S , WR  ,10,V,        
+631,Mandrel  ,Horehound         ,1969,AUG ,27, NTS-YF,36.99270,-115.99553,-331.83, UG-S , WR  ,    , ,        
+632,Mandrel  ,Rulison           ,1969,SEP ,10, -CO   ,39.40580,-107.94810,-2570, UG-S , PR  ,40,V,        
+633,Mandrel  ,Minute Steak      ,1969,SEP ,12, NTS-FF,36.87722,-115.92850,-264.26, UG-S , WE  ,5,V,8.4 kCi 
+634,Mandrel  ,Jorum             ,1969,SEP ,16, NTS-PM,37.31414,-116.46067,-1158.24, UG-S , WR  ,800, ,        
+635,Mandrel  ,Kyack-A           ,1969,SEP ,20, NTS-YF,37.15900,-116.06900,-192.02, UG-S , WR  ,0.8, ,        
+636,Mandrel  ,Kyack-B           ,1969,SEP ,20, NTS-YF,37.15700,-116.06700,-192, UG-S , WR  ,1,V,510 Ci  
+637,Mandrel  ,Seaweed-C         ,1969,OCT ,1, NTS-YF,37.01051,-115.99957,-118.43, UG-S , SE  ,    , ,        
+638,Mandrel  ,Seaweed-D         ,1969,OCT ,1, NTS-YF,37.01000,-116.00000,-118, UG-S , SE  ,    , ,        
+639,Mandrel  ,Seaweed-E         ,1969,OCT ,1, NTS-YF,37.01400,-115.99900,         , UG-S , SE  ,    , ,        
+640,Mandrel  ,Milrow            ,1969,OCT ,2, AK    ,51.41710,179.18230,-1220, UG-S , WR  ,1000, ,        
+641,Mandrel  ,Pipkin            ,1969,OCT ,8, NTS-PM,37.25672,-116.44075,-624.84, UG-S , WR  ,200,V,6 Ci    
+642,Mandrel  ,Seaweed B         ,1969,OCT ,16, NTS-YF,37.01277,-115.99826,-118.55, UG-S , SE  ,    , ,        
+643,Mandrel  ,Cruet             ,1969,OCT ,29, NTS-YF,37.12150,-116.12775,-263.65, UG-S , WR  ,11, ,        
+644,Mandrel  ,Pod-A             ,1969,OCT ,29, NTS-YF,37.14021,-116.13050,-266.7, UG-S , WR  ,16.7,V,3.9 kCi 
+645,Mandrel  ,Pod-B             ,1969,OCT ,29, NTS-YF,37.14000,-116.14300,         , UG-S , WR  ,    , ,        
+646,Mandrel  ,Pod-C             ,1969,OCT ,29, NTS-YF,37.13600,-116.14100,         , UG-S , WR  ,    , ,        
+647,Mandrel  ,Pod-D             ,1969,OCT ,29, NTS-YF,37.13500,-116.13700,-312, UG-S , WR  ,    ,V,        
+648,Mandrel  ,Calabash          ,1969,OCT ,29, NTS-YF,37.14331,-116.06383,-624.84, UG-S , WR  ,110, ,        
+649,Mandrel  ,Scuttle           ,1969,NOV ,13, NTS-YF,37.16463,-116.07483,-164.59, UG-S , WR  ,1.7,V,210 Ci  
+650,Mandrel  ,Piccalilli        ,1969,NOV ,21, NTS-YF,37.03119,-116.00206,-393.8, UG-S , WR  ,22, ,        
+651,Mandrel  ,Planer            ,1969,NOV ,21, NTS-YF,37.04816,-116.02273,-377.84, UG-S , WR  ,20, ,        
+652,Mandrel  ,Diesel Train      ,1969,DEC ,5, NTS-RM,37.17997,-116.21086,-419.15, UG-T , WE  ,20, ,        
+653,Mandrel  ,Culantro-A        ,1969,DEC ,10, NTS-YF,37.01472,-116.00287,-134.13, UG-S , WR  ,    , ,        
+654,Mandrel  ,Culantro-B        ,1969,DEC ,10, NTS-YF,37.01500,-116.00200,         , UG-S , WR  ,    , ,        
+655,Mandrel  ,Tun-A             ,1969,DEC ,10, NTS-YF,37.16800,-116.08000,-193.55, UG-S , WR  ,2.5, ,        
+656,Mandrel  ,Tun-B             ,1969,DEC ,10, NTS-YF,37.16900,-116.08000,-194, UG-S , WR  ,2,V,72 Ci   
+657,Mandrel  ,Tun-C             ,1969,DEC ,10, NTS-YF,37.16800,-116.07800,-194, UG-S , WR  ,2,V,        
+658,Mandrel  ,Tun-D             ,1969,DEC ,10, NTS-YF,37.16900,-116.07800,-256, UG-S , WR  ,3,V,        
+659,Mandrel  ,Grape A           ,1969,DEC ,17, NTS-YF,37.08381,-116.00158,-550.67, UG-S , WR  ,89, ,        
+660,Mandrel  ,Lovage            ,1969,DEC ,17, NTS-YF,37.00658,-116.02281,-378.05, UG-S , WR  ,16, ,        
+661,Mandrel  ,Terrine-White     ,1969,DEC ,18, NTS-YF,37.12047,-116.03478,-461.77, UG-S , WR  ,38,V,48 Ci   
+662,Mandrel  ,Terrine-Yellow    ,1969,DEC ,18, NTS-YF,37.12100,-116.02900,-417, UG-S , WR  ,    ,V,        
+663,Mandrel  ,Fob-Green         ,1970,JAN ,23, NTS-YF,37.14100,-116.03800,-266.7, UG-S , WR  ,8, ,        
+664,Mandrel  ,Fob-Red           ,1970,JAN ,23, NTS-YF,37.13742,-116.03678,         , UG-S , WR  ,    , ,        
+665,Mandrel  ,Fob-Blue          ,1970,JAN ,23, NTS-YF,37.14100,-116.03400,         , UG-S , WR  ,    , ,        
+666,Mandrel  ,Ajo               ,1970,JAN ,30, NTS-YF,37.03083,-116.03475,-304.11, UG-S , WR  ,20, ,        
+667,Mandrel  ,Grape B           ,1970,FEB ,4, NTS-YF,37.09808,-116.02650,-554.46, UG-S , WR  ,120, ,        
+668,Mandrel  ,Belen             ,1970,FEB ,4, NTS-YF,37.05502,-116.03884,-420.8, UG-S , WR  ,97, ,        
+669,Mandrel  ,Labis             ,1970,FEB ,5, NTS-YF,37.16397,-116.03883,-441.96, UG-S , WR  ,25, ,        
+670,Mandrel  ,Diana Mist        ,1970,FEB ,11, NTS-RM,37.20128,-116.20522,-402.02, UG-T , WE  ,12, ,        
+671,Mandrel  ,Cumarin           ,1970,FEB ,25, NTS-YF,37.03667,-115.99958,-408.51, UG-S , WR  ,51, ,        
+672,Mandrel  ,Yannigan-Red      ,1970,FEB ,26, NTS-YF,37.11636,-116.06144,-388.62, UG-S , WR  ,70,V,320 Ci  
+673,Mandrel  ,Yannigan-Blue     ,1970,FEB ,26, NTS-YF,37.11400,-116.06700,-394, UG-S , WR  ,20,V,        
+674,Mandrel  ,Yannigan-White    ,1970,FEB ,26, NTS-YF,37.11800,-116.06700,-363, UG-S , WR  ,30,V,        
+675,Mandrel  ,Cyathus           ,1970,MAR ,6, NTS-YF,37.02311,-116.09175,-289.56, UG-S , WR  ,8.7,V,<46 Ci  
+676,Mandrel  ,Arabis-Red        ,1970,MAR ,6, NTS-YF,37.14000,-116.03200,-249.94, UG-S , WR  ,3.5, ,        
+677,Mandrel  ,Arabis-Green      ,1970,MAR ,6, NTS-YF,37.14200,-116.03500,         , UG-S , WR  ,    , ,        
+678,Mandrel  ,Arabis-Blue       ,1970,MAR ,6, NTS-YF,37.14000,-116.03800,         , UG-S , SE  ,    , ,        
+679,Mandrel  ,Jal               ,1970,MAR ,19, NTS-YF,37.00108,-116.02286,-301.39, UG-S , WR  ,6, ,        
+680,Mandrel  ,Shaper            ,1970,MAR ,23, NTS-YF,37.08622,-116.02111,-560.44, UG-S , WR  ,89, ,        
+681,Mandrel  ,Handley           ,1970,MAR ,26, NTS-PM,37.30047,-116.53411,-1209.14, UG-S , WR  ,1900, ,        
+682,Mandrel  ,Snubber           ,1970,APR ,21, NTS-YF,37.05489,-115.98811,-343.5, UG-S , WE  ,12.7,V,55 kCi  
+683,Mandrel  ,Can-Green         ,1970,APR ,21, NTS-YF,37.11200,-116.08300,-274.32, UG-S , WR  ,20, ,        
+684,Mandrel  ,Can-Red           ,1970,APR ,21, NTS-YF,37.11558,-116.08011,         , UG-S , WR  ,20, ,        
+685,Mandrel  ,Beebalm           ,1970,MAY ,1, NTS-YF,37.05922,-116.02817,-390.21, UG-S , WR  ,1, ,        
+686,Mandrel  ,Hod-C (Blue)      ,1970,MAY ,1, NTS-YF,37.13800,-116.03200,         , UG-S , SE  ,    , ,        
+687,Mandrel  ,Hod-A (Green)     ,1970,MAY ,1, NTS-YF,37.13600,-116.03500,-265.18, UG-S , WR  ,9,V,1 Ci    
+688,Mandrel  ,Hod-B (Red)       ,1970,MAY ,1, NTS-YF,37.13300,-116.03408,-241, UG-S , WR  ,4,V,        
+689,Mandrel  ,Mint Leaf         ,1970,MAY ,5, NTS-RM,37.21653,-116.18406,-396.24, UG-T , WE  ,20,V,960 kCi 
+690,Mandrel  ,Diamond Dust      ,1970,MAY ,12, NTS-16,37.01044,-116.20189,-221.89, UG-T , VU  ,    ,V,5 Ci    
+691,Mandrel  ,Cornice-Yellow    ,1970,MAY ,15, NTS-YF,37.16600,-116.03600,-390.14, UG-S , WR  ,45, ,        
+692,Mandrel  ,Cornice-Green     ,1970,MAY ,15, NTS-YF,37.16192,-116.03886,         , UG-S , WR  ,40, ,        
+693,Mandrel  ,Manzanas          ,1970,MAY ,21, NTS-YF,37.02886,-115.99194,-240.65, UG-S , WR  ,1,V,<0.2 Ci 
+694,Mandrel  ,Morrones          ,1970,MAY ,21, NTS-YF,37.07081,-116.01300,-482.72, UG-S , WR  ,29, ,        
+695,Mandrel  ,Hudson Moon       ,1970,MAY ,26, NTS-RM,37.18260,-116.21340,-422.45, UG-T , WE  ,9,V,1.3 kCi 
+696,Mandrel  ,Flask-Green       ,1970,MAY ,26, NTS-YF,37.11300,-116.06300,-529, UG-S , PR  ,105,V,63 Ci   
+697,Mandrel  ,Flask-Yellow      ,1970,MAY ,26, NTS-YF,37.11800,-116.06400,-335, UG-S , PR  ,0.09,V,        
+698,Mandrel  ,Flask-Red         ,1970,MAY ,26, NTS-YF,37.11619,-116.06670,-152.4, UG-S , PR  ,0.035,V,        
+699,Mandrel  ,Piton-C           ,1970,MAY ,28, NTS-YF,37.13847,-116.02992,-100.58, UG-S , WR  ,2.5,V,25 kCi  
+700,Mandrel  ,Piton-A           ,1970,MAY ,28, NTS-YF,37.14398,-116.03262,-236.22, UG-S , WR  ,0.8,V,>10 Ci  
+701,Mandrel  ,Piton-B           ,1970,MAY ,28, NTS-YF,37.14100,-116.03500,         , UG-S , WR  ,    , ,        
+702,Mandrel  ,Arnica-Yellow     ,1970,JUN ,26, NTS-YF,37.11392,-116.08614,-309.37, UG-S , WR  ,3.5, ,        
+703,Mandrel  ,Arnica-Violet     ,1970,JUN ,26, NTS-YF,37.11700,-116.08500,-264, UG-S , WR  ,2,V,73 Ci   
+704,Emery    ,Scree-Acajou      ,1970,OCT ,13, NTS-YF,37.13745,-116.03404,-249.33, UG-S , WR  ,1,V,11 Ci   
+705,Emery    ,Scree-Alhambra    ,1970,OCT ,13, NTS-YF,37.13400,-116.03200,-192, UG-S , WR  ,2,V,        
+706,Emery    ,Scree-Chamois     ,1970,OCT ,13, NTS-YF,37.13700,-116.03200,         , UG-S , SE  ,    , ,        
+707,Emery    ,Tijeras           ,1970,OCT ,14, NTS-YF,37.07070,-116.00510,-560.62, UG-S , WR  ,89, ,        
+708,Emery    ,Truchas-Chacon    ,1970,OCT ,28, NTS-YF,37.01400,-116.01900,-118.38, UG-S , SE  ,    , ,        
+709,Emery    ,Truchas-Chamisal  ,1970,OCT ,28, NTS-YF,37.01400,-116.01800,-118, UG-S , SE  ,    ,V,3 Ci    
+710,Emery    ,Truchas-Rodarte   ,1970,OCT ,28, NTS-YF,37.01500,-116.02000,         , UG-S , WR  ,8, ,        
+711,Emery    ,Abeytas           ,1970,NOV ,5, NTS-YF,37.02947,-116.01181,-393.46, UG-S , WR  ,20, ,        
+712,Emery    ,Penasco           ,1970,NOV ,19, NTS-YF,37.01479,-116.01588,-270.92, UG-S , WR  ,2, ,        
+713,Emery    ,Carrizozo         ,1970,DEC ,3, NTS-YF,37.00600,-116.04100,         , UG-S , WR  ,    , ,        
+714,Emery    ,Corazon           ,1970,DEC ,3, NTS-YF,37.00200,-116.03791,-241.12, UG-S , WR  ,0.1, ,        
+715,Emery    ,Canjilon          ,1970,DEC ,16, NTS-YF,37.07252,-116.02499,-302.19, UG-S , WR  ,    , ,        
+716,Emery    ,Artesia           ,1970,DEC ,16, NTS-YF,37.10017,-116.00794,-484.83, UG-S , WR  ,45, ,        
+717,Emery    ,Avens-Andorre     ,1970,DEC ,16, NTS-YF,37.14200,-116.04000,         , UG-S , WR  ,    , ,        
+718,Emery    ,Avens-Alkermes    ,1970,DEC ,16, NTS-YF,37.13700,-116.03900,         , UG-S , WR  ,    , ,        
+719,Emery    ,Avens-Asamite     ,1970,DEC ,16, NTS-YF,37.13400,-116.03600,         , UG-S , WR  ,    , ,        
+720,Emery    ,Avens-Cream       ,1970,DEC ,16, NTS-YF,37.14289,-116.03400,-292.91, UG-S , WR  ,20,V,66 Ci   
+721,Emery    ,Carpetbag         ,1970,DEC ,17, NTS-YF,37.12914,-116.08300,-661.42, UG-S , WR  ,220,V,5 Ci    
+722,Emery    ,Baneberry         ,1970,DEC ,18, NTS-YF,37.17314,-116.09886,-277.98, UG-S , WR  ,10,V,6.7 MCi 
+723,Emery    ,Embudo            ,1971,JUN ,16, NTS-YF,37.03317,-116.01367,-303.06, UG-S , WR  ,18, ,        
+724,Emery    ,Dexter            ,1971,JUN ,23, NTS-YF,37.01321,-116.01642,-119.94, UG-S , SE  ,    , ,        
+725,Emery    ,Laguna            ,1971,JUN ,23, NTS-YF,37.02197,-116.02267,-454.92, UG-S , WR  ,20, ,        
+726,Emery    ,Harebell          ,1971,JUN ,24, NTS-YF,37.14669,-116.06683,-518.77, UG-S , WR  ,38,V,840 Ci  
+727,Emery    ,Camphor           ,1971,JUN ,29, NTS-RM,37.17678,-116.21149,-423.67, UG-T , WE  ,20,V,220 Ci  
+728,Grommet  ,Diamond Mine      ,1971,JUL ,1, NTS-16,37.01153,-116.20339,-266.15, UG-T , VU  ,    , ,        
+729,Grommet  ,Miniata           ,1971,JUL ,8, NTS-YF,37.11011,-116.05142,-528.83, UG-S , PR  ,83,V,180 Ci  
+730,Grommet  ,Bracken           ,1971,JUL ,9, NTS-YF,37.16445,-116.03273,-304.8, UG-S , WR  ,0.25,V,1 Ci    
+731,Grommet  ,Apodaca           ,1971,JUL ,21, NTS-YF,37.01438,-115.99193,-241.4, UG-S , WR  ,0.25, ,        
+732,Grommet  ,Barranca          ,1971,AUG ,4, NTS-YF,37.02607,-116.01956,-270.74, UG-S , WR  ,    , ,        
+733,Grommet  ,Nama-Amarylis     ,1971,AUG ,5, NTS-YF,37.14500,-116.03400,-272.8, UG-S , WR  ,    , ,        
+734,Grommet  ,Nama-Mephisto     ,1971,AUG ,5, NTS-YF,37.14100,-116.03200,         , UG-S , WR  ,    , ,        
+735,Grommet  ,Baltic            ,1971,AUG ,6, NTS-YF,37.13853,-116.04090,-411.48, UG-S , WR  ,    , ,        
+736,Grommet  ,Algodones         ,1971,AUG ,18, NTS-YF,37.05719,-116.03633,-527.61, UG-S , WR  ,67, ,        
+737,Grommet  ,Frijoles-Deming   ,1971,SEP ,22, NTS-YF,37.02200,-116.02000,-149.86, UG-S , SE  ,0.5, ,        
+738,Grommet  ,Frijoles-Espuela  ,1971,SEP ,22, NTS-YF,37.02300,-116.01700,         , UG-S , SE  ,    , ,        
+739,Grommet  ,Frijoles-Guaje    ,1971,SEP ,22, NTS-YF,37.02400,-116.01600,         , UG-S , WR  ,    , ,        
+740,Grommet  ,Frijoles-Petaca   ,1971,SEP ,22, NTS-YF,37.02200,-116.01700,         , UG-S , WR  ,    , ,        
+741,Grommet  ,Pedernal          ,1971,SEP ,29, NTS-YF,37.01103,-116.00733,-378.68, UG-S , WR  ,4, ,        
+742,Grommet  ,Chantilly         ,1971,SEP ,29, NTS-YF,37.12448,-116.08698,-330.71, UG-S , WR  ,    , ,        
+743,Grommet  ,Cathay            ,1971,OCT ,8, NTS-YF,37.11378,-116.03733,-377.95, UG-S , WR  ,7, ,        
+744,Grommet  ,Lagoon            ,1971,OCT ,14, NTS-YF,37.17978,-116.05309,-304.8, UG-S , WR  ,5, ,        
+745,Grommet  ,Cannikin          ,1971,NOV ,6, AK    ,51.47190,179.10690,-1790, UG-S , WR  ,4800, ,        
+746,Grommet  ,Diagonal Line     ,1971,NOV ,24, NTS-FF,36.87922,-115.93469,-264.26, UG-S , WE  ,4,V,6.8 kCi 
+747,Grommet  ,Parnassia         ,1971,NOV ,30, NTS-YF,37.16045,-116.07023,-330.71, UG-S , WR  ,10, ,        
+748,Grommet  ,Chaenactis        ,1971,DEC ,14, NTS-YF,37.12394,-116.08956,-331.01, UG-S , WR  ,24, ,        
+749,Grommet  ,Hospah            ,1971,DEC ,14, NTS-YF,37.02585,-116.02915,-302.03, UG-S , WR  ,11, ,        
+750,Grommet  ,Yerba             ,1971,DEC ,14, NTS-YF,37.02325,-116.05863,-331.99, UG-S , WR  ,5, ,        
+751,Grommet  ,Mescalero         ,1972,JAN ,5, NTS-YF,37.04566,-116.02954,-120.24, UG-S , WR  ,    , ,        
+752,Grommet  ,Cowles            ,1972,FEB ,3, NTS-YF,37.00108,-116.01943,-301.78, UG-S , WR  ,2, ,        
+753,Grommet  ,Dianthus          ,1972,FEB ,17, NTS-YF,37.16570,-116.05624,-304.8, UG-S , WR  ,3.5,V,18 Ci   
+754,Grommet  ,Sappho            ,1972,MAR ,23, NTS-YF,37.11305,-116.08082,-197.82, UG-S , WR  ,4,V,9 Ci    
+755,Grommet  ,Ocate             ,1972,MAR ,30, NTS-YF,37.00400,-116.01600,         , UG-S , WR  ,    , ,        
+756,Grommet  ,Onaja             ,1972,MAR ,30, NTS-YF,37.00547,-116.02008,-279.04, UG-S , WR  ,8, ,        
+757,Grommet  ,Longchamps        ,1972,APR ,19, NTS-YF,37.12194,-116.08383,-326.44, UG-S , WR  ,8, ,        
+758,Grommet  ,Jicarilla         ,1972,APR ,19, NTS-YF,37.00661,-116.01661,-148.11, UG-S , WR  ,    , ,        
+759,Grommet  ,Misty North       ,1972,MAY ,2, NTS-RM,37.20770,-116.20880,-376.08, UG-T , WE  ,19, ,        
+760,Grommet  ,Kara              ,1972,MAY ,11, NTS-YF,37.11249,-116.08450,-259.08, UG-S , WR  ,0.5,V,7 Ci    
+761,Grommet  ,Zinnia            ,1972,MAY ,17, NTS-YF,37.12056,-116.08789,-322.78, UG-S , WR  ,8,V,7 Ci    
+762,Grommet  ,Monero            ,1972,MAY ,19, NTS-YF,37.06469,-116.00175,-537.35, UG-S , WR  ,12, ,        
+763,Grommet  ,Merida            ,1972,JUN ,7, NTS-YF,37.11589,-116.08533,-204.22, UG-S , WR  ,0.8,V,10 Ci   
+764,Grommet  ,Capitan           ,1972,JUN ,28, NTS-YF,36.99296,-116.09063,-134.48, UG-S , WR  ,0.6, ,        
+765,Grommet  ,Tajique           ,1972,JUN ,28, NTS-YF,37.06959,-115.99211,-332.31, UG-S , WR  ,    , ,        
+766,Grommet  ,Haplopappus       ,1972,JUN ,28, NTS-YF,37.13520,-116.03527,-184.4, UG-S , WR  ,6, ,        
+767,Toggle   ,Diamond Sculls    ,1972,JUL ,20, NTS-RM,37.21453,-116.18336,-419.4, UG-T , WE  ,21, ,        
+768,Toggle   ,Atarque           ,1972,JUL ,25, NTS-YF,37.01249,-116.01505,-294.2, UG-S , WR  ,1.5,V,        
+769,Toggle   ,Cebolla           ,1972,AUG ,9, NTS-YF,37.00700,-116.02000,-287, UG-S , WR  ,    ,V,        
+770,Toggle   ,Cuchillo          ,1972,AUG ,9, NTS-YF,37.00375,-116.01906,-198.81, UG-S , WR  ,    , ,        
+771,Toggle   ,Solano            ,1972,AUG ,9, NTS-YF,37.00300,-116.01800,         , UG-S , SE  ,    , ,        
+772,Toggle   ,Oscuro            ,1972,SEP ,21, NTS-YF,37.08206,-116.03656,-560.21, UG-S , WR  ,160, ,        
+773,Toggle   ,Delphinium        ,1972,SEP ,26, NTS-YF,37.12136,-116.08572,-295.66, UG-S , WR  ,15, ,        
+774,Toggle   ,Akbar             ,1972,NOV ,9, NTS-YF,37.16204,-116.03316,-267, UG-S , WR  ,0.6, ,        
+775,Toggle   ,Arsenate          ,1972,NOV ,9, NTS-YF,37.12144,-116.03233,-250.24, UG-S , WR  ,0.6,V,12 Ci   
+776,Toggle   ,Canna-Umbrinus    ,1972,NOV ,17, NTS-YF,37.14000,-116.03300,-213.36, UG-S , WR  ,    , ,        
+777,Toggle   ,Canna-Limoges     ,1972,NOV ,17, NTS-YF,37.14000,-116.03300,6, UG-S , SE  ,    , ,        
+778,Toggle   ,Tuloso            ,1972,DEC ,12, NTS-YF,37.03130,-116.02123,-271.09, UG-S , WR  ,0.2, ,        
+779,Toggle   ,Solanum           ,1972,DEC ,14, NTS-YF,37.13809,-116.03473,-201.17, UG-S , WR  ,    ,V,        
+780,Toggle   ,Flax-Source       ,1972,DEC ,21, NTS-YF,37.13990,-116.08330,-440, UG-S , WR  ,20, ,        
+781,Toggle   ,Flax-Test         ,1972,DEC ,21, NTS-YF,37.13994,-116.08325,-688.85, UG-S , WE  ,, ,        
+782,Toggle   ,Flax-Backup       ,1972,DEC ,21, NTS-YF,37.13994,-116.08325,         , UG-S , WE  ,, ,        
+783,Toggle     , Alumroot              ,1973,FEB  ,14, NTS-YF ,37.14709,-116.05009,-182.88, UG-S  , WR ,       ,   ,         
+784,Toggle     , Miera                 ,1973,MAR  ,8, NTS-YF ,37.10358,-116.02672,-568.39, UG-S  , WR ,67, V ,         
+785,Toggle     , Gazook                ,1973,MAR  ,23, NTS-YF ,37.11727,-116.08703,-326.14, UG-S  , WR ,0.2, V , 12 Ci   
+786,Toggle     , Natoma                ,1973,APR  ,5, NTS-YF ,37.17788,-116.05389,-243.84, UG-S  , WR ,       ,   ,         
+787,Toggle     , Angus               ,1973,APR  ,25, NTS-YF ,37.00483,-116.02844,-452.63, UG-S  , WR ,9, V , 0.6 Ci  
+788,Toggle     , Velarde             ,1973,APR  ,25, NTS-YF ,36.99400,-116.02200,-277, UG-S  , WR ,8, V , 250 Ci  
+789,Toggle     , Colmor                ,1973,APR  ,26, NTS-YF ,37.01215,-116.01997,-245.81, UG-S  , WR ,0.5, V ,         
+790,Toggle     , Starwort              ,1973,APR  ,26, NTS-YF ,37.12306,-116.05850,-563.88, UG-S  , WR ,90, V , 10 Ci   
+791,Toggle     , Mesita                ,1973,MAY  ,9, NTS-YF ,37.00627,-116.01608,-149.25, UG-S  , WR ,       , V ,         
+792,Toggle     , Rio Blanco-1        ,1973,MAY  ,17, -CO    ,39.79300,-108.36800,-2040, UG-S  , PR ,33,   ,         
+793,Toggle     , Rio Blanco-2        ,1973,MAY  ,17, -CO    ,39.79300,-108.36700,        , UG-S  , PR ,33,   ,         
+794,Toggle     , Rio Blanco-3        ,1973,MAY  ,17, -CO    ,39.79300,-108.36800,        , UG-S  , PR ,33,   ,         
+795,Toggle     , Cabresto              ,1973,MAY  ,24, NTS-YF ,37.07805,-116.03077,-197.89, UG-S  , WR ,15,   ,         
+796,Toggle     , Kashan                ,1973,MAY  ,24, NTS-YF ,37.16223,-116.05597,-265.18, UG-S  , WR ,2, V , 270 Ci  
+797,Toggle     , Dido Queen            ,1973,JUN  ,5, NTS-RM ,37.18503,-116.21511,-391.36, UG-T  , WE ,18,   ,         
+798,Toggle     , Almendro              ,1973,JUN  ,6, NTS-PM ,37.24510,-116.34600,-1066.52, UG-S  , WR ,250,   ,         
+799,Toggle     , Potrillo              ,1973,JUN  ,21, NTS-YF ,37.09204,-116.02723,-567.02, UG-S  , WR ,58, V ,         
+800,Toggle     , Portulaca             ,1973,JUN  ,28, NTS-YF ,37.14842,-116.08586,-466.34, UG-S  , WR ,24, V ,         
+801,Toggle     , Silene                ,1973,JUN  ,28, NTS-YF ,37.11491,-116.04092,-198.12, UG-S  , WR ,0.005,   ,         
+802,Arbor      , Polygonum             ,1973,OCT  ,2, NTS-YF ,37.15879,-116.07299,-213.36, UG-S  , WR ,       ,   ,         
+803,Arbor      , Waller                ,1973,OCT  ,2, NTS-YF ,37.15391,-116.06771,-310.9, UG-S  , WR ,1, V , 3 Ci    
+804,Arbor      , Husky Ace             ,1973,OCT  ,12, NTS-RM ,37.20039,-116.20317,-415.66, UG-T  , WE ,8,   ,         
+805,Arbor      , Bernal                ,1973,NOV  ,28, NTS-YF ,37.01099,-116.02448,-285.29, UG-S  , WR ,5, V , 0.1 Ci  
+806,Arbor      , Pajara                ,1973,DEC  ,12, NTS-YF ,36.99149,-116.02413,-278.17, UG-S  , WR ,5, V , 5 Ci    
+807,Arbor      , Seafoam               ,1973,DEC  ,13, NTS-YF ,37.16140,-116.07305,-198.12, UG-S  , WR ,       , V , 5 Ci    
+808,Arbor      , Spar                  ,1973,DEC  ,19, NTS-YF ,37.00577,-116.01889,-148.43, UG-S  , SE ,       ,   ,         
+809,Arbor      , Elida                 ,1973,DEC  ,19, NTS-YF ,37.00114,-116.03141,-381.42, UG-S  , WR ,0.3, V , 0.8 Ci  
+810,Arbor      , Pinodrops-Sloat     ,1974,JAN  ,10, NTS-YF ,37.17400,-116.05200,-342.9, UG-S  , WR ,       ,   ,         
+811,Arbor      , Pinedrops-Tawny     ,1974,JAN  ,10, NTS-YF ,37.17400,-116.05200,        , UG-S  , WR ,       ,   ,         
+812,Arbor      , Pinedrops-Bayou     ,1974,JAN  ,10, NTS-YF ,37.17400,-116.05200,-343, UG-S  , WR ,       , V , 6 Ci    
+813,Arbor      , Latir                 ,1974,FEB  ,27, NTS-YF ,37.10426,-116.05284,-640.77, UG-S  , WR ,150,   ,         
+814,Arbor      , Hulsea                ,1974,MAR  ,14, NTS-YF ,37.15513,-116.06409,-195.07, UG-S  , WR ,       , V , 67 Ci   
+815,Arbor      , Sapello               ,1974,APR  ,12, NTS-YF ,37.01494,-116.04414,-180.74, UG-S  , WR ,       ,   ,         
+816,Arbor      , Potrero               ,1974,APR  ,23, NTS-YF ,37.15997,-116.07641,-210.31, UG-S  , WR ,0.5,   ,         
+817,Arbor      , Plomo                 ,1974,MAY  ,1, NTS-YF ,37.03110,-115.98560,-149.35, UG-S  , WR ,       ,   ,         
+818,Arbor      , Jib                   ,1974,MAY  ,8, NTS-YF ,37.00098,-116.00162,-180.44, UG-S  , WR ,       ,   ,         
+819,Arbor      , Grove                 ,1974,MAY  ,22, NTS-YF ,37.11481,-116.07470,-313.94, UG-S  , WR ,2.5, V , 26 Ci   
+820,Arbor      , Jara                  ,1974,JUN  ,6, NTS-YF ,37.00384,-116.02351,-378.06, UG-S  , WR ,4, V ,         
+821,Arbor      , Ming Blade            ,1974,JUN  ,19, NTS-RM ,37.21031,-116.20726,-387.65, UG-T  , WE ,20,   ,         
+822,Bedrock    , Escabosa              ,1974,JUL  ,10, NTS-YF ,37.07503,-116.03182,-638.52, UG-S  , WR ,150, V ,         
+823,Bedrock    , Crestlake-Tansan    ,1974,JUL  ,18, NTS-YF ,37.11900,-116.08600,-272, UG-S  , WR ,2, V , 19 Ci   
+824,Bedrock    , Crestlake-Briar     ,1974,JUL  ,18, NTS-YF ,37.11900,-116.08600,-373.68, UG-S  , WR ,       , V ,         
+825,Bedrock    , Puye                  ,1974,AUG  ,14, NTS-YF ,37.02341,-116.03636,-430.08, UG-S  , WR ,5, V ,         
+826,Bedrock    , Portmanteau           ,1974,AUG  ,30, NTS-YF ,37.15248,-116.08333,-655.32, UG-S  , WR ,160,   ,         
+827,Bedrock    , Pratt                 ,1974,SEP  ,25, NTS-YF ,37.01212,-116.03029,-313.96, UG-S  , WR ,5,   ,         
+828,Bedrock    , Trumbull              ,1974,SEP  ,26, NTS-YF ,37.09321,-116.09476,-262.74, UG-S  , WR ,0.2,   ,         
+829,Bedrock    , Stanyan               ,1974,SEP  ,26, NTS-YF ,37.13263,-116.06839,-573.02, UG-S  , WR ,100,   ,         
+830,Bedrock    , Estaca                ,1974,OCT  ,17, NTS-YF ,37.03973,-116.04819,-321.05, UG-S  , WR ,       ,   ,         
+831,Bedrock    , Hybla Fair            ,1974,OCT  ,28, NTS-RM ,37.20113,-116.20394,-404.47, UG-T  , WE ,       , V , 500 Ci  
+832,Bedrock    , Temescal              ,1974,NOV  ,2, NTS-YF ,37.09319,-116.09167,-262.74, UG-S  , WR ,       , V , 2 Ci    
+833,Bedrock    , Puddle                ,1974,NOV  ,26, NTS-YF ,37.00103,-116.01121,-183.97, UG-S  , SE ,       ,   ,         
+834,Bedrock    , Keel                  ,1974,DEC  ,16, NTS-YF ,37.01130,-116.01763,-304.72, UG-S  , WR ,4,   ,         
+835,Bedrock    , Portola             ,1975,FEB  ,6, NTS-YF ,37.17841,-116.05156,-198.12, UG-S  , WR ,0.35, V , 10 Ci   
+836,Bedrock    , Portola-Larkin      ,1975,FEB  ,6, NTS-YF ,37.17841,-116.05156,-274, UG-S  , WR ,       , V ,         
+837,Bedrock    , Teleme                ,1975,FEB  ,6, NTS-YF ,37.11412,-116.02104,-304.8, UG-S  , WR ,6,   ,         
+838,Bedrock    , Bilge                 ,1975,FEB  ,19, NTS-YF ,37.00220,-116.02456,-318.35, UG-S  , WR ,       , V ,         
+839,Bedrock    , Topgallant            ,1975,FEB  ,28, NTS-YF ,37.10620,-116.05625,-713.37, UG-S  , WR ,160,   ,         
+840,Bedrock    , Cabrillo              ,1975,MAR  ,7, NTS-YF ,37.13401,-116.08424,-600.46, UG-S  , WR ,89, V , 11 Ci   
+841,Bedrock    , Dining Car            ,1975,APR  ,5, NTS-RM ,37.18792,-116.21388,-383.01, UG-T  , WE ,20,   ,         
+842,Bedrock    , Edam                  ,1975,APR  ,24, NTS-YF ,37.11567,-116.08739,-411.48, UG-S  , WR ,20,   ,         
+843,Bedrock    , Obar                  ,1975,APR  ,30, NTS-YF ,37.10886,-116.02880,-568.8, UG-S  , WR ,38,   ,         
+844,Bedrock    , Tybo                  ,1975,MAY  ,14, NTS-PM ,37.22078,-116.47416,-765.05, UG-S  , WR ,380,   ,         
+845,Bedrock    , Stilton               ,1975,JUN  ,3, NTS-PM ,37.34010,-116.52290,-731.52, UG-S  , WR ,200,   ,         
+846,Bedrock    , Mizzen                ,1975,JUN  ,3, NTS-YF ,37.09483,-116.03611,-637.18, UG-S  , WR ,140,   ,         
+847,Bedrock    , Alviso                ,1975,JUN  ,11, NTS-YF ,37.11178,-116.07370,-183, UG-S  , SE ,       ,   ,         
+848,Bedrock    , Futtock               ,1975,JUN  ,18, NTS-YF ,37.06564,-116.02196,-186.56, UG-S  , SE ,       ,   ,         
+849,Bedrock    , Mast                  ,1975,JUN  ,19, NTS-PM ,37.35035,-116.32022,-910.7, UG-S  , WR ,520,   ,         
+850,Bedrock    , Camembert             ,1975,JUN  ,26, NTS-PM ,37.27893,-116.36858,-1310.64, UG-S  , WR ,750,   ,         
+851,Anvil      , Marsh                 ,1975,SEP  ,6, NTS-YF ,37.02365,-116.02831,-427.21, UG-S  , WR ,7,   ,         
+852,Anvil      , Husky Pup             ,1975,OCT  ,24, NTS-RM ,37.22164,-116.17969,-327.96, UG-T  , WE ,15,   ,         
+853,Anvil      , Kasseri               ,1975,OCT  ,28, NTS-PM ,37.29005,-116.41155,1264.92, UG-S  , WR ,1000, V ,         
+854,Anvil      , Deck                  ,1975,NOV  ,18, NTS-YF ,37.02031,-116.02063,-326.14, UG-S  , WR ,5,   ,         
+855,Anvil      , Inlet                 ,1975,NOV  ,20, NTS-PM ,37.22496,-116.36756,-818.33, UG-S  , WR ,500,   ,         
+856,Anvil      , Leyden                ,1975,NOV  ,26, NTS-YF ,37.11726,-116.01888,-326.11, UG-S  , WR ,5,   ,         
+857,Anvil      , Chiberta              ,1975,DEC  ,20, NTS-YF ,37.12765,-116.06157,-716, UG-S  , WR ,160,   ,         
+858,Anvil      , Muenster              ,1976,JAN  ,3, NTS-PM ,37.29655,-116.33319,-1452.4, UG-S  , WR ,800,   ,         
+859,Anvil      , Keelson               ,1976,FEB  ,4, NTS-YF ,37.06926,-116.03016,-639.62, UG-S  , WR ,150,   ,         
+860,Anvil      , Esrom                 ,1976,FEB  ,4, NTS-YF ,37.10659,-116.03742,-654.6, UG-S  , WR ,160, V , 88 Ci   
+861,Anvil      , Fontina               ,1976,FEB  ,12, NTS-PM ,37.27141,-116.48844,-1219, UG-S  , WR ,900,   ,         
+862,Anvil      , Cheshire              ,1976,FEB  ,14, NTS-PM ,37.24264,-116.42021,-1167, UG-S  , WR ,350,   ,         
+863,Anvil      , Shallows              ,1976,FEB  ,26, NTS-YF ,37.02852,-116.01577,-244.85, UG-S  , WR ,2.5, V ,         
+864,Anvil      , Estuary               ,1976,MAR  ,9, NTS-PM ,37.30996,-116.36422,-856.79, UG-S  , WR ,350,   ,         
+865,Anvil      , Colby                 ,1976,MAR  ,14, NTS-PM ,37.30599,-116.47148,-1273.4, UG-S  , WR ,800, V , 44 Ci   
+866,Anvil      , Pool                  ,1976,MAR  ,17, NTS-PM ,37.25589,-116.32858,-881.18, UG-S  , WR ,500,   ,         
+867,Anvil      , Strait                ,1976,MAR  ,17, NTS-YF ,37.10728,-116.05248,-782.42, UG-S  , WR ,210,   ,         
+868,Anvil      , Mighty Epic           ,1976,MAY  ,12, NTS-RM ,37.20910,-116.21250,-396.24, UG-T  , WE ,20,   ,         
+869,Anvil      , Rivoli                ,1976,MAY  ,20, NTS-YF ,37.13720,-116.06658,-199.64, UG-S  , WR ,0.6, V ,         
+870,Anvil      , Billet                ,1976,JUL  ,27, NTS-YF ,37.07537,-116.04382,-636.57, UG-S  , WR ,58, V ,         
+871,Fulcrum    , Gouda                 ,1976,OCT  ,6, NTS-YF ,37.13456,-116.06228,-200.1, UG-S  , WR ,0.6,   ,         
+872,Fulcrum    , Sprit                 ,1976,NOV  ,10, NTS-YF ,37.03595,-116.01742,-183.18, UG-S  , WR ,       ,   ,         
+873,Fulcrum    , Chevre                ,1976,NOV  ,23, NTS-YF ,37.17171,-116.05267,-317.3, UG-S  , WR ,2,   ,         
+874,Fulcrum    , Redmud                ,1976,DEC  ,8, NTS-YF ,37.07926,-116.00162,-426.72, UG-S  , WR ,20,   ,         
+875,Fulcrum    , Asiago                ,1976,DEC  ,21, NTS-YF ,37.12391,-116.06746,-330.8, UG-S  , WR ,11,   ,         
+876,Fulcrum    , Sutter                ,1976,DEC  ,21, NTS-YF ,37.15190,-116.06343,-200.3, UG-S  , WR ,       ,   ,         
+877,Fulcrum    , Rudder                ,1976,DEC  ,28, NTS-YF ,37.10049,-116.03646,-638.56, UG-S  , WR ,89,   ,         
+878,Fulcrum    , Cove               ,1977,FEB  ,16, NTS-YF ,37.00700,-116.03200,        , UG-S  , WR ,3,   ,         
+879,Fulcrum    , Oarlock            ,1977,FEB  ,16, NTS-YF ,37.01349,-116.02857,-317.6, UG-S  , WR ,8,   ,         
+880,Fulcrum    , Dofino             ,1977,MAR  ,8, NTS-YF ,37.17619,-116.05295,-182.88, UG-S  , WR ,0.8, V , 25 Ci   
+881,Fulcrum    , Dofino-Lawton      ,1977,MAR  ,8, NTS-YF ,37.17619,-116.05295,-282, UG-S  , WR ,       , V ,         
+882,Fulcrum    , Marsilly              ,1977,APR  ,5, NTS-YF ,37.12023,-116.06228,-689.73, UG-S  , WR ,140, V , 15 Ci   
+883,Fulcrum    , Bulkhead              ,1977,APR  ,27, NTS-YF ,37.09479,-116.02788,-594.36, UG-S  , WR ,67,   ,         
+884,Fulcrum    , Crewline              ,1977,MAY  ,25, NTS-YF ,37.09433,-116.04486,-564.18, UG-S  , WR ,51,   ,         
+885,Fulcrum    , Forefoot              ,1977,JUN  ,2, NTS-YF ,37.05494,-116.02496,-193.55, UG-S  , WR ,       ,   ,         
+886,Fulcrum    , Carnelian             ,1977,JUL  ,28, NTS-YF ,37.09758,-116.10397,-208, UG-S  , WR ,0.6, V , 7 Ci    
+887,Fulcrum    , Strake                ,1977,AUG  ,4, NTS-YF ,37.08657,-116.00687,-517.55, UG-S  , WR ,44,   ,         
+888,Fulcrum    , Gruyere             ,1977,AUG  ,16, NTS-YF ,37.14516,-116.04909,-206.96, UG-S  , WR ,       ,   ,         
+889,Fulcrum    , Gruyere-Gradino     ,1977,AUG  ,16, NTS-YF ,37.14516,-116.04909,-320, UG-S  , WR ,0.6, V , 0.8 Ci  
+890,Fulcrum    , Flotost               ,1977,AUG  ,16, NTS-YF ,37.14672,-116.06311,-274.93, UG-S  , WR ,1.5, V , 3 Ci    
+891,Fulcrum    , Scupper               ,1977,AUG  ,19, NTS-YF ,37.01762,-116.03161,-449.58, UG-S  , WR ,0.2,   ,         
+892,Fulcrum    , Scantling             ,1977,AUG  ,19, NTS-YF ,37.11003,-116.05451,-701.04, UG-S  , WR ,120,   ,         
+893,Fulcrum    , Ebbtide               ,1977,SEP  ,15, NTS-YF ,37.03279,-116.04314,-379.48, UG-S  , WR ,6,   ,         
+894,Fulcrum    , Coulommiers           ,1977,SEP  ,27, NTS-YF ,37.15117,-116.06756,-530.35, UG-S  , WR ,20, V , 0.9 Ci  
+895,Cresset    , Bobstay               ,1977,OCT  ,26, NTS-YF ,37.00760,-116.01670,-381.3, UG-S  , WR ,5, V ,         
+896,Cresset    , Hybla Gold            ,1977,NOV  ,1, NTS-RM ,37.18780,-116.21300,-384.99, UG-T  , WE ,10, V ,         
+897,Cresset    , Sandreef              ,1977,NOV  ,9, NTS-YF ,37.07211,-116.05001,-700.74, UG-S  , WR ,150,   ,         
+898,Cresset    , Seamount              ,1977,NOV  ,17, NTS-YF ,37.02061,-116.02508,-370.09, UG-S  , WR ,10,   ,         
+899,Cresset    , Rib                   ,1977,DEC  ,14, NTS-YF ,37.01755,-116.01791,-212.84, UG-S  , WR ,0.8,   ,         
+900,Cresset    , Farallones            ,1977,DEC  ,14, NTS-YF ,37.13587,-116.08603,-668, UG-S  , WR ,150, V , 1 Ci    
+901,Cresset    , Campos                ,1978,FEB  ,13, NTS-YF ,37.12612,-116.03174,-319.6, UG-S  , WR ,0.8, V , 1.3 kCi 
+902,Cresset    , Reblochon             ,1978,FEB  ,23, NTS-YF ,37.12368,-116.06383,-658.4, UG-S  , WR ,120, V , 36 Ci   
+903,Cresset    , Karab                 ,1978,MAR  ,16, NTS-YF ,37.08517,-116.08162,-331, UG-S  , WR ,1.5, V ,         
+904,Cresset    , Topmast               ,1978,MAR  ,23, NTS-YF ,37.09886,-116.01962,-457.81, UG-S  , WR ,       ,   ,         
+905,Cresset    , Iceberg               ,1978,MAR  ,23, NTS-YF ,37.10180,-116.05110,-640.29, UG-S  , WR ,120,   ,         
+906,Cresset    , Backbeach             ,1978,APR  ,11, NTS-PM ,37.23349,-116.36847,-671.78, UG-S  , WR ,100,   ,         
+907,Cresset    , Asco                  ,1978,APR  ,25, NTS-YF ,37.15457,-116.03476,-183, UG-S  , SE ,       ,   ,         
+908,Cresset    , Transom               ,1978,MAY  ,10, NTS-YF ,37.08778,-116.05263,-640, UG-S  , WR ,0,   ,         
+909,Cresset    , Jackpots              ,1978,JUN  ,1, NTS-YF ,37.02065,-116.03193,-304.22, UG-S  , WR ,0.6,   ,         
+910,Cresset    , Satz                  ,1978,JUL  ,7, NTS-YF ,37.11179,-116.07713,-315, UG-S  , WR ,1.5, V ,         
+911,Cresset    , Lowball               ,1978,JUL  ,12, NTS-YF ,37.07870,-116.04380,-564.88, UG-S  , WR ,99,   ,         
+912,Cresset    , Panir                 ,1978,AUG  ,31, NTS-PM ,37.27593,-116.35734,-681, UG-S  , WR ,140,   ,         
+913,Cresset    , Diablo Hawk           ,1978,SEP  ,13, NTS-RM ,37.20880,-116.21080,-388, UG-T  , WE ,8,   ,         
+914,Cresset    , Cremino             ,1978,SEP  ,27, NTS-YF ,37.17101,-116.08716,-210, UG-S  , WR ,0.25,   ,         
+915,Cresset    , Cremino-Caerphilly  ,1978,SEP  ,27, NTS-YF ,37.17101,-116.08716,        , UG-S  , WR ,       ,   ,         
+916,Cresset    , Draughts              ,1978,SEP  ,27, NTS-YF ,37.07387,-116.01983,-441.59, UG-S  , WR ,25,   ,         
+917,Cresset    , Rummy                 ,1978,SEP  ,27, NTS-YF ,37.07980,-116.05132,-639.78, UG-S  , WR ,150,   ,         
+918,Quicksilver, Emmenthal             ,1978,NOV  ,2, NTS-PM ,37.28794,-116.29749,-576.1, UG-S  , WR ,2.5,   ,         
+919,Quicksilver, Concentration         ,1978,DEC  ,1, NTS-YF ,37.02967,-116.02413,-247.59, UG-S  , WR ,0.6,   ,         
+920,Quicksilver, Farm                  ,1978,DEC  ,16, NTS-PM ,37.27339,-116.41028,-689, UG-S  , WR ,140, V ,         
+921,Quicksilver, Baccarat              ,1979,JAN  ,24, NTS-YF ,37.10540,-116.01170,-326.44, UG-S  , WR ,6,   ,         
+922,Quicksilver, Quinella              ,1979,FEB  ,8, NTS-YF ,37.10248,-116.05484,-579.1, UG-S  , WR ,89,   ,         
+923,Quicksilver, Kloster               ,1979,FEB  ,15, NTS-YF ,37.15201,-116.07184,-536.4, UG-S  , WR ,20, V ,         
+924,Quicksilver, Memory                ,1979,MAR  ,14, NTS-YF ,37.02783,-116.03975,-364.85, UG-S  , WR ,5,   ,         
+925,Quicksilver, Freezeout             ,1979,MAY  ,11, NTS-YF ,36.99818,-116.01774,-335.3, UG-S  , WR ,5,   ,         
+926,Quicksilver, Pepato                ,1979,JUN  ,11, NTS-PM ,37.28969,-116.45525,-681, UG-S  , WR ,100, V ,         
+927,Quicksilver, Chess                 ,1979,JUN  ,20, NTS-YF ,37.10763,-116.01509,-335.3, UG-S  , WR ,1.5,   ,         
+928,Quicksilver, Fajy                  ,1979,JUN  ,28, NTS-YF ,37.14330,-116.08752,-536, UG-S  , WR ,22, V ,         
+929,Quicksilver, Burzet                ,1979,AUG  ,3, NTS-YF ,37.08395,-116.06989,-450, UG-S  , WR ,20, V ,         
+930,Quicksilver, Offshore              ,1979,AUG  ,8, NTS-YF ,37.01475,-116.00801,-396.54, UG-S  , WR ,20,   ,         
+931,Quicksilver, Hearts                ,1979,SEP  ,6, NTS-YF ,37.08811,-116.05278,-640.02, UG-S  , WR ,140,   ,         
+932,Quicksilver, Pera                  ,1979,SEP  ,8, NTS-YF ,37.15500,-116.03900,-200, UG-S  , WR ,5,   ,         
+933,Quicksilver, Sheepshead            ,1979,SEP  ,26, NTS-PM ,37.22906,-116.36405,-640, UG-S  , WR ,140,   ,         
+934,Tinderbox  , Backgammon            ,1979,NOV  ,29, NTS-YF ,36.99396,-116.02411,-228.72, UG-S  , WR ,0.8,   ,         
+935,Tinderbox  , Azul                  ,1979,DEC  ,14, NTS-YF ,37.13737,-116.06307,-205, UG-S  , WR ,       ,   ,         
+936,Tinderbox  , Tarko                 ,1980,FEB  ,28, NTS-YF ,37.12655,-116.08851,-369, UG-S  , WR ,5, V , 50 Ci   
+937,Tinderbox  , Norbo                 ,1980,MAR  ,8, NTS-YF ,37.17994,-116.08311,-271, UG-S  , WR ,1, V ,         
+938,Tinderbox  , Liptauer              ,1980,APR  ,3, NTS-YF ,37.14988,-116.08226,-417, UG-S  , WR ,20,   ,         
+939,Tinderbox  , Pyramid               ,1980,APR  ,16, NTS-YF ,37.10112,-116.03053,-579.1, UG-S  , WR ,89,   ,         
+940,Tinderbox  , Canfield              ,1980,MAY  ,2, NTS-YF ,37.05601,-116.01895,-350.5, UG-S  , WR ,6,   ,         
+941,Tinderbox  , Flora                 ,1980,MAY  ,22, NTS-YF ,37.00306,-116.03139,-335.6, UG-S  , WR ,       , V , 1 kCi   
+942,Tinderbox  , Kash                  ,1980,JUN  ,12, NTS-PM ,37.28166,-116.45385,-645, UG-S  , WR ,140, V ,         
+943,Tinderbox  , Huron King            ,1980,JUN  ,24, NTS-YF ,37.02330,-116.03410,-320.04, UG-S  , WE ,6,   ,         
+944,Tinderbox  , Tafi                  ,1980,JUL  ,25, NTS-PM ,37.25633,-116.47740,-680, UG-S  , WR ,140, V ,         
+945,Tinderbox  , Verdello              ,1980,JUL  ,31, NTS-YF ,37.01304,-116.02275,-365.76, UG-S  , WR ,3.5, V , 45 Ci   
+946,Tinderbox  , Bonarda               ,1980,SEP  ,25, NTS-YF ,37.05616,-116.04809,-381, UG-S  , WR ,20,   ,         
+947,Tinderbox  , Riola                 ,1980,SEP  ,25, NTS-YF ,37.11586,-116.06457,-424, UG-S  , WR ,1.07, V , 2.2 kCi 
+948,Guardian   , Miners Iron           ,1980,OCT  ,31, NTS-RM ,37.21130,-116.20540,-389.5, UG-T  , WE ,10, V , 0.3 Ci  
+949,Guardian   , Dauphin               ,1980,NOV  ,14, NTS-YF ,37.11149,-116.01866,-320, UG-S  , WR ,2,   ,         
+950,Guardian   , Baseball              ,1981,JAN  ,15, NTS-YF ,37.08709,-116.04475,-563.88, UG-S  , WR ,99,   ,         
+951,Guardian   , Clairette             ,1981,FEB  ,5, NTS-YF ,37.01089,-116.03218,-353.6, UG-S  , WR ,       ,   ,         
+952,Guardian   , Seco                  ,1981,FEB  ,25, NTS-YF ,37.18190,-116.08425,-200, UG-S  , WR ,       ,   ,         
+953,Guardian   , Vide                  ,1981,APR  ,30, NTS-YF ,37.17733,-116.08476,-323, UG-S  , WR ,       , V , 3 Ci    
+954,Guardian   , Aligote               ,1981,MAY  ,29, NTS-YF ,37.10184,-116.00406,-320, UG-S  , WR ,2.5,   ,         
+955,Guardian   , Harzer                ,1981,JUN  ,6, NTS-PM ,37.30340,-116.32560,-637, UG-S  , WR ,140,   ,         
+956,Guardian   , Niza                  ,1981,JUL  ,10, NTS-YF ,37.12860,-116.03378,-341, UG-S  , WR ,4, V ,         
+957,Guardian   , Pineau                ,1981,JUL  ,16, NTS-YF ,37.08870,-116.01937,-207.26, UG-S  , WR ,       ,   ,         
+958,Guardian   , Havarti               ,1981,AUG  ,5, NTS-YF ,37.15374,-116.03508,-200, UG-S  , WR ,       ,   ,         
+959,Guardian   , Islay                 ,1981,AUG  ,27, NTS-YF ,37.16042,-116.06652,-294, UG-S  , WR ,4, V , 700 Ci  
+960,Guardian   , Trebbiano             ,1981,SEP  ,4, NTS-YF ,37.05809,-116.04807,-305.4, UG-S  , WR ,1, V , 200 Ci  
+961,Guardian   , Cernada               ,1981,SEP  ,24, NTS-YF ,37.00852,-116.02380,-213.2, UG-S  , WR ,       ,   ,         
+962,Praetorian , Paliza                ,1981,OCT  ,1, NTS-YF ,37.08160,-116.00880,-472.1, UG-S  , WR ,38,   ,         
+963,Praetorian , Tilci                 ,1981,NOV  ,11, NTS-YF ,37.07632,-116.06849,-445, UG-S  , WR ,29, V ,         
+964,Praetorian , Akavi                 ,1981,DEC  ,3, NTS-YF ,37.14843,-116.07084,-494, UG-S  , WR ,20, V ,         
+965,Praetorian , Caboc                 ,1981,DEC  ,16, NTS-YF ,37.11450,-116.12290,-335, UG-S  , WR ,5, V , 0.3 Ci  
+966,Praetorian , Jornada               ,1982,JAN  ,28, NTS-YF ,37.09134,-116.05123,-638.9, UG-S  , WR ,139,   ,         
+967,Praetorian , Molbo                 ,1982,FEB  ,12, NTS-PM ,37.22433,-116.46265,-638, UG-S  , WR ,80, V ,         
+968,Praetorian , Hosta                 ,1982,FEB  ,12, NTS-PM ,37.34800,-116.31610,-639.5, UG-S  , WR ,140,   ,         
+969,Praetorian , Tenaja                ,1982,APR  ,17, NTS-YF ,37.01682,-116.00987,-356.3, UG-S  , WR ,6,   ,         
+970,Praetorian , Kryddost              ,1982,MAY  ,6, NTS-YF ,37.11684,-116.12691,-335, UG-S  , WR ,3.5,   ,         
+971,Praetorian , Bouschet              ,1982,MAY  ,7, NTS-YF ,37.06906,-116.04546,-563.9, UG-S  , WR ,99, V , <1 Ci   
+972,Praetorian , Kesti                 ,1982,JUN  ,16, NTS-YF ,37.11423,-116.01658,-289, UG-S  , WR ,       ,   ,         
+973,Praetorian , Nebbiolo              ,1982,JUN  ,24, NTS-PM ,37.23622,-116.37018,-639.5, UG-S  , WR ,140,   ,         
+974,Praetorian , Monterey              ,1982,JUL  ,29, NTS-YF ,37.10231,-116.07497,-400, UG-S , WR ,20, V , 0.1 Ci  
+975,Praetorian , Atrisco               ,1982,AUG  ,5, NTS-YF ,37.08420,-116.00655,-639.78, UG-S  , WR ,138,   ,         
+976,Praetorian , Queso                 ,1982,AUG  ,11, NTS-YF ,37.18979,-116.04768,-216, UG-S , WR ,       ,   ,         
+977,Praetorian , Cerro                 ,1982,SEP  ,2, NTS-YF ,37.01974,-116.01566,-228.6, UG-S , WR ,       ,   ,         
+978,Praetorian , Huron Landing         ,1982,SEP  ,23, NTS-RM ,37.21200,-116.20680,-408,UG-T   , WE ,20, V , 280 Ci  
+979,Praetorian , Diamond Ace           ,1982,SEP  ,23, NTS-RM ,37.21202,-116.20677,-407.26, UG-T  , WE ,       , V ,         
+980,Praetorian , Frisco                ,1982,SEP  ,23, NTS-YF ,37.17475,-116.08779,-451, UG-S , WR ,20, V , 2 Ci    
+981,Praetorian , Borrego               ,1982,SEP  ,29, NTS-YF ,37.09131,-116.04489,-563.3, UG-S , WR ,1,   ,         
+982,Phalanx    , Seyval                ,1982,NOV  ,12, NTS-YF ,37.02370,-116.03210,-366.06, UG-S  , WR ,5,   ,         
+983,Phalanx    , Manteca               ,1982,DEC  ,10, NTS-YF ,37.03020,-116.07190,-413, UG-S  , WR ,20, V , 78 Ci   
+984,Phalanx    , Coalora               ,1983,FEB  ,11, NTS-YF ,37.05060,-116.04530,-274, UG-S  , WR ,       ,   ,         
+985,Phalanx    , Cheedam               ,1983,FEB  ,17, NTS-YF ,37.16280,-116.06330,-343, UG-S  , WR ,1.5, V , 0.2 Ci  
+986,Phalanx    , Cabra                 ,1983,MAR  ,26, NTS-PM ,37.30070,-116.46000,-542.5, UG-S  , WR ,45,   ,         
+987,Phalanx    , Turquoise             ,1983,APR  ,14, NTS-YF ,37.07280,-116.04600,-533.1, UG-S  , WR ,84, V ,         
+988,Phalanx    , Crowdie               ,1983,MAY  ,5, NTS-YF ,37.14600,-116.09000,-390, UG-S  , WR ,6, V , 7 Ci    
+989,Phalanx    , Mini Jade             ,1983,MAY  ,26, NTS-RM ,37.20900,-116.20600,-379.2, UG-TC , WE ,4, V , 1 Ci    
+990,Phalanx    , Fahada                ,1983,MAY  ,26, NTS-YF ,37.10290,-116.00570,-384.4, UG-S  , WR ,6,   ,         
+991,Phalanx    , Danablu               ,1983,JUN  ,9, NTS-YF ,37.15762,-116.08923,-320, UG-S  , WR ,6, V ,         
+992,Phalanx    , Laban                 ,1983,AUG  ,3, NTS-YF ,37.11900,-116.08890,-326, UG-S  , WR ,2.5, V , 51 Ci   
+993,Phalanx    , Sabado                ,1983,AUG  ,11, NTS-YF ,36.99770,-116.00270,-320, UG-S  , WR ,5,   ,         
+994,Phalanx    , Jarlsberg             ,1983,AUG  ,27, NTS-YF ,37.19300,-116.03500,-200, UG-S  , WR ,2, V ,         
+995,Phalanx    , Chancellor            ,1983,SEP  ,1, NTS-PM ,37.27280,-116.35500,-623.6, UG-S  , WR ,143,   ,         
+996,Phalanx    , Tomme/Midnight Zephyr ,1983,SEP  ,21, NTS-RM ,37.20970,-116.20930,-404.8, UG-T  , WE ,       ,   ,         
+997,Phalanx    , Branco              ,1983,SEP  ,21, NTS-YF ,37.12100,-116.05600,-293, UG-S  , WR ,0.6,   ,         
+998,Phalanx    , Branco-Herkimer     ,1983,SEP  ,21, NTS-YF ,37.12100,-116.05600,        , UG-S  , WR ,2,   ,         
+999,Phalanx    , Techado               ,1983,SEP  ,22, NTS-YF ,37.10560,-116.04940,-532.5, UG-S  , WR ,2,   ,         
+1000,Phalanx    , Navata                ,1983,SEP  ,29, NTS-YF ,37.05300,-116.02100,-182.9, UG-S  , SE ,       ,   ,         
+1001,Fusileer   , Muggins               ,1983,DEC  ,9, NTS-YF ,37.01300,-116.04700,-243.84, UG-S  , WR ,1.5,   ,         
+1002,Fusileer   , Romano                ,1983,DEC  ,16, NTS-YF ,37.14050,-116.07210,-515, UG-S  , WR ,29, V ,         
+1003,Fusileer   , Gorbea                ,1984,JAN  ,31, NTS-YF ,37.11270,-116.12170,-388, UG-S  , WR ,20, V , 12 Ci   
+1004,Fusileer   , Midas Myth/Milagro    ,1984,FEB  ,15, NTS-RM ,37.22140,-116.18110,-360.9, UG-T  , WE ,20,   ,         
+1005,Fusileer   , Tortugas              ,1984,MAR  ,1, NTS-YF ,37.06580,-116.04630,-638.6, UG-S  , WR ,150,   ,         
+1006,Fusileer   , Agrini                ,1984,MAR  ,31, NTS-YF ,37.14644,-116.08406,-320, UG-S  , WR ,6, V , 690 Ci  
+1007,Fusileer   , Orkney                ,1984,MAY  ,2, NTS-YF ,37.19848,-116.05397,-210, UG-S  , WR ,0.25, V , 0.5 Ci  
+1008,Fusileer   , Bellow                ,1984,MAY  ,16, NTS-YF ,37.09251,-116.09322,-207.3, UG-S  , WR ,0.8,   ,         
+1009,Fusileer   , Caprock               ,1984,MAY  ,31, NTS-YF ,37.10313,-116.04805,-599.85, UG-S  , WR ,120, V , 0.1 Ci  
+1010,Fusileer   , Duoro                 ,1984,JUN  ,20, NTS-YF ,37.00038,-116.04306,-379.78, UG-S  , WR ,20,   ,         
+1011,Fusileer   , Normanna              ,1984,JUL  ,12, NTS-YF ,37.19199,-116.03438,-200, UG-S  , WR ,0.5,   ,         
+1012,Fusileer   , Kappeli               ,1984,JUL  ,25, NTS-PM ,37.26777,-116.41064,-640, UG-S  , WR ,80, V , 12 Ci   
+1013,Fusileer   , Correo                ,1984,AUG  ,2, NTS-YF ,37.01710,-116.00760,-334.1, UG-S  , WR ,10,   ,         
+1014,Fusileer   , Wexford               ,1984,AUG  ,30, NTS-YF ,37.14389,-116.12526,-314, UG-S  , WR ,       ,   ,         
+1015,Fusileer   , Dolcetto              ,1984,AUG  ,30, NTS-YF ,37.08979,-115.99937,-365.15, UG-S  , WR ,20,   ,         
+1016,Fusileer   , Breton                ,1984,SEP  ,13, NTS-YF ,37.08669,-116.07118,-483.11, UG-S  , WR ,33, V , 4 Ci    
+1017,Grenadier  , Vermejo               ,1984,OCT  ,2, NTS-YF ,37.08523,-116.05281,-350.22, UG-S  , WR ,2.5,   ,         
+1018,Grenadier  , Villita               ,1984,NOV  ,10, NTS-YF ,37.00010,-116.01740,-372.2, UG-S  , WR ,5,   ,         
+1019,Grenadier  , Tierra                ,1984,DEC  ,15, NTS-PM ,37.28136,-116.30541,-640, UG-S  , WR ,80, V , 600 Ci  
+1020,Grenadier  , Minero                ,1984,DEC  ,20, NTS-YF ,37.01200,-116.04600,-244.8, UG-S  , WR ,2.5,   ,         
+1021,Grenadier  , Vaughn                ,1985,MAR  ,15, NTS-YF ,37.05810,-116.04530,-425.5, UG-S  , WR ,20, V , 100 Ci  
+1022,Grenadier  , Cottage               ,1985,MAR  ,23, NTS-YF ,37.17998,-116.08896,-515, UG-S  , WR ,60,   ,         
+1023,Grenadier  , Hermosa               ,1985,APR  ,2, NTS-YF ,37.09480,-116.03230,-638.25, UG-S  , WR ,150,   ,         
+1024,Grenadier  , Misty Rain            ,1985,APR  ,6, NTS-RM ,37.20083,-116.20718,-388.6, UG-T  , WE ,15, V , 63 Ci   
+1025,Grenadier  , Towanda               ,1985,MAY  ,2, NTS-PM ,37.25341,-116.32521,-660.2, UG-S  , WR ,150,   ,         
+1026,Grenadier  , Salut                 ,1985,JUN  ,12, NTS-PM ,37.24786,-116.48906,-608.08, UG-S  , WR ,100, V , 4 Ci    
+1027,Grenadier  , Ville                 ,1985,JUN  ,12, NTS-YF ,37.08831,-116.08394,-293.2, UG-S  , WR ,8, V , 0.1 Ci  
+1028,Grenadier  , Maribo                ,1985,JUN  ,26, NTS-YF ,37.12410,-116.12199,-381, UG-S  , WR ,3.5, V , 4 Ci    
+1029,Grenadier  , Serena                ,1985,JUL  ,25, NTS-PM ,37.29725,-116.43807,-597, UG-S  , WR ,45, V , 3 Ci    
+1030,Grenadier  , Cebrero               ,1985,AUG  ,14, NTS-YF ,37.11108,-116.01438,-183, UG-S  , WR ,       , V ,         
+1031,Grenadier  , Chamita               ,1985,AUG  ,17, NTS-YF ,37.00230,-116.04300,-331.62, UG-S  , WR ,8,   ,         
+1032,Grenadier  , Ponil                 ,1985,SEP  ,27, NTS-YF ,37.08980,-116.00180,-364.8, UG-S  , WR ,10,   ,         
+1033,Charioteer , Mill Yard             ,1985,OCT  ,9, NTS-RM ,37.20916,-116.20512,-371, UG-TC , WE ,0.075, V , 6 Ci    
+1034,Charioteer , Diamond Beech         ,1985,OCT  ,9, NTS-RM ,37.20967,-116.21009,-404.5, UG-T  , WE ,2.5, V , 1 Ci    
+1035,Charioteer , Roquefort             ,1985,OCT  ,16, NTS-YF ,37.10995,-116.12138,-415, UG-S  , WR ,20, V ,         
+1036,Charioteer , Abo                   ,1985,OCT  ,30, NTS-YF ,37.05061,-116.03614,-196.29, UG-S  , WR ,0.01, V , <30 Ci  
+1037,Charioteer , Goldstone             ,1985,DEC  ,28, NTS-PM ,37.23781,-116.47274,-549, UG-S  , WR ,60,   ,         
+1038,Charioteer , Glencoe               ,1986,MAR  ,22, NTS-YF ,37.08300,-116.06610,-609.6, UG-S  , WR ,29, V , 0.1 Ci  
+1039,Charioteer , Mighty Oak            ,1986,APR  ,10, NTS-RM ,37.21833,-116.18311,-394.4, UG-T  , WE ,20, V , 36 kCi  
+1040,Charioteer , Mogollon              ,1986,APR  ,20, NTS-YF ,37.01166,-116.04605,-259.4, UG-S  , WR ,1.5,   ,         
+1041,Charioteer , Jefferson             ,1986,APR  ,22, NTS-PM ,37.26412,-116.44020,-609, UG-S  , WR ,80, V ,         
+1042,Charioteer , Panamint              ,1986,MAY  ,21, NTS-YF ,37.12503,-116.05944,-480, UG-S  , WR ,1, V , 3 Ci    
+1043,Charioteer , Tajo                  ,1986,JUN  ,5, NTS-YF ,37.09829,-116.01550,-518.2, UG-S  , WR ,67,   ,         
+1044,Charioteer , Cybar                 ,1986,JUL  ,17, NTS-PM ,37.27870,-116.35560,-627, UG-S  , WR ,119, V ,         
+1045,Charioteer , Cornucopia            ,1986,JUL  ,24, NTS-YF ,37.14275,-116.07112,-381, UG-S  , WR ,8, V ,         
+1046,Charioteer , Galveston             ,1986,SEP  ,4, NTS-PM ,37.23973,-116.36776,-487.1, UG-S  , WR ,0.35,   ,         
+1047,Charioteer , Aleman                ,1986,SEP  ,11, NTS-YF ,37.06908,-116.04969,-502.6, UG-S  , WR ,0.1,   ,         
+1048,Charioteer , Labquark              ,1986,SEP  ,30, NTS-PM ,37.30008,-116.30743,-616, UG-S  , WR ,140, V , 16 Ci   
+1049,Musketeer  , Belmont               ,1986,OCT  ,16, NTS-PM ,37.22021,-116.46163,-605.03, UG-S  , WR ,140, V , 0.2 Ci  
+1050,Musketeer  , Gascon                ,1986,NOV  ,14, NTS-YF ,37.10043,-116.04807,-593.14, UG-S  , WR ,120, V ,         
+1051,Musketeer  , Bodie                 ,1986,DEC  ,13, NTS-PM ,37.26296,-116.41168,-635, UG-S  , WR ,140, V , 1 Ci    
+1052,Musketeer  , Hazebrook-Emerald ,1987,FEB  ,3, NTS-YF ,37.18114,-116.04844,-186, UG-S  , WR ,       , V ,         
+1053,Musketeer  , Hazebrook-Checkerber,1987,FEB  ,3, NTS-YF ,37.18114,-116.04844,-226, UG-S  , WR ,       , V ,         
+1054,Musketeer  , Hazebrook-Apricot ,1987,FEB  ,3, NTS-YF ,37.18114,-116.04844,-262, UG-S  , SE ,       , V ,         
+1055,Musketeer  , Tornero               ,1987,FEB  ,11, NTS-YF ,37.01070,-116.04470,-298.4, UG-S  , WR ,6,   ,         
+1056,Musketeer  , Middle Note           ,1987,MAR  ,18, NTS-RM ,37.21024,-116.20857,-398.7, UG-T  , WE ,3.5,   ,         
+1057,Musketeer  , Delamar               ,1987,APR  ,18, NTS-PM ,37.24789,-116.50914,-544.1, UG-S  , WR ,100,   ,         
+1058,Musketeer  , Presidio              ,1987,APR  ,22, NTS-YF ,36.98314,-116.00458,-319.7, UG-S  , WR ,2.5,   ,         
+1059,Musketeer  , Hardin                ,1987,APR  ,30, NTS-PM ,37.23305,-116.42312,-625, UG-S  , WR ,100, V , 0.2 Ci  
+1060,Musketeer  , Brie                  ,1987,JUN  ,18, NTS-YF ,37.19355,-116.03501,-203, UG-S  , WR ,       ,   ,         
+1061,Musketeer  , Mission Ghost         ,1987,JUN  ,20, NTS-RM ,37.22000,-116.17780,-321.3, UG-T  , WE ,       , V , 3 Ci    
+1062,Musketeer  , Panchuela             ,1987,JUN  ,30, NTS-YF ,36.99860,-116.04310,-319.13, UG-S  , WR ,8, V , <100 Ci 
+1063,Musketeer  , Tahoka                ,1987,AUG  ,13, NTS-YF ,37.06100,-116.04530,-638.56, UG-S  , WR ,150,   ,         
+1064,Musketeer  , Lockney               ,1987,SEP  ,24, NTS-PM ,37.22799,-116.37471,-614.17, UG-S  , WR ,150, V , 4 Ci    
+1065,Touchstone , Borate                ,1987,OCT  ,23, NTS-YF ,37.14190,-116.07870,-542.5, UG-S  , WR ,38, V ,         
+1066,Touchstone , Waco                  ,1987,DEC  ,1, NTS-YF ,36.99641,-116.00447,-182.9, UG-S  , WR ,       ,   ,         
+1067,Touchstone , Mission Cyber         ,1987,DEC  ,2, NTS-RM ,37.23465,-116.16338,-270.6, UG-T  , WE ,2,   ,         
+1068,Touchstone , Kernville             ,1988,FEB  ,15, NTS-PM ,37.31444,-116.47148,-541.6, UG-S  , WR ,60,   ,         
+1069,Touchstone , Abilene               ,1988,APR  ,7, NTS-YF ,37.01316,-116.04433,-245.06, UG-S  , WR ,2,   ,         
+1070,Touchstone , Schellbourne          ,1988,MAY  ,13, NTS-YF ,37.12442,-116.07210,-463, UG-S  , WR ,16, V , 22 Ci   
+1071,Touchstone , Laredo                ,1988,MAY  ,21, NTS-YF ,37.03250,-115.98730,-351.4, UG-S  , WR ,3.5,   ,         
+1072,Touchstone , Comstock              ,1988,JUN  ,2, NTS-PM ,37.26014,-116.44108,-620.3, UG-S  , WR ,80, V ,         
+1073,Touchstone , Rhyolite              ,1988,JUN  ,22, NTS-YF ,37.16616,-116.07224,-207.3, UG-S  , WR ,       ,   ,         
+1074,Touchstone , Nightingale           ,1988,JUN  ,22, NTS-YF ,37.16616,-116.07224,-237.7, UG-S  , SE ,       ,   ,         
+1075,Touchstone , Alamo                 ,1988,JUL  ,7, NTS-PM ,37.25244,-116.37668,-622.1, UG-S  , WR ,150,   ,         
+1076,Touchstone , Kearsarge             ,1988,AUG  ,17, NTS-PM ,37.29716,-116.30654,-615.7, UG-S  , WR ,140,   ,         
+1077,Touchstone , Harlingen-A         ,1988,AUG  ,23, NTS-YF ,36.99100,-116.01900,-289.6, UG-S  , WR ,2,   ,         
+1078,Touchstone , Harlingen-B         ,1988,AUG  ,23, NTS-YF ,36.98900,-116.01900,        , UG-S  , WR ,       ,   ,         
+1079,Touchstone , Bullfrog              ,1988,AUG  ,30, NTS-YF ,37.08593,-116.06852,-489.2, UG-S  , WR ,33, V , 4 Ci    
+1080,Cornerstone, Dalhart               ,1988,OCT  ,13, NTS-YF ,37.08900,-116.04926,-639.78, UG-S  , WR ,150,   ,         
+1081,Cornerstone, Monahans-A          ,1988,NOV  ,9, NTS-YF ,36.99100,-116.02200,-289.86, UG-S  , WR ,       ,   ,         
+1082,Cornerstone, Monahans-B          ,1988,NOV  ,9, NTS-YF ,36.98900,-116.02200,        , UG-S  , WR ,       ,   ,         
+1083,Cornerstone, Kawich A-White      ,1988,DEC  ,9, NTS-YF ,37.17500,-116.09300,-384, UG-S  , SE ,3,   ,         
+1084,Cornerstone, Kawich B-Blue       ,1988,DEC  ,9, NTS-YF ,37.17500,-116.09300,        , UG-S  , SE ,       ,   ,         
+1085,Cornerstone, Misty Echo            ,1988,DEC  ,10, NTS-RM ,37.19900,-116.20940,-400, UG-T  , WE ,25, V , 7 Ci    
+1086,Cornerstone, Texarkana           ,1989,FEB  ,10, NTS-YF ,37.07678,-116.00061,-504.02, UG-S  , WR ,67,   ,         
+1087,Cornerstone, Kawich-Red          ,1989,FEB  ,24, NTS-YF ,37.12849,-116.12196,-370, UG-S  , WR ,5, V , 10 Ci   
+1088,Cornerstone, Kawich-Black        ,1989,FEB  ,24, NTS-YF ,37.12849,-116.12196,-431, UG-S  , SE ,       , V ,         
+1089,Cornerstone, Ingot                 ,1989,MAR  ,9, NTS-YF ,37.14283,-116.06694,-500, UG-S  , WR ,33,   ,         
+1090,Cornerstone, Palisade-1          ,1989,MAY  ,15, NTS-YF ,37.10761,-116.12089,-345.22, UG-S  , WR ,5, V , 2 Ci    
+1091,Cornerstone, Palisade-2          ,1989,MAY  ,15, NTS-YF ,37.10761,-116.12089,-392, UG-S  , SE ,       , V ,         
+1092,Cornerstone, Palisade-3          ,1989,MAY  ,15, NTS-YF ,37.10761,-116.12089,-404, UG-S  , SE ,8, V ,         
+1093,Cornerstone, Tulia                 ,1989,MAY  ,26, NTS-YF ,37.08587,-116.05513,-397.8, UG-S  , WR ,0.5,   ,         
+1094,Cornerstone, Contact               ,1989,JUN  ,22, NTS-PM ,37.28288,-116.41231,-544.1, UG-S  , WR ,60,   ,         
+1095,Cornerstone, Amarillo              ,1989,JUN  ,27, NTS-PM ,37.27546,-116.35356,-640.1, UG-S  , WR ,20,   ,         
+1096,Cornerstone, Disko Elm             ,1989,SEP  ,14, NTS-RM ,37.23589,-116.16290,-260, UG-T  , WE ,10, V , 0.5 Ci  
+1097,Aqueduct   , Hornitos              ,1989,OCT  ,31, NTS-PM ,37.26310,-116.49072,-562.94, UG-S  , WR ,150,   ,         
+1098,Aqueduct   , Muleshoe              ,1989,NOV  ,15, NTS-YF ,37.10652,-116.01338,-244.45, UG-S  , WR ,       ,   ,         
+1099,Aqueduct   , Whiteface-A        ,1989,DEC  ,20, NTS-YF ,37.02600,-116.03200,-196.9, UG-S  , SE ,       ,   ,         
+1100,Aqueduct   , Whiteface-B        ,1989,DEC  ,20, NTS-YF ,37.02600,-116.03200,        , UG-S  , SE ,       ,   ,         
+1101,Aqueduct   , Metropolis            ,1990,MAR  ,10, NTS-YF ,37.11251,-116.05518,-469.4, UG-S  , WR ,44, V , 6 Ci    
+1102,Aqueduct   , Bowie                 ,1990,APR  ,6, NTS-YF ,37.06767,-115.99213,-213.4, UG-S  , WR ,0.1,   ,         
+1103,Aqueduct   , Bullion               ,1990,JUN  ,13, NTS-PM ,37.26160,-116.42012,-673.9, UG-S  , WR ,150,   ,         
+1104,Aqueduct   , Austin                ,1990,JUN  ,21, NTS-YF ,36.99284,-116.00449,-350.5, UG-S  , WR ,2,   ,         
+1105,Aqueduct   , Mineral Quarry      ,1990,JUL  ,25, NTS-RM ,37.20687,-116.21426,-389.5, UG-T  , WE ,10, V , 0.5 Ci  
+1106,Aqueduct   , Randsburg           ,1990,JUL  ,25, NTS-RM ,37.20700,-116.21500,        , UG-T  , WR ,       ,   ,         
+1107,Aqueduct   , Sundown-A           ,1990,SEP  ,20, NTS-YF ,37.03822,-116.05680,-270.4, UG-S  , SE ,       ,   ,         
+1108,Aqueduct   , Sundown-B           ,1990,SEP  ,20, NTS-YF ,37.03822,-116.05680,        , UG-S  , SE ,       ,   ,         
+1109,Aqueduct   , Ledoux                ,1990,SEP  ,27, NTS-YF ,37.00715,-116.05822,-291, UG-S  , WR ,       ,   ,         
+1110,Sculpin    , Tenabo                ,1990,OCT  ,12, NTS-PM ,37.24786,-116.49421,-600, UG-S  , WR ,140, V ,         
+1111,Sculpin    , Coso-Bronze         ,1991,MAR  ,8, NTS-YF ,37.10436,-116.07403,-333, UG-S  , WR ,3.5,   ,         
+1112,Sculpin    , Coso-Gray           ,1991,MAR  ,8, NTS-YF ,37.10436,-116.07403,        , UG-S  , WR ,8,   ,         
+1113,Sculpin    , Coso-Silver         ,1991,MAR  ,8, NTS-YF ,37.10436,-116.07403,        , UG-S  , SE ,       ,   ,         
+1114,Sculpin    , Bexar                 ,1991,APR  ,4, NTS-PM ,37.29608,-116.31290,-629.4, UG-S  , WR ,140, V , 0.5 Ci  
+1115,Sculpin    , Montello              ,1991,APR  ,16, NTS-PM ,37.24544,-116.44163,-641.6, UG-S  , WR ,80,   ,         
+1116,Sculpin    , Floydada              ,1991,AUG  ,15, NTS-YF ,37.08733,-116.00179,-502.9, UG-S  , WR ,3,   ,         
+1117,Sculpin    , Hoya                  ,1991,SEP  ,14, NTS-PM ,37.22564,-116.42813,-658, UG-S  , WR ,100,   ,         
+1118,Sculpin    , Distant Zenith        ,1991,SEP  ,19, NTS-RM ,37.23573,-116.16643,-263.8, UG-T  , WE ,1.5, V , 0.4 Ci  
+1119,Julin      , Lubbock               ,1991,OCT  ,18, NTS-YF ,37.06343,-116.04529,-457.2, UG-S  , WR ,53, V , 0.1 Ci  
+1120,Julin      , Junction              ,1992,MAR  ,26, NTS-PM ,37.27246,-116.35976,-622, UG-S  , WR ,100,   ,         
+1121,Julin      , Diamond Fortune       ,1992,APR  ,30, NTS-RM ,37.23418,-116.15735,-236, UG-T  , WE ,3, V , 0.2 Ci  
+1122,Julin      , Victoria              ,1992,JUN  ,19, NTS-YF ,37.00542,-116.01014,-244, UG-S  , WR ,0.08,   ,         
+1123,Julin      , Galena-Yellow       ,1992,JUN  ,23, NTS-YF ,37.12392,-116.03124,-400, UG-S  , WR ,       ,   ,         
+1124,Julin      , Galena-Orange       ,1992,JUN  ,23, NTS-YF ,37.12392,-116.03124,        , UG-S  , SE ,       ,   ,         
+1125,Julin      , Galena-Green        ,1992,JUN  ,23, NTS-YF ,37.12392,-116.03124,        , UG-S  , SE ,       ,   ,         
+1126,Julin      , Hunters Trophy        ,1992,SEP  ,18, NTS-RM ,37.20692,-116.20998,-385.3, UG-T  , WE ,4, V , 1 Ci    
+1127,Julin      , Divider               ,1992,SEP  ,23, NTS-YF ,37.02068,-115.98791,-426, UG-S  , WR ,5, V , 0.1 Ci  
