@@ -1,7 +1,5 @@
-nuclear-vis
-===========
-
-Nuclear detonations InfoVis
+# Nuclear Detonations Information Visualization
+This is an visualization of nuclear detonations around the world for CS 4460 at the Georgia Institute of Technology.
 
 ## Data
 The data used in this visualization can be found in `data/`.
