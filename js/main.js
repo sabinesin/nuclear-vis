@@ -23,9 +23,9 @@ $(document).ready(function() {
   var path = d3.geo.path()
     .projection(projection);
 
-  d3.json("data/ne_10m_admin_0_countries.json", function(error, countries) {
+  d3.json("data/world-110m.json", function(error, countries) {
     svg.append("path")
-      .datum(topojson.feature(countries, countries.objects.ne_10m_admin_0_countries))
+      .datum(topojson.feature(countries, countries.objects.land))
       .attr("class", "land")
       .attr("d", path);
   });
