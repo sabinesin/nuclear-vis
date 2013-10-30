@@ -7,3 +7,5 @@ The data was extracted from [Johnston's Archive](http://www.johnstonsarchive.net
 
 ### Topology
 The toplogy data is from [Natural Earth](http://www.naturalearthdata.com) and converted to TopoJSON using [World Atlas TopoJSON](https://github.com/mbostock/world-atlas).
+
+It was generated using `make topo/world-110m.json`.
