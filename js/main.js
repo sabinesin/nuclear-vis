@@ -14,4 +14,19 @@ $(document).ready(function() {
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var projection = d3.geo.equirectangular()
+    .scale(75)
+    .translate([width / 2, height / 2])
+    .rotate([-180, 0]);
+
+  var path = d3.geo.path()
+    .projection(projection);
+
+  d3.json("data/ne_10m_admin_0_countries.json", function(error, countries) {
+    svg.append("path")
+      .datum(topojson.feature(countries, countries.objects.ne_10m_admin_0_countries))
+      .attr("class", "land")
+      .attr("d", path);
+  });
 });
