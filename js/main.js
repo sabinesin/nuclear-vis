@@ -16,7 +16,7 @@ $(document).ready(function() {
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var projection = d3.geo.equirectangular()
-    .scale(75)
+    .scale(150)
     .translate([width / 2, height / 2])
     .rotate([-180, 0]);
 
