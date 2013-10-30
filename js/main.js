@@ -23,10 +23,14 @@ $(document).ready(function() {
   var path = d3.geo.path()
     .projection(projection);
 
-  d3.json("data/world-110m.json", function(error, countries) {
-    svg.append("path")
-      .datum(topojson.feature(countries, countries.objects.land))
-      .attr("class", "land")
+  d3.json("data/world-110m.json", function(error, world) {
+    var countries = topojson.feature(world, world.objects.countries).features;
+    var neighbors = topojson.neighbors(world.objects.countries.geometries);
+
+    svg.selectAll(".country")
+      .data(countries)
+    .enter().insert("path", ".graticule")
+      .attr("class", "country")
       .attr("d", path);
   });
 });
