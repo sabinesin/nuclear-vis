@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-left: -480px;  /* Width of SVG divided by two */
+  margin-top: -250px;   /* Height of SVG divided by two */
+}
