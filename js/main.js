@@ -18,7 +18,7 @@ $(document).ready(function() {
   var projection = d3.geo.equirectangular()
     .scale(150)
     .translate([width / 2, height / 2])
-    .rotate([-180, 0]);
+    .rotate([0, 0]);
 
   var path = d3.geo.path()
     .projection(projection);
