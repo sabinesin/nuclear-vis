@@ -27,7 +27,8 @@ $(document).ready(function() {
 
   queue()
     .defer(d3.json, "data/world-110m.json")
-    .await(function ready(errors, world) {
+    .defer(d3.csv, "data/USA.csv")
+    .await(function ready(errors, world, usa) {
       var countries = topojson.feature(world, world.objects.countries).features;
       var neighbors = topojson.neighbors(world.objects.countries.geometries);
 
@@ -37,5 +38,13 @@ $(document).ready(function() {
         .attr("class", "country")
         .attr("d", path)
         .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
+
+      svg.selectAll(".detonation.usa")
+        .data(usa)
+      .enter().append("circle")
+        .attr("class", "usa detonation")
+        .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
+        .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
+        .attr("r", 2);
     });
 });
