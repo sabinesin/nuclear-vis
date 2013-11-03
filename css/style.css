@@ -17,6 +17,11 @@ svg {
   margin-top: -250px;   /* Height of SVG divided by two */
 }
 
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
 .country {
   fill: #bbb;
   stroke: #fff;

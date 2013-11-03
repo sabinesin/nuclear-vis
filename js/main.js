@@ -9,11 +9,25 @@ $(document).ready(function() {
   var width = 960 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
 
+  var zoom = d3.behavior.zoom()
+      .scaleExtent([1, 10])
+      .on("zoom", zoomed);
+
   var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
+    .call(zoom);
+
+  svg.append("rect")
+    .attr("class", "overlay")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", width)
+    .attr("height", height);
+
+  var mapGroup = svg.append("g");
 
   var projection = d3.geo.equirectangular()
     .scale(150)
@@ -31,6 +45,7 @@ $(document).ready(function() {
           "<strong>Series:</strong> <span style='color:white'>" + d["SERIES"] + "</span><br>" +
           "<strong>Name:</strong> <span style='color:white'>" + d["NAME"] + "</span><br>";
   });
+
   svg.call(tip);
   
   queue()
@@ -54,14 +69,14 @@ $(document).ready(function() {
       var countries = topojson.feature(world, world.objects.countries).features;
       var neighbors = topojson.neighbors(world.objects.countries.geometries);
 
-      svg.selectAll(".country")
+      mapGroup.selectAll(".country")
         .data(countries)
       .enter().insert("path", ".graticule")
         .attr("class", "country")
         .attr("d", path);
 
       function drawDetonations(data, name) {
-        svg.selectAll(".detonation." + name)
+        mapGroup.selectAll(".detonation." + name)
           .data(data)
         .enter().append("circle")
           .attr("class", name + " detonation")
@@ -81,4 +96,8 @@ $(document).ready(function() {
       drawDetonations(china, "china");
       drawDetonations(unknown, "unknown");
     });
+
+  function zoomed() {
+    mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
+  }
 });
