@@ -79,7 +79,7 @@ $(document).ready(function() {
       drawDetonations(northkorea, "northkorea");
       drawDetonations(pakistan, "pakistan");
       drawDetonations(china, "china");
-      drawDetonations(china, "unknown");
+      drawDetonations(unknown, "unknown");
     });
 
   /** Year Slider **/
