@@ -49,6 +49,11 @@ $(document).ready(function() {
 		  .on("mouseover", function(){
 				mouseoverDetonation = d;
 				tip.show;
+			// debugging - this is never triggered
+			d3.select("body")
+				.append("p")
+				.text("mouseover");
+				
 			})
 		  .on("mouseout", tip.hide);
     });
@@ -91,7 +96,7 @@ $(document).ready(function() {
 				  .style('opacity', o);
 			} 
 			*/
-		})
+		});
 		minYear = newMin;
 		maxYear = newMax;
 	}
@@ -155,14 +160,26 @@ $(document).ready(function() {
 		.style("margin-right", "auto")
     
 	
-	d3.select(".ui-slider.timeline").append("svg")
-		.style("top", (height / 2 + timelineHeight + 10) + "px")
-		.style("left", (width / 2 + 10) + "px")
-		.attr("width", timelineWidth)
-		.attr("height", 50)
+	var timeline = d3.select(".ui-slider.timeline").append("svg")
+		.style("top", (height / 2 + timelineHeight - 100) + "px")
+		.style("left", (width / 2 - 100) + "px")
+		.attr("width", timelineWidth * 2)
+		.attr("height", 150)
 		.append("g")
 		  .attr("class", "x axis")
 		  .call(yearAxis)
+		  .attr("transform", "translate(110, 111)")
+		  
+	timeline.append("text")
+		  .attr("x", -70)
+		  .attr("y", 0)
+		  .text("Year")
+		  .style("font-size","14pt")
+	timeline.append("text")
+		  .attr("x", timelineWidth - 15)
+		  .attr("y", 17)
+		  .text("2000")
+
 	
 	
 	
