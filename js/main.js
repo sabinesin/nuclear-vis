@@ -108,13 +108,29 @@ $(document).ready(function() {
 		.orient("bottom")
 		.tickFormat(d3.time.format("%Y"))
 	
+	function setSliderTicks(element) {
+		var $slider =  $(element);
+		var max =  $slider.slider("option", "max");    
+		var min =  $slider.slider("option", "min");    
+		var spacing =  100 / (max - min);
+
+		$slider.find(".ui-slider-tick-mark").remove();
+		for (var i = 0; i < max - min ; i++) {
+			if (i % 5 == 0) continue;
+			$('<span class="ui-slider-tick-mark"></span>').css("left", (spacing * i) +  "%").appendTo($slider); 
+			$(".ui-slider-tick-mark").css("top", (timelineHeight + 0) + "px");
+		 }
+	}
+	
 	$(function() {
 		$( ".ui-slider" ).slider({
 			range: true,
 			min: minYear,
 			max: maxYear,
 			values: [minYear, maxYear],
-				
+			create: function( event, ui ) {
+				setSliderTicks(event.target);
+			},
 			slide: function( event, ui ) {
 				filterYear(ui.values[0], ui.values[1]);
 			}
