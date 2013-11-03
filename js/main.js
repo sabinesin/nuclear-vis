@@ -24,7 +24,7 @@ $(document).ready(function() {
 
   var path = d3.geo.path()
     .projection(projection);
-
+		
   queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.csv, "data/USA.csv")
@@ -45,6 +45,110 @@ $(document).ready(function() {
         .attr("class", "usa detonation")
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-        .attr("r", 2);
+        .attr("r", 2)
+		  .on("mouseover", function(){
+				mouseoverDetonation = d;
+				tip.show;
+			})
+		  .on("mouseout", tip.hide);
     });
+	
+	/** Details on demand **/
+	
+	var mouseoverDetonation;
+		
+	var tip = d3.tip()
+	  .attr('class', 'd3-tip')
+	  .offset([-10, 0])
+	  .html(function(d) {
+		return "<strong>Year:</strong> <span style='color:white'>" + mouseoverDetonation["YEAR"] + "</span><br>" +
+				"<strong>Series:</strong> <span style='color:white'>" + mouseoverDetonation["SERIES"] + "</span><br>" +
+				"<strong>Name:</strong> <span style='color:white'>" + mouseoverDetonation["NAME"] + "</span><br>";
+	  });	
+		
+	svg.call(tip);
+	
+	
+	
+	/** Year Slider **/
+	
+	 function filterYear(newMin, newMax) {
+		svg.selectAll(".detonation.usa")
+			.each(function(d,i) {
+			var y = d["YEAR"];
+			
+			d3.select(this)
+				.style('opacity', function(){ return (newMin <= y && y <= newMax)? 1 : 0;});
+				
+			/* Trying optimization here
+			if (minYear <= y && y <= newMin) {
+				var o = (y >= newMin)? 1 : 0;
+				d3.select(this)
+				  .style('opacity', o);
+			} else if (newMax <= y && y <= maxYear) {
+				var o = (y <= newMax)? 1 : 0;
+				d3.select(this)
+				  .style('opacity', o);
+			} 
+			*/
+		})
+		minYear = newMin;
+		maxYear = newMax;
+	}
+	
+	var minYear = 1945, maxYear = 2000;
+	var timelineWidth = 600,
+		timelineHeight = 20;
+	var years = d3.time.scale()
+		.rangeRound([0, timelineWidth])
+		.domain([new Date(minYear, 0, 0), new Date(maxYear, 0, 0)])
+		
+	var yearAxis = d3.svg.axis()
+		.scale(years)
+		.orient("bottom")
+		.tickFormat(d3.time.format("%Y"))
+	
+	$(function() {
+		$( ".ui-slider" ).slider({
+			range: true,
+			min: minYear,
+			max: maxYear,
+			values: [minYear, maxYear],
+				
+			slide: function( event, ui ) {
+				filterYear(ui.values[0], ui.values[1]);
+			}
+		});
+		//$(".ui-slider").css("background", "#D8D8D8");
+		//$(".ui-slider .ui-slider-range").css("background", "#848484");
+		
+		$(".timeline").css("height", timelineHeight + "px");
+		$(".timeline .ui-slider-handle").css("width","10px");
+		$(".timeline .ui-slider-handle").css("height", (timelineHeight + 7) + "px");
+		$(".timeline .ui-slider-handle").css("border-color","#000000");
+
+    });
+	
+	d3.select("body")
+		.append("div")
+		.attr("class", "ui-slider timeline")
+		.style("width", timelineWidth + "px")
+		.style("height", timelineWidth + "px")
+		.style("top", height + "px")
+		.style("margin-left", "auto")
+		.style("margin-right", "auto")
+    
+	
+	d3.select(".ui-slider.timeline").append("svg")
+		.style("top", (height / 2 + timelineHeight + 10) + "px")
+		.style("left", (width / 2 + 10) + "px")
+		.attr("width", timelineWidth)
+		.attr("height", 50)
+		.append("g")
+		  .attr("class", "x axis")
+		  .call(yearAxis)
+	
+	
+	
+	
 });

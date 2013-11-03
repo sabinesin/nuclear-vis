@@ -1,4 +1,4 @@
-ID#,SERIES,Name,YEAR,MON,DAY,SITE,LAT,LONG,HOB,TYPE,PUR,YIELD,VENT,DEVIC
+ID#,SERIES,NAME,YEAR,MON,DAY,SITE,LAT,LONG,HOB,TYPE,PUR,YIELD,VENT,DEVIC
 1,Trinity        ,Trinity                ,1945,JUL,16,NM     ,33.67530,-106.47470,30,AS-T   ,WR ,21, ,    IP 
 2,Alberta        ,Little Boy             ,1945,AUG,5,-JP    ,34.39140,132.45810,580,A-AD   ,C  ,15, ,       
 3,Alberta        ,Fat Man                ,1945,AUG,9,-JP    ,32.77020,129.86570,503,A-AD   ,C  ,21, ,       
