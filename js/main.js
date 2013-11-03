@@ -24,7 +24,19 @@ $(document).ready(function() {
 
   var path = d3.geo.path()
     .projection(projection);
-		
+	
+	/** Details on demand **/
+	var mouseoverDetonation;
+	var tip = d3.tip()
+	  .attr('class', 'd3-tip')
+	  .offset([-10, 0])
+	  .html(function(d) {
+		return "fda";//"<strong>Year:</strong> <span style='color:white'>" + mouseoverDetonation["YEAR"] + "</span><br>" +
+				//"<strong>Series:</strong> <span style='color:white'>" + mouseoverDetonation["SERIES"] + "</span><br>" +
+				//"<strong>Name:</strong> <span style='color:white'>" + mouseoverDetonation["NAME"] + "</span><br>";
+	  });	
+	svg.call(tip);
+	
   queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.csv, "data/USA.csv")
@@ -47,7 +59,7 @@ $(document).ready(function() {
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
         .attr("r", 2)
 		  .on("mouseover", function(){
-				mouseoverDetonation = d;
+				//mouseoverDetonation = d;
 				tip.show;
 			// debugging - this is never triggered
 			d3.select("body")
@@ -58,22 +70,7 @@ $(document).ready(function() {
 		  .on("mouseout", tip.hide);
     });
 	
-	/** Details on demand **/
-	
-	var mouseoverDetonation;
-		
-	var tip = d3.tip()
-	  .attr('class', 'd3-tip')
-	  .offset([-10, 0])
-	  .html(function(d) {
-		return "<strong>Year:</strong> <span style='color:white'>" + mouseoverDetonation["YEAR"] + "</span><br>" +
-				"<strong>Series:</strong> <span style='color:white'>" + mouseoverDetonation["SERIES"] + "</span><br>" +
-				"<strong>Name:</strong> <span style='color:white'>" + mouseoverDetonation["NAME"] + "</span><br>";
-	  });	
-		
-	svg.call(tip);
-	
-	
+
 	
 	/** Year Slider **/
 	
@@ -82,20 +79,17 @@ $(document).ready(function() {
 			.each(function(d,i) {
 			var y = d["YEAR"];
 			
-			d3.select(this)
-				.style('opacity', function(){ return (newMin <= y && y <= newMax)? 1 : 0;});
-				
-			/* Trying optimization here
-			if (minYear <= y && y <= newMin) {
+			if (minYear - 1 <= y && y <= newMin) {
 				var o = (y >= newMin)? 1 : 0;
 				d3.select(this)
 				  .style('opacity', o);
-			} else if (newMax <= y && y <= maxYear) {
+				//?if (y > newMin && maxYear == newMax) break;
+			} else if (newMax <= y && y <= maxYear + 1) {
 				var o = (y <= newMax)? 1 : 0;
 				d3.select(this)
 				  .style('opacity', o);
 			} 
-			*/
+			
 		});
 		minYear = newMin;
 		maxYear = newMax;
