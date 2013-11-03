@@ -38,14 +38,6 @@ svg {
   shape-rendering: crispEdges;
 }
 
-.ui-slider-tick-mark{
-    display: inline-block;
-    width: 1px;
-    background: black;
-    height: 3px;
-    position: absolute;
-}
-
 .d3-tip {
   line-height: 1;
   font-weight: bold;
