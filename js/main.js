@@ -36,7 +36,14 @@ $(document).ready(function() {
   queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.csv, "data/USA.csv")
-    .await(function ready(errors, world, usa) {
+    .defer(d3.csv, "data/UK.csv")
+    .defer(d3.csv, "data/USSR.csv")
+    .defer(d3.csv, "data/India.csv")
+    .defer(d3.csv, "data/NorthKorea.csv")
+    .defer(d3.csv, "data/Pakistan.csv")
+    .defer(d3.csv, "data/PRCChina.csv")
+    .defer(d3.csv, "data/Unknown.csv")
+    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, unknown) {
       if (errors) {
         console.log("Could not draw data due to error in retrieving data.");
         console.error(errors);
@@ -53,15 +60,26 @@ $(document).ready(function() {
         .attr("class", "country")
         .attr("d", path);
 
-      svg.selectAll(".detonation.usa")
-        .data(usa)
-      .enter().append("circle")
-        .attr("class", "usa detonation")
-        .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
-        .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-        .attr("r", 2)
-        .on("mouseover", tip.show)
-        .on("mouseout", tip.hide);
+      function drawDetonations(data, name) {
+        svg.selectAll(".detonation." + name)
+          .data(data)
+        .enter().append("circle")
+          .attr("class", name + " detonation")
+          .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
+          .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
+          .attr("r", 2)
+          .on("mouseover", tip.show)
+          .on("mouseout", tip.hide);
+      }
+
+      drawDetonations(usa, "usa");
+      drawDetonations(uk, "uk");
+      drawDetonations(ussr, "ussr");
+      drawDetonations(india, "india");
+      drawDetonations(northkorea, "northkorea");
+      drawDetonations(pakistan, "pakistan");
+      drawDetonations(china, "china");
+      drawDetonations(china, "unknown");
     });
 
   /** Year Slider **/
