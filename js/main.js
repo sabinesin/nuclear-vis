@@ -20,8 +20,6 @@ $(document).ready(function() {
     .translate([width / 2, height / 2])
     .rotate([0, 0]);
 
-  var color = color = d3.scale.category20();
-
   var path = d3.geo.path()
     .projection(projection);
   
@@ -55,8 +53,7 @@ $(document).ready(function() {
         .data(countries)
       .enter().insert("path", ".graticule")
         .attr("class", "country")
-        .attr("d", path)
-        .style("fill", function(d, i) { return color(d.color = d3.max(neighbors[i], function(n) { return countries[n].color; }) + 1 | 0); });
+        .attr("d", path);
 
       svg.selectAll(".detonation.usa")
         .data(usa)
