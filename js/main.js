@@ -22,17 +22,15 @@ $(document).ready(function() {
 
   var path = d3.geo.path()
     .projection(projection);
-  
-  /** Details on demand **/
-  var mouseoverDetonation;
+
   var tip = d3.tip()
     .attr('class', 'd3-tip')
     .offset([-10, 0])
     .html(function(d) {
-    return "fda";//"<strong>Year:</strong> <span style='color:white'>" + mouseoverDetonation["YEAR"] + "</span><br>" +
-        //"<strong>Series:</strong> <span style='color:white'>" + mouseoverDetonation["SERIES"] + "</span><br>" +
-        //"<strong>Name:</strong> <span style='color:white'>" + mouseoverDetonation["NAME"] + "</span><br>";
-    });
+      return "<strong>Year:</strong> <span style='color:white'>" + d["YEAR"] + "</span><br>" +
+          "<strong>Series:</strong> <span style='color:white'>" + d["SERIES"] + "</span><br>" +
+          "<strong>Name:</strong> <span style='color:white'>" + d["NAME"] + "</span><br>";
+  });
   svg.call(tip);
   
   queue()
@@ -62,15 +60,8 @@ $(document).ready(function() {
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
         .attr("r", 2)
-      .on("mouseover", function(){
-        // mouseoverDetonation = d;
-        tip.show;
-        // debugging - this is never triggered
-        d3.select("body")
-          .append("p")
-          .text("mouseover");
-      })
-      .on("mouseout", tip.hide);
+        .on("mouseover", tip.show)
+        .on("mouseout", tip.hide);
     });
 
   /** Year Slider **/
