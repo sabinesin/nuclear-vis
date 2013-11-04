@@ -163,7 +163,7 @@ $(document).ready(function() {
           .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
           .call(xAxis);
 
-      timeline.selectAll(".bar")
+      var detonationBars = timeline.selectAll(".bar")
         .data(years)
       .enter().append("rect")
         .attr("class", "bar")
@@ -171,6 +171,33 @@ $(document).ready(function() {
         .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["detonations"]); })
         .attr("width", width / years.length)
         .attr("height", function(d) { return y(d["detonations"]); });
+
+      timeline.append("g")
+        .attr("class", "brush")
+        .call(d3.svg.brush().x(x)
+        .on("brushstart", brushstart)
+        .on("brush", brushmove)
+        .on("brushend", brushend))
+      .selectAll("rect")
+        .attr("height", height);
+
+      function brushstart() {
+        timeline.classed("selecting", true);
+      }
+
+      function brushmove() {
+        var s = d3.event.target.extent();
+
+        detonationBars.classed("selected", function(d) {
+          var year = d["year"];
+
+          return s[0] < year && year < s[1];
+        });
+      }
+
+      function brushend() {
+        timeline.classed("selecting", !d3.event.target.empty());
+      }
     });
 
   function zoomed() {
