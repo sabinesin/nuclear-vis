@@ -146,8 +146,6 @@ $(document).ready(function() {
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
 
-      console.log(y.range(), y.domain());
-
       var timeline = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
 
