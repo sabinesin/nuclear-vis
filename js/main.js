@@ -82,7 +82,7 @@ $(document).ready(function() {
           .attr("class", name + " detonation")
           .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
           .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-          .attr("r", 2)
+          .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale())
           .on("mouseover", tip.show)
           .on("mouseout", tip.hide);
       }
@@ -98,6 +98,9 @@ $(document).ready(function() {
     });
 
   function zoomed() {
+    mapGroup.selectAll(".detonation")
+      .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale());
+
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
   }
 });
