@@ -191,10 +191,23 @@ $(document).ready(function() {
 
           return s[0] < year && year < s[1];
         });
+
+        mapGroup.selectAll(".detonation")
+          .attr("opacity", function(d) {
+            var year = parseDate(d["YEAR"]);
+            var present = s[0] < year && year < s[1];
+
+            return present ? 1.0 : 0.2;
+        });
       }
 
       function brushend() {
         timeline.classed("selecting", !d3.event.target.empty());
+
+        if (d3.event.target.empty()) {
+          mapGroup.selectAll(".detonation")
+            .attr("opacity", 1.0);
+        }
       }
     });
 
