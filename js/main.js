@@ -167,7 +167,7 @@ $(document).ready(function() {
         .attr("class", "bar")
         .attr("x", function(d) { return x(d["year"]); })
         .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["detonations"]); })
-        .attr("width", width / years.length)
+        .attr("width", width / (y.domain()[1] - y.domain()[0]))
         .attr("height", function(d) { return y(d["detonations"]); });
 
       timeline.append("g")
