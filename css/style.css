@@ -17,6 +17,10 @@ svg {
   margin-top: -250px;   /* Height of SVG divided by two */
 }
 
+.background {
+  fill: #fff;
+}
+
 .overlay {
   fill: none;
   pointer-events: all;
@@ -41,6 +45,12 @@ svg {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
 }
 
 .d3-tip {

@@ -1,9 +1,9 @@
 $(document).ready(function() {
   var margin = {
-    top: 10,
-    right: 10,
-    bottom: 10,
-    left: 10
+    top: 0,
+    right: 0,
+    bottom: 40,
+    left: 0
   };
 
   var width = 960 - margin.left - margin.right;
@@ -66,6 +66,8 @@ $(document).ready(function() {
         return;
       }
 
+      var allData = [usa, uk, ussr, india, northkorea, pakistan, china, unknown];
+
       var countries = topojson.feature(world, world.objects.countries).features;
       var neighbors = topojson.neighbors(world.objects.countries.geometries);
 
@@ -95,6 +97,64 @@ $(document).ready(function() {
       drawDetonations(pakistan, "pakistan");
       drawDetonations(china, "china");
       drawDetonations(unknown, "unknown");
+
+      var parseDate = d3.time.format("%Y").parse;
+
+      var x = d3.scale.ordinal()
+        .rangeRoundBands([0, width], 0.1);
+
+      var y = d3.scale.linear()
+        .range([0, margin.bottom]);
+
+      var years = [];
+      var yearsTemp = {};
+
+      allData.forEach(function(country) {
+        country.forEach(function(detonation) {
+          var year = detonation["YEAR"];
+
+          if (year == null || year == "") {
+            return;
+          }
+
+          if (yearsTemp[year] == null) {
+            yearsTemp[year] = 0;
+          }
+
+          yearsTemp[year]++;
+        });
+      });
+
+      for (var key in yearsTemp) {
+        years.push({
+          "year": parseDate(key),
+          "detonations": yearsTemp[key]
+        });
+      }
+
+      x.domain(years.map(function(d) { return d["year"]; }));
+      y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
+
+      console.log(y.range(), y.domain());
+
+      var timeline = svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+
+      timeline.append("rect")
+        .attr("class", "background")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", margin.bottom);
+
+      timeline.selectAll(".bar")
+        .data(years)
+      .enter().append("rect")
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d["year"]); })
+        .attr("y", function(d) { return margin.bottom - y(d["detonations"]); })
+        .attr("width", width / years.length)
+        .attr("height", function(d) { return y(d["detonations"]); });
     });
 
   function zoomed() {
