@@ -100,15 +100,15 @@ $(document).ready(function() {
 
       var timelineMargin =  {
         top: 5,
-        right: 0,
+        right: 15,
         bottom: 20,
-        left: 0
+        left: 15
       };
 
       var parseDate = d3.time.format("%Y").parse;
 
       var x = d3.time.scale()
-        .range([0, width]);
+        .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
 
       var y = d3.scale.linear()
         .range([0, margin.bottom - timelineMargin.top - timelineMargin.bottom]);
