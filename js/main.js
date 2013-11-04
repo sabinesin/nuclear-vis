@@ -2,7 +2,7 @@ $(document).ready(function() {
   var margin = {
     top: 0,
     right: 0,
-    bottom: 40,
+    bottom: 50,
     left: 0
   };
 
@@ -98,13 +98,24 @@ $(document).ready(function() {
       drawDetonations(china, "china");
       drawDetonations(unknown, "unknown");
 
+      var timelineMargin =  {
+        top: 0,
+        right: 0,
+        bottom: 20,
+        left: 0
+      };
+
       var parseDate = d3.time.format("%Y").parse;
 
-      var x = d3.scale.ordinal()
-        .rangeRoundBands([0, width], 0.1);
+      var x = d3.time.scale()
+        .range([0, width]);
 
       var y = d3.scale.linear()
-        .range([0, margin.bottom]);
+        .range([0, margin.bottom - timelineMargin.bottom]);
+
+      var xAxis = d3.svg.axis()
+          .scale(x)
+          .orient("bottom");
 
       var years = [];
       var yearsTemp = {};
@@ -132,7 +143,7 @@ $(document).ready(function() {
         });
       }
 
-      x.domain(years.map(function(d) { return d["year"]; }));
+      x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
 
       console.log(y.range(), y.domain());
@@ -147,12 +158,17 @@ $(document).ready(function() {
         .attr("width", width)
         .attr("height", margin.bottom);
 
+      timeline.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
+          .call(xAxis);
+
       timeline.selectAll(".bar")
         .data(years)
       .enter().append("rect")
         .attr("class", "bar")
         .attr("x", function(d) { return x(d["year"]); })
-        .attr("y", function(d) { return margin.bottom - y(d["detonations"]); })
+        .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["detonations"]); })
         .attr("width", width / years.length)
         .attr("height", function(d) { return y(d["detonations"]); });
     });
