@@ -47,11 +47,11 @@ svg {
   shape-rendering: crispEdges;
 }
 
-.selecting rect {
+.selecting rect.bar {
   fill-opacity: 0.5;
 }
 
-.selecting rect.selected {
+.selecting rect.bar.selected {
   fill-opacity: 1.0;
 }
 
