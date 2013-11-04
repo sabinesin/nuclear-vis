@@ -19,6 +19,8 @@ $(document).ready(function() {
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+  var mapGroup = svg.append("g");
+
   svg.append("rect")
     .attr("class", "overlay")
     .attr("x", 0)
@@ -26,8 +28,6 @@ $(document).ready(function() {
     .attr("width", width)
     .attr("height", height)
     .call(zoom);
-
-  var mapGroup = svg.append("g");
 
   var projection = d3.geo.equirectangular()
     .scale(150)
