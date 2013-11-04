@@ -17,15 +17,15 @@ $(document).ready(function() {
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
-    .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
-    .call(zoom);
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   svg.append("rect")
     .attr("class", "overlay")
     .attr("x", 0)
     .attr("y", 0)
     .attr("width", width)
-    .attr("height", height);
+    .attr("height", height)
+    .call(zoom);
 
   var mapGroup = svg.append("g");
 
