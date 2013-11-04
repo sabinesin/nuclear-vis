@@ -77,7 +77,13 @@ $(document).ready(function() {
         .attr("class", "country")
         .attr("d", path);
 
+      var parseDate = d3.time.format("%Y").parse;
+
       function drawDetonations(data, name) {
+        data.forEach(function(detonation) {
+          detonation["formattedDate"] = parseDate(detonation["YEAR"]);
+        });
+
         mapGroup.selectAll(".detonation." + name)
           .data(data)
         .enter().append("circle")
@@ -98,14 +104,14 @@ $(document).ready(function() {
       drawDetonations(china, "china");
       drawDetonations(unknown, "unknown");
 
+      var detonations = d3.selectAll(".detonation");
+
       var timelineMargin =  {
         top: 5,
         right: 15,
         bottom: 20,
         left: 15
       };
-
-      var parseDate = d3.time.format("%Y").parse;
 
       var x = d3.time.scale()
         .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
@@ -192,9 +198,8 @@ $(document).ready(function() {
           return s[0] < year && year < s[1];
         });
 
-        mapGroup.selectAll(".detonation")
-          .attr("opacity", function(d) {
-            var year = parseDate(d["YEAR"]);
+        detonations.attr("opacity", function(d) {
+            var year = d["formattedDate"];
             var present = s[0] < year && year < s[1];
 
             return present ? 1.0 : 0.2;
@@ -205,8 +210,7 @@ $(document).ready(function() {
         timeline.classed("selecting", !d3.event.target.empty());
 
         if (d3.event.target.empty()) {
-          mapGroup.selectAll(".detonation")
-            .attr("opacity", 1.0);
+          detonations.attr("opacity", 1.0);
         }
       }
     });
