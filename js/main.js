@@ -111,7 +111,7 @@ $(document).ready(function() {
         .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
 
       var y = d3.scale.linear()
-        .range([0, margin.bottom - timelineMargin.top - timelineMargin.bottom]);
+        .range([3, margin.bottom - timelineMargin.top - timelineMargin.bottom]);
 
       var xAxis = d3.svg.axis()
           .scale(x)
