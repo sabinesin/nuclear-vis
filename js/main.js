@@ -13,6 +13,13 @@ $(document).ready(function() {
     left: 0
   };
 
+  var legendMargin = {
+    top: 0,
+    right: 0,
+    bottom: 5,
+    left: 0
+  };
+
   var width = 960 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
 
@@ -26,13 +33,13 @@ $(document).ready(function() {
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var legend = svg.append("g");
-
   var countryColors = d3.scale.category10();
 
   var mapGroup = svg.append("g")
     .attr("id", "viewer")
     .attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
+
+  var legend = svg.append("g");
 
   svg.append("rect")
     .attr("class", "overlay")
@@ -150,6 +157,13 @@ $(document).ready(function() {
         .on("mouseout", tip.hide);
 
       // Draw legend
+      legend.append("rect")
+        .attr("class", "background")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", mapMargin.top + legendMargin.bottom);
+      
       var legendItem = legend.selectAll(".item")
         .data(data)
       .enter().append("g")
