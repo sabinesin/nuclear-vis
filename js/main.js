@@ -121,6 +121,7 @@ $(document).ready(function() {
         },
       ];
 
+      // Draw world
       var countries = topojson.feature(world, world.objects.countries).features;
       var neighbors = topojson.neighbors(world.objects.countries.geometries);
 
@@ -132,6 +133,7 @@ $(document).ready(function() {
         .attr("class", "country")
         .attr("d", path);
 
+      // Draw detonations
       var parseDate = d3.time.format("%Y").parse;
 
       data.forEach(function(country) {
@@ -179,6 +181,7 @@ $(document).ready(function() {
         .attr("y", mapMargin.top)
         .text(function(d) { return d["name"]; });
 
+      // Draw timeline
       var detonations = d3.selectAll(".detonation");
 
       var timelineMargin =  {
