@@ -148,6 +148,7 @@ $(document).ready(function() {
         .data(data)
       .enter().append("g")
         .attr("class", function(d) { return d["name"].replace(/ /g, ''); })
+        .style("fill", function(d) { return countryColors(d["name"]); })
         .selectAll(".detonation")
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
