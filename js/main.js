@@ -281,7 +281,7 @@ $(document).ready(function() {
             var year = d["formattedDate"];
             var present = s[0] < year && year < s[1];
 
-            return present ? 1.0 : 0.2;
+            return present ? 1.0 : 0.0;
         });
       }
 
