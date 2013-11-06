@@ -19,7 +19,7 @@ $(document).ready(function() {
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var mapGroup = svg.append("g");
+  var mapGroup = svg.append("g").attr("id", "viewer");
 
   svg.append("rect")
     .attr("class", "overlay")
@@ -66,12 +66,47 @@ $(document).ready(function() {
         return;
       }
 
-      var allData = [usa, uk, ussr, india, northkorea, pakistan, china, unknown];
+      var data = [
+        {
+          "name": "USA",
+          "data": usa
+        },
+        {
+          "name": "UK",
+          "data": uk
+        },
+        {
+          "name": "USSR",
+          "data": ussr
+        },
+        {
+          "name": "India",
+          "data": india
+        },
+        {
+          "name": "North Korea",
+          "data": northkorea
+        },
+        {
+          "name": "Pakistan",
+          "data": pakistan
+        },
+        {
+          "name": "Chian",
+          "data": china
+        },
+        {
+          "name": "Unknown",
+          "data": unknown
+        },
+      ];
 
       var countries = topojson.feature(world, world.objects.countries).features;
       var neighbors = topojson.neighbors(world.objects.countries.geometries);
 
-      mapGroup.selectAll(".country")
+      mapGroup.append("g")
+        .attr("id", "map")
+        .selectAll(".country")
         .data(countries)
       .enter().insert("path", ".graticule")
         .attr("class", "country")
@@ -79,30 +114,27 @@ $(document).ready(function() {
 
       var parseDate = d3.time.format("%Y").parse;
 
-      function drawDetonations(data, name) {
-        data.forEach(function(detonation) {
+      data.forEach(function(country) {
+        country["data"].forEach(function(detonation) {
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
         });
+      });
 
-        mapGroup.selectAll(".detonation." + name)
-          .data(data)
-        .enter().append("circle")
-          .attr("class", name + " detonation")
-          .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
-          .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-          .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale())
-          .on("mouseover", tip.show)
-          .on("mouseout", tip.hide);
-      }
-
-      drawDetonations(usa, "usa");
-      drawDetonations(uk, "uk");
-      drawDetonations(ussr, "ussr");
-      drawDetonations(india, "india");
-      drawDetonations(northkorea, "northkorea");
-      drawDetonations(pakistan, "pakistan");
-      drawDetonations(china, "china");
-      drawDetonations(unknown, "unknown");
+      mapGroup.append("g")
+        .attr("id", "countries")
+        .selectAll(".country")
+        .data(data)
+      .enter().append("g")
+        .attr("class", function(d) { return d["name"].replace(/ /g, ''); })
+        .selectAll(".detonation")
+        .data(function(d) { return d["data"]; })
+      .enter().append("circle")
+        .attr("class", "detonation")
+        .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
+        .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
+        .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale())
+        .on("mouseover", tip.show)
+        .on("mouseout", tip.hide);
 
       var detonations = d3.selectAll(".detonation");
 
@@ -126,8 +158,8 @@ $(document).ready(function() {
       var years = [];
       var yearsTemp = {};
 
-      allData.forEach(function(country) {
-        country.forEach(function(detonation) {
+      data.forEach(function(country) {
+        country["data"].forEach(function(detonation) {
           var year = detonation["YEAR"];
 
           if (year == null || year == "") {
