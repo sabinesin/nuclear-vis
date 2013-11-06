@@ -6,6 +6,13 @@ $(document).ready(function() {
     left: 0
   };
 
+  var mapMargin = {
+    top: 10,
+    right: 0,
+    bottom: 0,
+    left: 0
+  };
+
   var width = 960 - margin.left - margin.right;
   var height = 500 - margin.top - margin.bottom;
 
@@ -19,7 +26,13 @@ $(document).ready(function() {
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  var mapGroup = svg.append("g").attr("id", "viewer");
+  var legend = svg.append("g");
+
+  var countryColors = d3.scale.category10();
+
+  var mapGroup = svg.append("g")
+    .attr("id", "viewer")
+    .attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
 
   svg.append("rect")
     .attr("class", "overlay")
@@ -135,6 +148,22 @@ $(document).ready(function() {
         .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale())
         .on("mouseover", tip.show)
         .on("mouseout", tip.hide);
+
+      // Draw legend
+      var legendItem = legend.selectAll(".item")
+        .data(data)
+      .enter().append("g")
+        .attr("transform", function(d, i) { return "translate(" + i * (width / data.length) + ", 0)"; });
+
+      legendItem.append("rect")
+        .attr("width", mapMargin.top)
+        .attr("height", mapMargin.top)
+        .style("fill", function(d) { return countryColors(d["name"]); });
+
+      legendItem.append("text")
+        .attr("x", mapMargin.top + mapMargin.top / 2)
+        .attr("y", mapMargin.top)
+        .text(function(d) { return d["name"]; });
 
       var detonations = d3.selectAll(".detonation");
 
