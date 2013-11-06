@@ -54,6 +54,9 @@ $(document).ready(function() {
     .translate([width / 2, height / 2])
     .rotate([0, 0]);
 
+  var yield = d3.scale.linear()
+    .range([10, 50]);
+
   var path = d3.geo.path()
     .projection(projection);
 
@@ -136,6 +139,18 @@ $(document).ready(function() {
       // Draw detonations
       var parseDate = d3.time.format("%Y").parse;
 
+      var domain = data.map(function(d) {
+        return d["data"].map(function(d) {
+          return d["YIELD"];
+        });
+      });
+
+      domain = [].concat.apply([], domain);
+
+      yield.domain(d3.extent(domain, function(d) {
+        return parseFloat(d);
+      }));
+
       data.forEach(function(country) {
         country["data"].forEach(function(detonation) {
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
@@ -155,7 +170,16 @@ $(document).ready(function() {
         .attr("class", "detonation")
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-        .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale())
+        .attr("r", function(d) {
+          var value = parseFloat(d["YIELD"]);
+
+          if (isNaN(value)) {
+            value = 1;
+          }
+
+          return yield(value) * zoom.scaleExtent()[0] / zoom.scale();
+        })
+        .attr("opacity", 0.5)
         .on("mouseover", tip.show)
         .on("mouseout", tip.hide);
 
@@ -283,7 +307,7 @@ $(document).ready(function() {
             var year = d["formattedDate"];
             var present = s[0] <= year && year <= s[1];
 
-            return present ? 1.0 : 0.0;
+            return present ? 0.5 : 0.0;
         });
       }
 
@@ -291,14 +315,22 @@ $(document).ready(function() {
         timeline.classed("selecting", !d3.event.target.empty());
 
         if (d3.event.target.empty()) {
-          detonations.attr("opacity", 1.0);
+          detonations.attr("opacity", 0.5);
         }
       }
     });
 
   function zoomed() {
     mapGroup.selectAll(".detonation")
-      .attr("r", 2 * zoom.scaleExtent()[0] / zoom.scale());
+      .attr("r", function(d) {
+        var value = parseFloat(d["YIELD"]);
+
+        if (isNaN(value)) {
+          value = 1;
+        }
+
+        return yield(value) * zoom.scaleExtent()[0] / zoom.scale();
+      });
 
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
   }
