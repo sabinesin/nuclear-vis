@@ -231,6 +231,8 @@ $(document).ready(function() {
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
 
+      x.nice();
+
       var timeline = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
 
@@ -274,12 +276,12 @@ $(document).ready(function() {
         detonationBars.classed("selected", function(d) {
           var year = d["year"];
 
-          return s[0] < year && year < s[1];
+          return s[0] <= year && year <= s[1];
         });
 
         detonations.attr("opacity", function(d) {
             var year = d["formattedDate"];
-            var present = s[0] < year && year < s[1];
+            var present = s[0] <= year && year <= s[1];
 
             return present ? 1.0 : 0.0;
         });
