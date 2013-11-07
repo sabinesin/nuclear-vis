@@ -253,7 +253,8 @@ $(document).ready(function() {
           countries.push({
             "y0": y0,
             "y1": y0 += countriesTemp[country],
-            "name": country
+            "name": country,
+            "year": parseDate(key)
           });
         }
 
@@ -290,11 +291,14 @@ $(document).ready(function() {
           .attr("class", "g")
           .attr("transform", function(d) { return "translate(" + x(d["year"]) + ",0)"; });
 
+      var barWidth = width / (y.domain()[1] - y.domain()[0]);
+      var barWidth = d3.scale.ordinal().domain(d3.time.years(x.domain()[0], x.domain()[1])).rangeRoundBands(x.range(), 0.2).rangeBand();
+
       var detonationBars = year.selectAll("rect.bar")
           .data(function(d) { return d["detonations"]; })
         .enter().append("rect")
           .attr("class", "bar")
-          .attr("width", width / (y.domain()[1] - y.domain()[0]))
+          .attr("width", barWidth)
           .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["y1"]); })
           .attr("height", function(d) { return y(d["y1"]) - y(d["y0"]); })
           .style("fill", function(d) { return countryColors(d["name"]); });
