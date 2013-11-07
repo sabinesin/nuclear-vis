@@ -170,10 +170,13 @@ $(document).ready(function() {
         .attr("class", "detonation")
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-        .attr("r", detonationYieldRadius)
+        .attr("r", 0)
         .attr("opacity", 0.5)
         .on("mouseover", tip.show)
-        .on("mouseout", tip.hide);
+        .on("mouseout", tip.hide)
+      .transition()
+        .duration(1000)
+        .attr("r", detonationYieldRadius);
 
       // Draw legend
       legend.append("rect")
