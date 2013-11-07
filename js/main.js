@@ -295,11 +295,11 @@ $(document).ready(function() {
           return s[0] <= year && year <= s[1];
         });
 
-        detonations.attr("opacity", function(d) {
+        detonations.transition().attr("r", function(d) {
             var year = d["formattedDate"];
             var present = s[0] <= year && year <= s[1];
 
-            return present ? 0.5 : 0.0;
+            return present ? detonationYieldRadius(d) : 0.0;
         });
       }
 
@@ -307,7 +307,7 @@ $(document).ready(function() {
         timeline.classed("selecting", !d3.event.target.empty());
 
         if (d3.event.target.empty()) {
-          detonations.attr("opacity", 0.5);
+          detonations.transition().attr("r", detonationYieldRadius);
         }
       }
     });
