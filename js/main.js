@@ -170,15 +170,7 @@ $(document).ready(function() {
         .attr("class", "detonation")
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
-        .attr("r", function(d) {
-          var value = parseFloat(d["YIELD"]);
-
-          if (isNaN(value)) {
-            value = 1;
-          }
-
-          return yield(value) * zoom.scaleExtent()[0] / zoom.scale();
-        })
+        .attr("r", detonationYieldRadius)
         .attr("opacity", 0.5)
         .on("mouseover", tip.show)
         .on("mouseout", tip.hide);
@@ -320,17 +312,23 @@ $(document).ready(function() {
       }
     });
 
+  function detonationYieldRadius(d) {
+    var value = parseFloat(d["YIELD"]);
+
+    if (isNaN(value)) {
+      value = 1;
+    }
+
+    return transformDetonationRadius(yield(value));
+  }
+
+  function transformDetonationRadius(value) {
+    return value * zoom.scaleExtent()[0] / zoom.scale()
+  }
+
   function zoomed() {
     mapGroup.selectAll(".detonation")
-      .attr("r", function(d) {
-        var value = parseFloat(d["YIELD"]);
-
-        if (isNaN(value)) {
-          value = 1;
-        }
-
-        return yield(value) * zoom.scaleExtent()[0] / zoom.scale();
-      });
+      .attr("r", detonationYieldRadius);
 
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
   }
