@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('#filters-modal').modal(null);
+
   var margin = {
     top: 0,
     right: 0,
