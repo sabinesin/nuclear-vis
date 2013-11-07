@@ -17,13 +17,14 @@ body {
   user-select: none !important;
 }
 
-svg {
+#main {
   position: absolute;
   top: 50%;
   left: 50%;
+}
 
-  margin-left: -480px;  /* Width of SVG divided by two */
-  margin-top: -250px;   /* Height of SVG divided by two */
+#buttons {
+  padding-bottom: 5px;
 }
 
 .background {

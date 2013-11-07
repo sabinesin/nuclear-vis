@@ -27,11 +27,13 @@ $(document).ready(function() {
       .scaleExtent([1, 10])
       .on("zoom", zoomed);
 
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#svg").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  $("#main").css("margin-left", -1 * $("#main").width() / 2 + "px").css("margin-top", -1 * $("#main").height() / 2 + "px");
 
   var countryColors = d3.scale.category10();
 
