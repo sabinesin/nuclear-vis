@@ -56,6 +56,10 @@ svg {
   shape-rendering: crispEdges;
 }
 
+rect.bar {
+  -webkit-transition: fill-opacity 250ms linear;
+}
+
 .selecting rect.bar {
   fill-opacity: 0.5;
 }
