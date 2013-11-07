@@ -167,7 +167,7 @@ $(document).ready(function() {
         .selectAll(".detonation")
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
-        .attr("class", "detonation")
+        .attr("class", "detonation shown")
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
         .attr("r", 0)
@@ -298,12 +298,18 @@ $(document).ready(function() {
           return s[0] <= year && year <= s[1];
         });
 
-        detonations.transition().attr("r", function(d) {
+        detonations.classed("shown", function(d) {
             var year = d["formattedDate"];
-            var present = s[0] <= year && year <= s[1];
 
-            return present ? detonationYieldRadius(d) : 0.0;
-        });
+            return s[0] <= year && year <= s[1];
+          })
+          .transition()
+          .attr("r", function(d) {
+              var year = d["formattedDate"];
+              var present = s[0] <= year && year <= s[1];
+
+              return present ? detonationYieldRadius(d) : 0.0;
+          });
       }
 
       function brushend() {
@@ -311,6 +317,7 @@ $(document).ready(function() {
 
         if (d3.event.target.empty()) {
           detonations.transition().attr("r", detonationYieldRadius);
+          detonations.classed("shown", true);
         }
       }
     });
@@ -330,7 +337,7 @@ $(document).ready(function() {
   }
 
   function zoomed() {
-    mapGroup.selectAll(".detonation")
+    mapGroup.selectAll(".detonation.shown")
       .attr("r", detonationYieldRadius);
 
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
