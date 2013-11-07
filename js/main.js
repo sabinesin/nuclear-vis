@@ -212,7 +212,7 @@ $(document).ready(function() {
         .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
 
       var y = d3.scale.linear()
-        .range([3, margin.bottom - timelineMargin.top - timelineMargin.bottom]);
+        .range([0, margin.bottom - timelineMargin.top - timelineMargin.bottom]);
 
       var xAxis = d3.svg.axis()
           .scale(x)
@@ -222,6 +222,8 @@ $(document).ready(function() {
       var yearsTemp = {};
 
       data.forEach(function(country) {
+        var name = country["name"];
+
         country["data"].forEach(function(detonation) {
           var year = detonation["YEAR"];
 
@@ -230,22 +232,40 @@ $(document).ready(function() {
           }
 
           if (yearsTemp[year] == null) {
-            yearsTemp[year] = 0;
+            yearsTemp[year] = {};
           }
 
-          yearsTemp[year]++;
+          if (yearsTemp[year][name] == null) {
+            yearsTemp[year][name] = 0;
+          }
+
+          yearsTemp[year][name]++;
         });
       });
 
       for (var key in yearsTemp) {
+        var countriesTemp = yearsTemp[key];
+
+        var countries = [];
+        var y0 = 0;
+
+        for (var country in countriesTemp) {
+          countries.push({
+            "y0": y0,
+            "y1": y0 += countriesTemp[country],
+            "name": country
+          });
+        }
+
         years.push({
           "year": parseDate(key),
-          "detonations": yearsTemp[key]
+          "detonations": countries,
+          "total": countries[countries.length - 1]["y1"]
         });
       }
 
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
-      y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
+      y.domain([0, d3.max(years, function(d) { return d["total"]; })]);
 
       x.nice();
 
@@ -264,14 +284,20 @@ $(document).ready(function() {
           .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
           .call(xAxis);
 
-      var detonationBars = timeline.selectAll(".bar")
-        .data(years)
-      .enter().append("rect")
-        .attr("class", "bar")
-        .attr("x", function(d) { return x(d["year"]); })
-        .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["detonations"]); })
-        .attr("width", width / (y.domain()[1] - y.domain()[0]))
-        .attr("height", function(d) { return y(d["detonations"]); });
+      var year = timeline.selectAll(".year")
+          .data(years)
+        .enter().append("g")
+          .attr("class", "g")
+          .attr("transform", function(d) { return "translate(" + x(d["year"]) + ",0)"; });
+
+      var detonationBars = year.selectAll("rect.bar")
+          .data(function(d) { return d["detonations"]; })
+        .enter().append("rect")
+          .attr("class", "bar")
+          .attr("width", width / (y.domain()[1] - y.domain()[0]))
+          .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["y1"]); })
+          .attr("height", function(d) { return y(d["y1"]) - y(d["y0"]); })
+          .style("fill", function(d) { return countryColors(d["name"]); });
 
       timeline.append("g")
         .attr("class", "brush")
