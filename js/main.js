@@ -21,7 +21,8 @@ $(document).ready(function() {
   };
 
   var width = 960 - margin.left - margin.right;
-  var height = 500 - margin.top - margin.bottom;
+	var totalHeight = 500;
+  var height = totalHeight - margin.top - margin.bottom;
 
   var zoom = d3.behavior.zoom()
       .scaleExtent([1, 10])
@@ -29,7 +30,7 @@ $(document).ready(function() {
 
   var svg = d3.select("body").append("svg")
     .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("height", totalHeight)
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
@@ -81,7 +82,8 @@ $(document).ready(function() {
     .defer(d3.csv, "data/Pakistan.csv")
     .defer(d3.csv, "data/PRCChina.csv")
     .defer(d3.csv, "data/Unknown.csv")
-    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, unknown) {
+		.defer(d3.csv, "data/Treaties.csv")
+    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, unknown, treaties) {
       if (errors) {
         console.log("Could not draw data due to error in retrieving data.");
         console.error(errors);
@@ -115,7 +117,7 @@ $(document).ready(function() {
           "data": pakistan
         },
         {
-          "name": "Chian",
+          "name": "China",
           "data": china
         },
         {
@@ -246,7 +248,10 @@ $(document).ready(function() {
           "detonations": yearsTemp[key]
         });
       }
-
+			
+			// Addition
+			years.sort(function(a, b) { return a["year"] - b["year"]; }); //for using binary search later?
+			
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
 
@@ -263,10 +268,10 @@ $(document).ready(function() {
         .attr("height", margin.bottom);
 
       timeline.append("g")
-          .attr("class", "x axis")
-          .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
-          .call(xAxis);
-
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
+				.call(xAxis);
+					
       var detonationBars = timeline.selectAll(".bar")
         .data(years)
       .enter().append("rect")
@@ -304,6 +309,7 @@ $(document).ready(function() {
             return s[0] <= year && year <= s[1];
           })
           .transition()
+					.attr("cx", function(d) { return x2(d["formattedDate"]); })
           .attr("r", function(d) {
               var year = d["formattedDate"];
               var present = s[0] <= year && year <= s[1];
@@ -319,7 +325,132 @@ $(document).ready(function() {
           detonations.transition().attr("r", detonationYieldRadius);
           detonations.classed("shown", true);
         }
+				
+				var s = d3.event.target.extent();
+				// Linking with second axis
+				x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
+				// Updating the focused timeline
+        d3.selectAll(".focus").classed("shown", function(d) {
+            var year = d["formattedDate"];
+
+            return s[0] <= year && year <= s[1];
+          })
+					.attr("cx", function(d) { return x2(d["formattedDate"]); })
+          .attr("opacity", function(d) {
+              var year = d["formattedDate"];
+              var present = s[0] <= year && year <= s[1];
+
+              return present ? .75 : 0.0;
+          });
+				timelineFocus.select(".x.axis").call(xAxis2);
       }
+			
+			
+// Addition
+			// Treaties text boxes
+			var treatyMarksHeight = 50;
+			totalHeight += treatyMarksHeight;
+			height += treatyMarksHeight;
+			
+			d3.select("svg")
+				.attr("height", totalHeight)
+		
+			var treatySection = svg.append("g")
+					.attr("transform", "translate(" + margin.left + "," + height + ")");
+				
+			treatySection.append("rect")
+        .attr("class", "background")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", treatyMarksHeight)
+
+			var treatyMarks = treatySection.selectAll(".treaty")
+					.data(treaties)
+					.enter()
+				
+			timeline.selectAll(".marks")
+			.data(treaties)
+				.enter()
+			.append("rect")
+        .attr("class", "line")
+        .attr("x", function(d) { return x(parseDate(d["YEAR"])); })
+        .attr("y", margin.bottom - timelineMargin.bottom )
+        .attr("width", 1)
+        .attr("height", function(d) { return parseFloat(d["YEAR"]) % 5 == 0 ? 0 : timelineMargin.bottom; })
+				
+			var textboxY = 10;
+			
+			treatyMarks.append("rect")
+        .attr("class", "line")
+        .attr("x", function(d) { return x(parseDate(d["YEAR"])); })
+        .attr("y", 0)
+        .attr("width", 1)
+				.attr("height", textboxY)
+			
+			treatyMarks.append("foreignObject")
+				.attr('x', function(d) { return x(parseDate(d["YEAR"])) - 50; })
+				.attr('y', textboxY)
+				.attr('width', 100)
+				.attr('height', 100)
+					.append("xhtml:div")
+						.append("p")
+						.style("background-color", "#d8d8d8")
+						.style("border-style", "solid")
+						.style("border-width", "1px")
+						.style("text-align", "center")
+							.text(function(d) { return d["NAME"]; })
+						.on("click", function(d) {d3.select(this).style("background-color", "#000000");});
+			
+			// Focus Timeline
+			var x2 = d3.time.scale()
+        .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
+
+      var xAxis2 = d3.svg.axis()
+          .scale(x2)
+          .orient("bottom");
+			
+			x2.domain(d3.extent(years, function(d) { return d["year"]; }));
+			x2.nice();
+			
+			var timelineFocusHeight = 50;
+			totalHeight += timelineFocusHeight;
+			height += timelineFocusHeight;
+			
+			d3.select("svg")
+				.attr("height", totalHeight)
+		
+      var timelineFocus = svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+
+      timelineFocus.append("rect")
+        .attr("class", "background")
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr("width", width)
+        .attr("height", margin.bottom);
+
+      timelineFocus.append("g")
+				.attr("class", "x axis")
+				.attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
+				.call(xAxis2);
+			
+			timelineFocus.append("g")
+				.selectAll(".countryFocus")
+        .data(data)
+      .enter().append("g")
+        .style("fill", function(d) { return countryColors(d["name"]); })
+        .selectAll(".focus")
+        .data(function(d) { return d["data"]; })
+      .enter().append("circle")
+        .attr("class", "focus shown")
+			  .attr("cx", function(d) { return x2(d["formattedDate"]); })
+        .attr("cy", margin.bottom - timelineMargin.bottom )
+        .attr("r", 5)
+        .attr("opacity", 0.75)
+			
+
+			
     });
 
   function detonationYieldRadius(d) {
