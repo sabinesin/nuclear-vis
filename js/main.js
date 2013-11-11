@@ -312,7 +312,6 @@ $(document).ready(function() {
             return s[0] <= year && year <= s[1];
           })
           .transition()
-					.attr("cx", function(d) { return x2(d["formattedDate"]); })
           .attr("r", function(d) {
               var year = d["formattedDate"];
               var present = s[0] <= year && year <= s[1];
@@ -333,18 +332,18 @@ $(document).ready(function() {
 				// Linking with second axis
 				x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
 				// Updating the focused timeline
-        d3.selectAll(".focus").classed("shown", function(d) {
-            var year = d["formattedDate"];
+        // d3.selectAll(".focus").classed("shown", function(d) {
+            // var year = d["formattedDate"];
 
-            return s[0] <= year && year <= s[1];
-          })
-					.attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
-          .attr("opacity", function(d) {
-              var year = d["formattedDate"];
-              var present = s[0] <= year && year <= s[1];
+            // return s[0] <= year && year <= s[1];
+          // })
+					// .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
+          // .attr("opacity", function(d) {
+              // var year = d["formattedDate"];
+              // var present = s[0] <= year && year <= s[1];
 
-              return present ? .75 : 0.0;
-          });
+              // return present ? .75 : 0.0;
+          // });
 				timelineFocus.select(".x.axis").call(xAxis2);
       }
 			
