@@ -156,6 +156,9 @@ $(document).ready(function() {
       data.forEach(function(country) {
         country["data"].forEach(function(detonation) {
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
+					
+					var format = d3.time.format("%Y %m %d");
+					detonation["formattedDateComplete"] = format.parse(detonation["YEAR"] + " " + detonation["MON"] + " " + detonation["DAY"]);
         });
       });
 
@@ -335,7 +338,7 @@ $(document).ready(function() {
 
             return s[0] <= year && year <= s[1];
           })
-					.attr("cx", function(d) { return x2(d["formattedDate"]); })
+					.attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
           .attr("opacity", function(d) {
               var year = d["formattedDate"];
               var present = s[0] <= year && year <= s[1];
@@ -348,9 +351,9 @@ $(document).ready(function() {
 			
 // Addition
 			// Treaties text boxes
-			var treatyMarksHeight = 50;
+			var treatyMarksHeight = 60;
 			totalHeight += treatyMarksHeight;
-			height += treatyMarksHeight;
+			height += margin.bottom;
 			
 			d3.select("svg")
 				.attr("height", totalHeight)
@@ -415,7 +418,7 @@ $(document).ready(function() {
 			
 			var timelineFocusHeight = 50;
 			totalHeight += timelineFocusHeight;
-			height += timelineFocusHeight;
+			height += treatyMarksHeight;
 			
 			d3.select("svg")
 				.attr("height", totalHeight)
@@ -444,12 +447,12 @@ $(document).ready(function() {
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
         .attr("class", "focus shown")
-			  .attr("cx", function(d) { return x2(d["formattedDate"]); })
+			  .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
         .attr("cy", margin.bottom - timelineMargin.bottom )
         .attr("r", 5)
         .attr("opacity", 0.75)
 			
-
+			height += timelineFocusHeight;
 			
     });
 
