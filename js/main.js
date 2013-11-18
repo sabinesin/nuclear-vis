@@ -157,8 +157,8 @@ $(document).ready(function() {
         country["data"].forEach(function(detonation) {
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
           
-          var format = d3.time.format("%Y %m %d");
-          detonation["formattedDateComplete"] = format.parse(detonation["YEAR"] + " " + detonation["MON"] + " " + detonation["DAY"]);
+          var parseDateComplete = d3.time.format("%Y %b %d").parse;
+          detonation["formattedDateComplete"] = parseDateComplete(detonation["YEAR"] + " " + detonation["MON"] + " " + detonation["DAY"]);
         });
       });
 
@@ -183,6 +183,23 @@ $(document).ready(function() {
         .duration(1000)
         .attr("r", detonationYieldRadius);
 
+			// Map interactivity instructions and cursor indicator over map
+			var instructions = svg.append("g")
+				.attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
+			instructions.append("text")
+        .attr("x", 0)
+        .attr("y", mapMargin.top + 10)
+        .text("Double click / Shift + Double click or Mouse wheel to zoom");
+               
+			instructions.append("text")
+				.attr("x", 0)
+				.attr("y", mapMargin.top + 25)
+				.text("Click + Drag to pan");
+			
+			d3.select(".overlay").style("cursor", "zoom-in")
+				.on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing");})
+				.on("mouseup", function() {d3.select(this).style("cursor", "zoom-in");})
+				
       // Draw legend
       legend.append("rect")
         .attr("class", "background")
@@ -328,26 +345,29 @@ $(document).ready(function() {
           detonations.classed("shown", true);
         }
         
+        // Linking with focused timeline axis
         var s = d3.event.target.extent();
-        // Linking with second axis
-        x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
+				var interval = d3.time.year;	
+				var adjustedMax = interval.ceil(s[1]);
+				
+        x2.domain(d3.event.target.empty() ? x2.domain() : [s[0], adjustedMax]);
+				
         // Updating the focused timeline
-        // d3.selectAll(".focus").classed("shown", function(d) {
-            // var year = d["formattedDate"];
+        d3.selectAll(".focus").classed("shown", function(d) {
+            var year = d["formattedDate"];
 
-            // return s[0] <= year && year <= s[1];
-          // })
-          // .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
-          // .attr("opacity", function(d) {
-              // var year = d["formattedDate"];
-              // var present = s[0] <= year && year <= s[1];
+            return s[0] <= year && year <= s[1];
+          })
+          .attr("cx", function(d) {return x2(d["formattedDateComplete"]); })
+          .attr("opacity", function(d) {
+              var cx = x2(d["formattedDateComplete"]);
+              var present = timelineMargin.left <= cx && cx <= width - timelineMargin.right - timelineMargin.left;
 
-              // return present ? .75 : 0.0;
-          // });
+              return present ? .75 : 0.0;
+          });
         timelineFocus.select(".x.axis").call(xAxis2);
       }
       
-      // Addition
       // Treaties text boxes
       var treatyMarksHeight = 60;
       totalHeight += treatyMarksHeight;
@@ -396,12 +416,13 @@ $(document).ready(function() {
         .attr('height', 100)
           .append("xhtml:div")
             .append("p")
-            .style("background-color", "#d8d8d8")
             .style("border-style", "solid")
             .style("border-width", "1px")
             .style("text-align", "center")
               .text(function(d) { return d["NAME"]; })
-            .on("click", function(d) {d3.select(this).style("background-color", "#000000");});
+            .on("mouseover", function(d) {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
+						.on("mouseout", function(d) {d3.select(this).style("background-color", "#ffffff");});
+
       
       // Focus Timeline
       var x2 = d3.time.scale()
@@ -445,7 +466,7 @@ $(document).ready(function() {
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
         .attr("class", "focus shown")
-        .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
+        .attr("cx", function(d) { return x2(d["formattedDate"]); })
         .attr("cy", margin.bottom - timelineMargin.bottom )
         .attr("r", 5)
         .attr("opacity", 0.75)
