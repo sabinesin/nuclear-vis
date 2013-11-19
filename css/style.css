@@ -17,6 +17,10 @@ body {
   user-select: none !important;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 svg {
   position: absolute;
   top: 50%;

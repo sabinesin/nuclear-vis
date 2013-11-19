@@ -184,18 +184,6 @@ $(document).ready(function() {
         .attr("r", detonationYieldRadius);
 
 			// Map interactivity instructions and cursor indicator over map
-			var instructions = svg.append("g")
-				.attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
-			instructions.append("text")
-        .attr("x", 0)
-        .attr("y", mapMargin.top + 10)
-        .text("Double click / Shift + Double click or Mouse wheel to zoom");
-               
-			instructions.append("text")
-				.attr("x", 0)
-				.attr("y", mapMargin.top + 25)
-				.text("Click + Drag to pan");
-			
 			d3.select(".overlay").style("cursor", "zoom-in")
 				.on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing");})
 				.on("mouseup", function() {d3.select(this).style("cursor", "zoom-in");})
@@ -347,10 +335,11 @@ $(document).ready(function() {
         
         // Linking with focused timeline axis
         var s = d3.event.target.extent();
-				var interval = d3.time.year;	
-				var adjustedMax = interval.ceil(s[1]);
+				var yearInterval = d3.time.year;	
+				var adjustedMin = yearInterval.ceil(s[0]),
+					adjustedMax = yearInterval.ceil(s[1]);
 				
-        x2.domain(d3.event.target.empty() ? x2.domain() : [s[0], adjustedMax]);
+        x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
 				
         // Updating the focused timeline
         d3.selectAll(".focus").classed("shown", function(d) {
@@ -420,8 +409,14 @@ $(document).ready(function() {
             .style("border-width", "1px")
             .style("text-align", "center")
               .text(function(d) { return d["NAME"]; })
-            .on("mouseover", function(d) {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
-						.on("mouseout", function(d) {d3.select(this).style("background-color", "#ffffff");});
+            .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
+						.on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
+						.on("click", function(d) {
+							 popup.select(".contents")
+								.html("<b>" + d["YEAR"] + "<br>" + d["NAME"] + "</b><br><br>" + d["DESCRIPTION"]  + "<br><br><a href=" + d["WEBSITE"] + ">" + d["WEBSITE"] + "</a>");
+								
+							popup.style("visibility", "visible");
+						})
 
       
       // Focus Timeline
@@ -475,6 +470,56 @@ $(document).ready(function() {
       
     });
 
+  // Mouse map interactivity message
+  var controls = '<b>Controls</b><br><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
+
+  // Popup
+  var popupProperties = {
+		width: width / 2,
+		height: height / 2,
+    top: height / 4,
+    left: width / 4,
+		margin: 20,
+  };
+
+  var popup = svg.append("g")
+        .attr("transform", "translate(" +  popupProperties.left + "," + popupProperties.top + ")")
+        //.style("visibility", "hidden")
+				
+  popup.append("rect")
+    .attr("class", "background")
+    .attr("width", popupProperties.width)
+    .attr("height", popupProperties.height)
+    .style("opacity", .70)
+		
+  popup.append("g")
+    .attr("transform", "translate(" + (popupProperties.width - 25) + ", 0)")
+    .selectAll(".redCross")
+      .data([{color: "#ffffff", w: 25, h: 25, x: 0, y: 0, r: 0},
+            {color: "#B40404", w: 20, h: 6, x: 7, y: 4, r: 45},
+            {color: "#B40404", w: 20, h: 6, x: 3, y: 18, r: -45}])
+      .enter()
+      .append("rect")
+        .attr("transform", function(d) { return "translate(" + d.x + ", " + d.y + ") rotate(" + d.r + ")"; })
+        .attr("width", function(d) { return d.w; })
+        .attr("height", function(d) { return d.h; })
+        .attr("fill", function(d) { return d.color; })
+        .style("opacity", function(d, i) { return i == 0 ? 0 : 1; })
+          .on("mouseover", function() {d3.select(this).style("cursor", "pointer");})
+          .on("click", function(){return popup.style("visibility", "hidden");});
+
+  popup.append("foreignObject")
+      .attr('x', popupProperties.margin)
+      .attr('y', popupProperties.margin)
+      .attr('width', function() { return popupProperties.width - popupProperties.margin * 2; })
+      .attr('height', function() { return popupProperties.height - popupProperties.margin * 2; })
+        .append("xhtml:div")
+          .attr("class", "contents")
+          .style("height", function() { return popupProperties.height - popupProperties.margin * 2 + "px"; })
+          .style("overflow", "auto")
+          .html(controls);
+
+						
   function detonationYieldRadius(d) {
     var value = parseFloat(d["YIELD"]);
 
