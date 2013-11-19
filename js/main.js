@@ -183,10 +183,24 @@ $(document).ready(function() {
         .duration(1000)
         .attr("r", detonationYieldRadius);
 
-			// Map interactivity instructions and cursor indicator over map
+			// Cursor indicator over map
 			d3.select(".overlay").style("cursor", "zoom-in")
-				.on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing");})
-				.on("mouseup", function() {d3.select(this).style("cursor", "zoom-in");})
+				.on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing").style("cursor", "-webkit-grabbing").style("cursor", "grabbing");})
+        .on("mouseup", function() { 
+          if (d3.event.shiftKey)
+            d3.select(this).style("cursor", "-webkit-zoom-out").style("cursor", "zoom-out");
+          else
+            d3.select(this).style("cursor", "-webkit-zoom-in").style("cursor", "zoom-in");
+        })
+
+      d3.select("body")
+        .on("keydown", function() {
+          if (d3.event.shiftKey) 
+            d3.select(".overlay").style("cursor", "-webkit-zoom-out").style("cursor", "zoom-out");
+        })
+        .on("keyup", function() {
+          d3.select(".overlay").style("cursor", "-webkit-zoom-in").style("cursor", "zoom-in");
+        })
 				
       // Draw legend
       legend.append("rect")
@@ -401,22 +415,24 @@ $(document).ready(function() {
       treatyMarks.append("foreignObject")
         .attr('x', function(d) { return x(parseDate(d["YEAR"])) - 50; })
         .attr('y', textboxY)
-        .attr('width', 100)
-        .attr('height', 100)
+        .attr('width', 102)
+        .attr('height', 102)
           .append("xhtml:div")
             .append("p")
-            .style("border-style", "solid")
-            .style("border-width", "1px")
+            .style("border", "2px double #F7FE2E")
+            .style("outline", "1px solid #000")
+            .style("outline-offset", "-3px")
+            .style("padding", "2px")
             .style("text-align", "center")
               .text(function(d) { return d["NAME"]; })
             .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
-						.on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
-						.on("click", function(d) {
-							 popup.select(".contents")
-								.html("<b>" + d["YEAR"] + "<br>" + d["NAME"] + "</b><br><br>" + d["DESCRIPTION"]  + "<br><br><a href=" + d["WEBSITE"] + ">" + d["WEBSITE"] + "</a>");
-								
-							popup.style("visibility", "visible");
-						})
+            .on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
+            .on("click", function(d) {
+               popup.select(".contents")
+                .html("<b>" + d["YEAR"] + "<br>" + d["NAME"] + "</b><br><br>" + d["DESCRIPTION"]  + "<br><br>Learn more: <a href=" + d["WEBSITE"] + ">" + d["NAME"] + " on Wikipedia</a>");
+                
+              popup.style("visibility", "visible");
+            })
 
       
       // Focus Timeline
@@ -470,8 +486,36 @@ $(document).ready(function() {
       
     });
 
-  // Mouse map interactivity message
-  var controls = '<b>Controls</b><br><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
+  // Help/welcome/controls button and message
+  var controls = '<br><br><b>Controls</b><br><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
+  
+  var welcomeMessage = "<h1>Welcome</h1>" + 
+      "<h2>Global Nuclear Detonations from 1946 to 2010</h2>" +
+      "<br><br>Data source: <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>" +
+      controls;
+      
+  svg.append("g")
+    .attr("transform", "translate(" + mapMargin.left + "," + (mapMargin.top + 5) + ")")
+    .append("foreignObject")
+    .attr('width', 50)
+    .attr('height', 70)
+      .append("xhtml:div")
+        .append("p")
+        .style("border", "2px double #F7FE2E")
+        .style("outline", "1px solid #000")
+        .style("outline-offset", "-3px")
+        .style("padding", "2px")
+          .text("Help?")
+        .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
+        .on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
+            .on("click", function(d) {
+               popup.select(".contents")
+                .html(welcomeMessage);
+                
+              popup.style("visibility", "visible");
+            })
+  
+
 
   // Popup
   var popupProperties = {
@@ -517,7 +561,7 @@ $(document).ready(function() {
           .attr("class", "contents")
           .style("height", function() { return popupProperties.height - popupProperties.margin * 2 + "px"; })
           .style("overflow", "auto")
-          .html(controls);
+          .html(welcomeMessage);
 
 						
   function detonationYieldRadius(d) {
