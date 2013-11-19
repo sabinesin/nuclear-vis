@@ -490,7 +490,7 @@ $(document).ready(function() {
   var controls = '<br><br><b>Controls</b><br><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
   
   var welcomeMessage = "<h1>Welcome</h1>" + 
-      "<h2>Global Nuclear Detonations from 1946 to 2010</h2>" +
+      "<h2>Global Nuclear Detonations from 1945 to 2010</h2>" +
       "<br><br>Data source: <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>" +
       controls;
       
