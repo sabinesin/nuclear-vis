@@ -461,7 +461,7 @@ $(document).ready(function() {
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
         .attr("class", "focus shown")
-        .attr("cx", function(d) { return x2(d["formattedDate"]); })
+        .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
         .attr("cy", margin.bottom - timelineMargin.bottom )
         .attr("r", 5)
         .attr("opacity", 0.75)
