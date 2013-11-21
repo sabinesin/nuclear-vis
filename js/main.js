@@ -240,9 +240,7 @@ $(document).ready(function() {
       
       var yieldY = d3.scale.linear()
           .range([yieldScaleHeight, 0])
-          .domain(d3.extent(domain, function(d) {
-            return parseFloat(d);
-          }));
+          .domain(yield.domain());
           
       yieldY.nice();
 
@@ -264,13 +262,57 @@ $(document).ready(function() {
           .style("font-size", "7pt")
           .text("(Unknown)");
 
-      yieldScale.selectAll("circle")
+      var yieldScaleCircles = yieldScale.selectAll("circle")
           .data(d3.range(0, 60000, 5000))
         .enter().append("circle")
           .attr("r", function(d) { return yield(d);})
           .attr("cy", function(d) { return yieldY(d);})
           .style("fill", "#A4A4A4")
-          .style('opacity', .25)
+          .style('opacity', .25);
+          
+      // Brushing for the yield scale
+      yieldScale.append("g")
+        .attr("class", "brush")
+        .call(d3.svg.brush().x(yieldY)
+        .on("brushstart", brushstartYield)
+        .on("brush", brushmoveYield)
+        .on("brushend", brushendYield))
+
+      function brushstartYield() {
+        yieldScale.classed("selecting", true);
+      }
+
+      function brushmoveYield() {
+        var s = d3.event.target.extent();
+
+        yieldScaleCircles.classed("selected", function(d) {
+          var yield = yieldY.invert(d.attr("cy"));
+
+          return s[0] <= yield && yield <= s[1];
+        });
+
+        // detonations.classed("shown", function(d) {
+            // var yield = d["YIELD"];
+
+            // return s[0] <= yield && yield <= s[1];
+          // })
+          // .transition()
+          // .attr("r", function(d) {
+              // var year = d["formattedDate"];
+              // var present = s[0] <= year && year <= s[1];
+
+              // return present ? detonationYieldRadius(d) : 0.0;
+          // });
+      }
+
+      function brushendYield() {
+        yieldScale.classed("selecting", !d3.event.target.empty());
+
+        if (d3.event.target.empty()) {
+          detonations.transition().attr("r", detonationYieldRadius);
+          detonations.classed("shown", true);
+        }
+      }
           
       // Draw legend
       legend.append("rect")
@@ -341,8 +383,7 @@ $(document).ready(function() {
         });
       }
       
-      // Addition
-      years.sort(function(a, b) { return a["year"] - b["year"]; }); //for using binary search later?
+      //years.sort(function(a, b) { return a["year"] - b["year"]; }); //for using binary search later?
       
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
