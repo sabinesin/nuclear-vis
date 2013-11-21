@@ -106,9 +106,10 @@ $(document).ready(function() {
     .defer(d3.csv, "data/NorthKorea.csv")
     .defer(d3.csv, "data/Pakistan.csv")
     .defer(d3.csv, "data/PRCChina.csv")
+    .defer(d3.csv, "data/France.csv")
     .defer(d3.csv, "data/Unknown.csv")
     .defer(d3.csv, "data/Treaties.csv")
-    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, unknown, treaties) {
+    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, france, unknown, treaties) {
       if (errors) {
         console.log("Could not draw data due to error in retrieving data.");
         console.error(errors);
@@ -144,6 +145,10 @@ $(document).ready(function() {
         {
           "name": "China",
           "data": china
+        },
+        {
+          "name": "France",
+          "data": france
         },
         {
           "name": "Unknown",
