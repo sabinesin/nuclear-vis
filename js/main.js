@@ -239,7 +239,7 @@ $(document).ready(function() {
       var yieldScaleHeight = 150;
       
       var yieldY = d3.scale.linear()
-          .rangeRound([yieldScaleHeight, 0])
+          .range([yieldScaleHeight, 0])
           .domain(d3.extent(domain, function(d) {
             return parseFloat(d);
           }));
@@ -552,11 +552,13 @@ $(document).ready(function() {
     });
 
   // Help/welcome/controls button and message
-  var controls = '<br><br><b>Controls</b><br><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
+  var controls = '<br><br><b>Map Controls:</b><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
   
   var welcomeMessage = "<h1>Welcome</h1>" + 
       "<h2>Global Nuclear Detonations from 1945 to 2010</h2>" +
-      "<br><br>Data source: <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>" +
+      "<br>Nuclear detonations: <b>Yield</b> (radioactivity emitted in kilotons) is associated with each detonation. To view detonations within a smaller timespan, click on the timeline below the map and drag over the bar chart. Each bar corresponds to the number of detonations in that year. Whatever range of years highlighted will show detonations in the bottommost timeline with a greater precision." +
+      "<br><br>Click on <b>treaties</b> and other nuclear events in the main timeline for a greater nuclear context." +
+      "<br><br><b>Data source:</b> Data for nuclear detonations was compiled from <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>." +
       controls;
       
   svg.append("g")
@@ -584,10 +586,10 @@ $(document).ready(function() {
 
   // Popup
   var popupProperties = {
-		width: width / 2,
-		height: height / 2,
+		width: width * 5 / 8,
+		height: height * 2 / 3,
     top: height / 4,
-    left: width / 4,
+    left: width / 5,
 		margin: 20,
   };
 
