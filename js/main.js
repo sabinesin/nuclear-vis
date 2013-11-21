@@ -603,7 +603,7 @@ $(document).ready(function() {
   
   var welcomeMessage = "<h1>Welcome</h1>" + 
       "<h2>Global Nuclear Detonations from 1945 to 2010</h2>" +
-      "<br>Nuclear detonations: <b>Yield</b> (radioactivity emitted in kilotons) is associated with each detonation. To view detonations within a smaller timespan, click on the timeline below the map and drag over the bar chart. Each bar corresponds to the number of detonations in that year. Whatever range of years highlighted will show detonations in the bottommost timeline with a greater precision." +
+      "<br>Nuclear detonations: <b>Yield</b> (energy outputted in kilotons) is associated with each detonation. To view detonations within a smaller timespan, click on the timeline below the map and drag over the bar chart. Each bar corresponds to the number of detonations in that year. Whatever range of years highlighted will show detonations in the bottommost timeline with a greater precision." +
       "<br><br>Click on <b>treaties</b> and other nuclear events in the main timeline for a greater nuclear context." +
       "<br><br><b>Data source:</b> Data for nuclear detonations was compiled from <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>." +
       controls;
