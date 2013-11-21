@@ -252,12 +252,18 @@ $(document).ready(function() {
         
       var yieldScaleDrawn = yieldScale.append("g")
           .attr("class", "axis")
-          .call(yieldAxis)
-        .append("text")
+          .call(yieldAxis);
+          
+      yieldScaleDrawn.append("text")
           .attr("y", yieldScaleHeight + 20)
           .style("text-anchor", "middle")
           .text("Yield");
-          
+
+      yieldScaleDrawn.append("text")
+          .attr("y", yieldScaleHeight + 2)
+          .style("font-size", "7pt")
+          .text("(Unknown)");
+
       yieldScale.selectAll("circle")
           .data(d3.range(0, 60000, 5000))
         .enter().append("circle")
