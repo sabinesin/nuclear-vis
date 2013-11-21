@@ -5,24 +5,41 @@ $(document).ready(function() {
     bottom: 50,
     left: 0
   };
-
+  
+  var sidebarMargin = {
+    top: 10,
+    bottom: 50,
+    left: 0
+  };
+  
+  var sidebarWidth = 100;
+  
+  var mainMargin = {
+    top: 10,
+    right: 0,
+    bottom: 50,
+    left: sidebarWidth,
+  };
+  
   var mapMargin = {
     top: 10,
     right: 0,
     bottom: 0,
-    left: 0
+    left: mainMargin.left
   };
 
   var legendMargin = {
     top: 0,
     right: 0,
     bottom: 5,
-    left: 0
+    left: mainMargin.left
   };
 
-  var width = 960 - margin.left - margin.right;
-  var totalHeight = 500;
-  var height = totalHeight - margin.top - margin.bottom;
+  var width = 960 - margin.left - margin.right,
+      mainWidth = width - sidebarWidth;
+
+  var totalHeight = 500,
+      height = totalHeight - margin.top - margin.bottom;
 
   var zoom = d3.behavior.zoom()
       .scaleExtent([1, 10])
@@ -41,12 +58,20 @@ $(document).ready(function() {
     .attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
 
   var legend = svg.append("g");
-
+  
   svg.append("rect")
-    .attr("class", "overlay")
+    .attr("class", "background")
+    .attr("id", "sidebar")
     .attr("x", 0)
     .attr("y", 0)
-    .attr("width", width)
+    .attr("width", sidebarWidth)
+    .attr("height", height);
+      
+  svg.append("rect")
+    .attr("class", "overlay")
+    .attr("x", sidebarWidth)
+    .attr("y", 0)
+    .attr("width", mainWidth)
     .attr("height", height)
     .call(zoom);
 
@@ -191,7 +216,7 @@ $(document).ready(function() {
             d3.select(this).style("cursor", "-webkit-zoom-out").style("cursor", "zoom-out");
           else
             d3.select(this).style("cursor", "-webkit-zoom-in").style("cursor", "zoom-in");
-        })
+        });
 
       d3.select("body")
         .on("keydown", function() {
@@ -200,20 +225,59 @@ $(document).ready(function() {
         })
         .on("keyup", function() {
           d3.select(".overlay").style("cursor", "-webkit-zoom-in").style("cursor", "zoom-in");
-        })
-				
+        });
+				 
+      // Detonation Yield Scale
+      var yieldMargin = {
+        top: 50,
+        right: 0,
+        left: 0
+      };
+      
+      var yieldScale = svg.append("g")
+        .attr("transform", "translate(" + (sidebarWidth / 2) + " ," + yieldMargin.top + ")")
+      var yieldScaleHeight = 150;
+      
+      var yieldY = d3.scale.linear()
+          .rangeRound([yieldScaleHeight, 0])
+          .domain(d3.extent(domain, function(d) {
+            return parseFloat(d);
+          }));
+          
+      yieldY.nice();
+
+      var yieldAxis = d3.svg.axis()
+        .scale(yieldY)
+        .orient("left");
+        
+      var yieldScaleDrawn = yieldScale.append("g")
+          .attr("class", "axis")
+          .call(yieldAxis)
+        .append("text")
+          .attr("y", yieldScaleHeight + 20)
+          .style("text-anchor", "middle")
+          .text("Yield");
+          
+      yieldScale.selectAll("circle")
+          .data(d3.range(0, 60000, 5000))
+        .enter().append("circle")
+          .attr("r", function(d) { return yield(d);})
+          .attr("cy", function(d) { return yieldY(d);})
+          .style("fill", "#A4A4A4")
+          .style('opacity', .25)
+          
       // Draw legend
       legend.append("rect")
         .attr("class", "background")
-        .attr("x", 0)
+        .attr("x", legendMargin.left)
         .attr("y", 0)
-        .attr("width", width)
+        .attr("width", mainWidth)
         .attr("height", mapMargin.top + legendMargin.bottom);
       
       var legendItem = legend.selectAll(".item")
         .data(data)
       .enter().append("g")
-        .attr("transform", function(d, i) { return "translate(" + i * (width / data.length) + ", 0)"; });
+        .attr("transform", function(d, i) { return "translate(" + (legendMargin.left + i * (mainWidth / data.length)) + ", 0)"; });
 
       legendItem.append("rect")
         .attr("width", mapMargin.top)
@@ -353,7 +417,8 @@ $(document).ready(function() {
 				var adjustedMin = yearInterval.ceil(s[0]),
 					adjustedMax = yearInterval.ceil(s[1]);
 				
-        x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
+        //x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
+				x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
 				
         // Updating the focused timeline
         d3.selectAll(".focus").classed("shown", function(d) {
@@ -562,7 +627,6 @@ $(document).ready(function() {
           .style("height", function() { return popupProperties.height - popupProperties.margin * 2 + "px"; })
           .style("overflow", "auto")
           .html(welcomeMessage);
-
 						
   function detonationYieldRadius(d) {
     var value = parseFloat(d["YIELD"]);
