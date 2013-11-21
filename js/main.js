@@ -76,8 +76,8 @@ $(document).ready(function() {
     .call(zoom);
 
   var projection = d3.geo.equirectangular()
-    .scale(150)
-    .translate([width / 2, height / 2])
+    .scale(150 * mainWidth / width)
+    .translate([(width - mapMargin.left - mapMargin.right) / 2, height / 2])
     .rotate([0, 0]);
 
   var yield = d3.scale.linear()
