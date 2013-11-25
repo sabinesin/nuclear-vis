@@ -53,6 +53,14 @@ $(document).ready(function() {
 
   var countryColors = d3.scale.category10();
 
+  svg.append("rect")
+    .attr("class", "overlay")
+    .attr("x", sidebarWidth)
+    .attr("y", 0)
+    .attr("width", mainWidth)
+    .attr("height", height)
+    .call(zoom);
+
   var mapGroup = svg.append("g")
     .attr("id", "viewer")
     .attr("transform", "translate(" + mapMargin.left + "," + mapMargin.top + ")");
@@ -66,14 +74,6 @@ $(document).ready(function() {
     .attr("y", 0)
     .attr("width", sidebarWidth)
     .attr("height", height);
-      
-  svg.append("rect")
-    .attr("class", "overlay")
-    .attr("x", sidebarWidth)
-    .attr("y", 0)
-    .attr("width", mainWidth)
-    .attr("height", height)
-    .call(zoom);
 
   var projection = d3.geo.equirectangular()
     .scale(150 * mainWidth / width)
