@@ -381,6 +381,18 @@ $(document).ready(function() {
         });
       });
 
+      treaties.forEach(function(treaty) {
+        var year = treaty["YEAR"];
+
+        if (year == null || year == "") {
+          return;
+        }
+
+        if (yearsTemp[year] == null) {
+          yearsTemp[year] = 0;
+        }
+      });
+
       for (var key in yearsTemp) {
         years.push({
           "year": parseDate(key),
