@@ -557,10 +557,13 @@ $(document).ready(function() {
             .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
             .on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
             .on("click", function(d) {
-               popup.select(".contents")
-                .html("<b>" + d["YEAR"] + "<br>" + d["NAME"] + "</b><br><br>" + d["DESCRIPTION"]  + "<br><br>Learn more: <a href=" + d["WEBSITE"] + ">" + d["NAME"] + " on Wikipedia</a>");
-                
-              popup.style("visibility", "visible");
+              $(".modal#treaty .modal-title span#date").text(d["YEAR"]);
+              $(".modal#treaty .modal-title span#name").text(d["NAME"]);
+
+              $(".modal#treaty .modal-body p#description").text(d["DESCRIPTION"]);
+              $(".modal#treaty .modal-body span#link").html("<a href=\"" + d["WEBSITE"] + "\">" + d["NAME"] + " on Wikipedia</a>");
+
+              $(".modal#treaty").modal();
             })
 
       
