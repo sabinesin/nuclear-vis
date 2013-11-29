@@ -21,13 +21,17 @@ a:hover {
   cursor: pointer;
 }
 
-svg {
+#main {
   position: absolute;
   top: 50%;
   left: 50%;
 
   margin-left: -480px;  /* Width of SVG divided by two */
   margin-top: -305px;   /* Height of SVG divided by two */
+}
+
+#help {
+  padding-bottom: 5px;
 }
 
 .background {

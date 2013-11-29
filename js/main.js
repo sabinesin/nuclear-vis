@@ -47,7 +47,7 @@ $(document).ready(function() {
       .scaleExtent([1, 10])
       .on("zoom", zoomed);
 
-  var svg = d3.select("body").append("svg")
+  var svg = d3.select("#svg").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", totalHeight)
   .append("g")
