@@ -236,14 +236,15 @@ $(document).ready(function() {
 
       // Detonation Yield Scale
       var yieldMargin = {
-        top: 50,
+        top: 40,
         right: 0,
         left: 0
       };
 
       var yieldScale = svg.append("g")
         .attr("transform", "translate(" + (sidebarWidth / 2) + " ," + yieldMargin.top + ")")
-      var yieldScaleHeight = 150;
+
+      var yieldScaleHeight = height * 0.85;
       
       var yieldY = d3.scale.linear()
           .range([yieldScaleHeight, 0])
