@@ -263,7 +263,7 @@ $(document).ready(function() {
       yieldScaleDrawn.append("text")
           .attr("y", yieldScaleHeight + 20)
           .style("text-anchor", "middle")
-          .text("Yield");
+          .text("Yield (kiloton)");
 
       yieldScaleDrawn.append("text")
           .attr("y", yieldScaleHeight + 2)
