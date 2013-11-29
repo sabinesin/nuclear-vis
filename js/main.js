@@ -474,31 +474,39 @@ $(document).ready(function() {
         if (d3.event.target.empty()) {
           detonations.transition().attr("r", detonationYieldRadius);
           detonations.classed("shown", true);
+
+          x2.domain(d3.extent(years, function(d) { return d["year"]; }));
+
+          timelineFocus.select(".x.axis").call(xAxis2);
+
+          d3.selectAll(".focus").classed("shown", true)
+            .attr("x", function(d) {return x2(d["formattedDateComplete"]); })
+            .attr("opacity", 0.75);
+        } else {
+          // Linking with focused timeline axis
+          var s = d3.event.target.extent();
+          var yearInterval = d3.time.year;  
+          var adjustedMin = yearInterval.ceil(s[0]),
+            adjustedMax = yearInterval.ceil(s[1]);
+
+          //x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
+          x2.domain(d3.event.target.extent());
+
+          // Updating the focused timeline
+          d3.selectAll(".focus").classed("shown", function(d) {
+              var year = d["formattedDate"];
+
+              return s[0] <= year && year <= s[1];
+            })
+            .attr("x", function(d) {return x2(d["formattedDateComplete"]); })
+            .attr("opacity", function(d) {
+                var cx = x2(d["formattedDateComplete"]);
+                var present = timelineMargin.left <= cx && cx <= width - timelineMargin.right - timelineMargin.left;
+
+                return present ? 0.75 : 0.0;
+            });
+          timelineFocus.select(".x.axis").call(xAxis2);
         }
-
-        // Linking with focused timeline axis
-        var s = d3.event.target.extent();
-        var yearInterval = d3.time.year;  
-        var adjustedMin = yearInterval.ceil(s[0]),
-          adjustedMax = yearInterval.ceil(s[1]);
-
-        //x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
-        x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
-
-        // Updating the focused timeline
-        d3.selectAll(".focus").classed("shown", function(d) {
-            var year = d["formattedDate"];
-
-            return s[0] <= year && year <= s[1];
-          })
-          .attr("x", function(d) {return x2(d["formattedDateComplete"]); })
-          .attr("opacity", function(d) {
-              var cx = x2(d["formattedDateComplete"]);
-              var present = timelineMargin.left <= cx && cx <= width - timelineMargin.right - timelineMargin.left;
-
-              return present ? .75 : 0.0;
-          });
-        timelineFocus.select(".x.axis").call(xAxis2);
       }
 
       // Treaties text boxes
