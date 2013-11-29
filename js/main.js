@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $(".modal#intro").modal();
+
   var margin = {
     top: 0,
     right: 0,
@@ -618,85 +620,6 @@ $(document).ready(function() {
       
     });
 
-  // Help/welcome/controls button and message
-  var controls = '<br><br><b>Map Controls:</b><br><img src="img/zoom-in.gif"> Double click / <img src="img/zoom-out.gif"> Shift + Double click or Mouse wheel to zoom<br><img src="img/grabbing.gif"> Click + Drag to pan';
-  
-  var welcomeMessage = "<h1>Welcome</h1>" + 
-      "<h2>Global Nuclear Detonations from 1945 to 2010</h2>" +
-      "<br>Nuclear detonations: <b>Yield</b> (energy outputted in kilotons) is associated with each detonation. To view detonations within a smaller timespan, click on the timeline below the map and drag over the bar chart. Each bar corresponds to the number of detonations in that year. Whatever range of years highlighted will show detonations in the bottommost timeline with a greater precision." +
-      "<br><br>Click on <b>treaties</b> and other nuclear events in the main timeline for a greater nuclear context." +
-      "<br><br><b>Data source:</b> Data for nuclear detonations was compiled from <a href=http://www.johnstonsarchive.net/nuclear/tests/>Johnston's Archive</a>." +
-      controls;
-      
-  svg.append("g")
-    .attr("transform", "translate(" + mapMargin.left + "," + (mapMargin.top + 5) + ")")
-    .append("foreignObject")
-    .attr('width', 50)
-    .attr('height', 70)
-      .append("xhtml:div")
-        .append("p")
-        .style("border", "2px double #F7FE2E")
-        .style("outline", "1px solid #000")
-        .style("outline-offset", "-3px")
-        .style("padding", "2px")
-          .text("Help?")
-        .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
-        .on("mouseout", function() {d3.select(this).style("background-color", "#ffffff");})
-            .on("click", function(d) {
-               popup.select(".contents")
-                .html(welcomeMessage);
-                
-              popup.style("visibility", "visible");
-            })
-  
-
-
-  // Popup
-  var popupProperties = {
-		width: width * 5 / 8,
-		height: height * 2 / 3,
-    top: height / 4,
-    left: width / 5,
-		margin: 20,
-  };
-
-  var popup = svg.append("g")
-        .attr("transform", "translate(" +  popupProperties.left + "," + popupProperties.top + ")")
-        //.style("visibility", "hidden")
-				
-  popup.append("rect")
-    .attr("class", "background")
-    .attr("width", popupProperties.width)
-    .attr("height", popupProperties.height)
-    .style("opacity", .70)
-		
-  popup.append("g")
-    .attr("transform", "translate(" + (popupProperties.width - 25) + ", 0)")
-    .selectAll(".redCross")
-      .data([{color: "#ffffff", w: 25, h: 25, x: 0, y: 0, r: 0},
-            {color: "#B40404", w: 20, h: 6, x: 7, y: 4, r: 45},
-            {color: "#B40404", w: 20, h: 6, x: 3, y: 18, r: -45}])
-      .enter()
-      .append("rect")
-        .attr("transform", function(d) { return "translate(" + d.x + ", " + d.y + ") rotate(" + d.r + ")"; })
-        .attr("width", function(d) { return d.w; })
-        .attr("height", function(d) { return d.h; })
-        .attr("fill", function(d) { return d.color; })
-        .style("opacity", function(d, i) { return i == 0 ? 0 : 1; })
-          .on("mouseover", function() {d3.select(this).style("cursor", "pointer");})
-          .on("click", function(){return popup.style("visibility", "hidden");});
-
-  popup.append("foreignObject")
-      .attr('x', popupProperties.margin)
-      .attr('y', popupProperties.margin)
-      .attr('width', function() { return popupProperties.width - popupProperties.margin * 2; })
-      .attr('height', function() { return popupProperties.height - popupProperties.margin * 2; })
-        .append("xhtml:div")
-          .attr("class", "contents")
-          .style("height", function() { return popupProperties.height - popupProperties.margin * 2 + "px"; })
-          .style("overflow", "auto")
-          .html(welcomeMessage);
-						
   function detonationYieldRadius(d) {
     var value = parseFloat(d["YIELD"]);
 
