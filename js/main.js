@@ -92,9 +92,13 @@ $(document).ready(function() {
     .attr('class', 'd3-tip')
     .offset([-10, 0])
     .html(function(d) {
-      return "<strong>Year:</strong> <span style='color:white'>" + d["YEAR"] + "</span><br>" +
-          "<strong>Series:</strong> <span style='color:white'>" + d["SERIES"] + "</span><br>" +
-          "<strong>Name:</strong> <span style='color:white'>" + d["NAME"] + "</span><br>";
+      var year = d["YEAR"] ? d["YEAR"] : "Not Available";
+      var series = d["SERIES"] ? d["SERIES"] : "Not Available";
+      var name = d["NAME"] ? d["NAME"] : "Not Available";
+
+      return "<strong>Year:</strong> <span style='color:white'>" + year + "</span><br>" +
+          "<strong>Series:</strong> <span style='color:white'>" + series + "</span><br>" +
+          "<strong>Name:</strong> <span style='color:white'>" + name + "</span><br>";
   });
 
   svg.call(tip);
@@ -187,6 +191,9 @@ $(document).ready(function() {
 
       data.forEach(function(country) {
         country["data"].forEach(function(detonation) {
+          detonation["NAME"] = $.trim(detonation["NAME"])
+          detonation["YEAR"] = $.trim(detonation["YEAR"])
+
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
           
           var parseDateComplete = d3.time.format("%Y %b %d").parse;
