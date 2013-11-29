@@ -98,7 +98,8 @@ $(document).ready(function() {
 
       return "<p><strong>Year:</strong> <span style='color:white'>" + year + "</span></p>" +
           "<p><strong>Series:</strong> <span style='color:white'>" + series + "</span></p>" +
-          "<p><strong>Name:</strong> <span style='color:white'>" + name + "</span></p>";
+          "<p><strong>Name:</strong> <span style='color:white'>" + name + "</span></p>" + 
+          "<p><strong>Country:</strong> <span style='color:white'>" + d["country"] + "</span></p>";
   });
 
   svg.call(tip);
@@ -195,7 +196,8 @@ $(document).ready(function() {
           detonation["YEAR"] = $.trim(detonation["YEAR"])
 
           detonation["formattedDate"] = parseDate(detonation["YEAR"]);
-          
+          detonation["country"] = country["name"];
+
           var parseDateComplete = d3.time.format("%Y %b %d").parse;
           detonation["formattedDateComplete"] = parseDateComplete(detonation["YEAR"] + " " + detonation["MON"] + " " + detonation["DAY"]);
         });
