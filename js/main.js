@@ -96,9 +96,9 @@ $(document).ready(function() {
       var series = d["SERIES"] ? d["SERIES"] : "Not Available";
       var name = d["NAME"] ? d["NAME"] : "Not Available";
 
-      return "<strong>Year:</strong> <span style='color:white'>" + year + "</span><br>" +
-          "<strong>Series:</strong> <span style='color:white'>" + series + "</span><br>" +
-          "<strong>Name:</strong> <span style='color:white'>" + name + "</span><br>";
+      return "<p><strong>Year:</strong> <span style='color:white'>" + year + "</span></p>" +
+          "<p><strong>Series:</strong> <span style='color:white'>" + series + "</span></p>" +
+          "<p><strong>Name:</strong> <span style='color:white'>" + name + "</span></p>";
   });
 
   svg.call(tip);

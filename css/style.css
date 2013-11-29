@@ -111,3 +111,6 @@ rect.bar {
   left: 0;
 }
 
+.d3-tip p:last-child {
+  margin: 0;
+}
