@@ -401,9 +401,7 @@ $(document).ready(function() {
           "detonations": yearsTemp[key]
         });
       }
-      
-      //years.sort(function(a, b) { return a["year"] - b["year"]; }); //for using binary search later?
-      
+
       x.domain(d3.extent(years, function(d) { return d["year"]; }));
       y.domain([0, d3.max(years, function(d) { return d["detonations"]; })]);
 
@@ -482,10 +480,10 @@ $(document).ready(function() {
 				var yearInterval = d3.time.year;	
 				var adjustedMin = yearInterval.ceil(s[0]),
 					adjustedMax = yearInterval.ceil(s[1]);
-				
+
         //x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
 				x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
-				
+
         // Updating the focused timeline
         d3.selectAll(".focus").classed("shown", function(d) {
             var year = d["formattedDate"];
