@@ -369,7 +369,7 @@ $(document).ready(function() {
 
       data.forEach(function(country) {
         country["data"].forEach(function(detonation) {
-          var year = detonation["YEAR"];
+        var year = detonation["YEAR"].replace(/\s+/g, '');
 
           if (year == null || year == "") {
             return;
@@ -384,7 +384,7 @@ $(document).ready(function() {
       });
 
       treaties.forEach(function(treaty) {
-        var year = treaty["YEAR"];
+        var year = treaty["YEAR"].replace(/\s+/g, '');
 
         if (year == null || year == "") {
           return;
