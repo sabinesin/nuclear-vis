@@ -98,7 +98,7 @@ $(document).ready(function() {
   });
 
   svg.call(tip);
-  
+
   queue()
     .defer(d3.json, "data/world-110m.json")
     .defer(d3.csv, "data/USA.csv")
@@ -215,9 +215,9 @@ $(document).ready(function() {
         .duration(1000)
         .attr("r", detonationYieldRadius);
 
-			// Cursor indicator over map
-			d3.select(".overlay").style("cursor", "zoom-in")
-				.on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing").style("cursor", "-webkit-grabbing").style("cursor", "grabbing");})
+      // Cursor indicator over map
+      d3.select(".overlay").style("cursor", "zoom-in")
+        .on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing").style("cursor", "-webkit-grabbing").style("cursor", "grabbing");})
         .on("mouseup", function() { 
           if (d3.event.shiftKey)
             d3.select(this).style("cursor", "-webkit-zoom-out").style("cursor", "zoom-out");
@@ -233,14 +233,14 @@ $(document).ready(function() {
         .on("keyup", function() {
           d3.select(".overlay").style("cursor", "-webkit-zoom-in").style("cursor", "zoom-in");
         });
-				 
+
       // Detonation Yield Scale
       var yieldMargin = {
         top: 50,
         right: 0,
         left: 0
       };
-      
+
       var yieldScale = svg.append("g")
         .attr("transform", "translate(" + (sidebarWidth / 2) + " ," + yieldMargin.top + ")")
       var yieldScaleHeight = 150;
@@ -248,17 +248,17 @@ $(document).ready(function() {
       var yieldY = d3.scale.linear()
           .range([yieldScaleHeight, 0])
           .domain(yield.domain());
-          
+
       yieldY.nice();
 
       var yieldAxis = d3.svg.axis()
         .scale(yieldY)
         .orient("left");
-        
+
       var yieldScaleDrawn = yieldScale.append("g")
           .attr("class", "axis")
           .call(yieldAxis);
-          
+
       yieldScaleDrawn.append("text")
           .attr("y", yieldScaleHeight + 20)
           .style("text-anchor", "middle")
@@ -276,7 +276,7 @@ $(document).ready(function() {
           .attr("cy", function(d) { return yieldY(d);})
           .style("fill", "#A4A4A4")
           .style('opacity', .25);
-          
+
       // Brushing for the yield scale
       yieldScale.append("g")
         .attr("class", "brush")
@@ -320,7 +320,7 @@ $(document).ready(function() {
           detonations.classed("shown", true);
         }
       }
-          
+
       // Draw legend
       legend.append("rect")
         .attr("class", "background")
@@ -328,7 +328,7 @@ $(document).ready(function() {
         .attr("y", 0)
         .attr("width", mainWidth)
         .attr("height", mapMargin.top + legendMargin.bottom);
-      
+
       var legendItem = legend.selectAll(".item")
         .data(data)
       .enter().append("g")
@@ -421,7 +421,7 @@ $(document).ready(function() {
         .attr("class", "x axis")
         .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
         .call(xAxis);
-          
+
       var detonationBars = timeline.selectAll(".bar")
         .data(years)
       .enter().append("rect")
@@ -474,15 +474,15 @@ $(document).ready(function() {
           detonations.transition().attr("r", detonationYieldRadius);
           detonations.classed("shown", true);
         }
-        
+
         // Linking with focused timeline axis
         var s = d3.event.target.extent();
-				var yearInterval = d3.time.year;	
-				var adjustedMin = yearInterval.ceil(s[0]),
-					adjustedMax = yearInterval.ceil(s[1]);
+        var yearInterval = d3.time.year;  
+        var adjustedMin = yearInterval.ceil(s[0]),
+          adjustedMax = yearInterval.ceil(s[1]);
 
         //x2.domain(d3.event.target.empty() ? x2.domain() : [adjustedMin, adjustedMax]);
-				x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
+        x2.domain(d3.event.target.empty() ? x2.domain() : d3.event.target.extent());
 
         // Updating the focused timeline
         d3.selectAll(".focus").classed("shown", function(d) {
@@ -499,15 +499,15 @@ $(document).ready(function() {
           });
         timelineFocus.select(".x.axis").call(xAxis2);
       }
-      
+
       // Treaties text boxes
       var treatyMarksHeight = 60;
       totalHeight += treatyMarksHeight;
       height += margin.bottom;
-      
+
       d3.select("svg")
         .attr("height", totalHeight)
-    
+
       var treatySection = svg.append("g")
           .attr("transform", "translate(" + margin.left + "," + height + ")");
         
@@ -521,7 +521,7 @@ $(document).ready(function() {
       var treatyMarks = treatySection.selectAll(".treaty")
           .data(treaties)
           .enter()
-        
+
       timeline.selectAll(".marks")
       .data(treaties)
         .enter()
@@ -531,16 +531,16 @@ $(document).ready(function() {
         .attr("y", margin.bottom - timelineMargin.bottom )
         .attr("width", 1)
         .attr("height", function(d) { return parseFloat(d["YEAR"]) % 5 == 0 ? 0 : timelineMargin.bottom; })
-        
+
       var textboxY = 10;
-      
+
       treatyMarks.append("rect")
         .attr("class", "line")
         .attr("x", function(d) { return x(parseDate(d["YEAR"])); })
         .attr("y", 0)
         .attr("width", 1)
         .attr("height", textboxY)
-      
+
       treatyMarks.append("foreignObject")
         .attr('x', function(d) { return x(parseDate(d["YEAR"])) - 50; })
         .attr('y', textboxY)
@@ -566,7 +566,6 @@ $(document).ready(function() {
               $(".modal#treaty").modal();
             })
 
-      
       // Focus Timeline
       var x2 = d3.time.scale()
         .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
@@ -574,17 +573,17 @@ $(document).ready(function() {
       var xAxis2 = d3.svg.axis()
           .scale(x2)
           .orient("bottom");
-      
+
       x2.domain(d3.extent(years, function(d) { return d["year"]; }));
       x2.nice();
-      
+
       var timelineFocusHeight = 50;
       totalHeight += timelineFocusHeight;
       height += treatyMarksHeight;
-      
+
       d3.select("svg")
         .attr("height", totalHeight)
-    
+
       var timelineFocus = svg.append("g")
         .attr("transform", "translate(0," + height + ")")
 
@@ -599,7 +598,7 @@ $(document).ready(function() {
         .attr("class", "x axis")
         .attr("transform", "translate(0," + (margin.bottom - timelineMargin.bottom) + ")")
         .call(xAxis2);
-      
+
       timelineFocus.append("g")
         .selectAll(".countryFocus")
         .data(data)
@@ -613,9 +612,8 @@ $(document).ready(function() {
         .attr("cy", margin.bottom - timelineMargin.bottom )
         .attr("r", 5)
         .attr("opacity", 0.75)
-      
+
       height += timelineFocusHeight;
-      
     });
 
   function detonationYieldRadius(d) {
