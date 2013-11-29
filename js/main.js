@@ -491,7 +491,7 @@ $(document).ready(function() {
 
             return s[0] <= year && year <= s[1];
           })
-          .attr("cx", function(d) {return x2(d["formattedDateComplete"]); })
+          .attr("x", function(d) {return x2(d["formattedDateComplete"]); })
           .attr("opacity", function(d) {
               var cx = x2(d["formattedDateComplete"]);
               var present = timelineMargin.left <= cx && cx <= width - timelineMargin.right - timelineMargin.left;
@@ -607,11 +607,12 @@ $(document).ready(function() {
         .style("fill", function(d) { return countryColors(d["name"]); })
         .selectAll(".focus")
         .data(function(d) { return d["data"]; })
-      .enter().append("circle")
+      .enter().append("rect")
         .attr("class", "focus shown")
-        .attr("cx", function(d) { return x2(d["formattedDateComplete"]); })
-        .attr("cy", margin.bottom - timelineMargin.bottom )
-        .attr("r", 5)
+        .attr("x", function(d) { return x2(d["formattedDateComplete"]); })
+        .attr("y", 0)
+        .attr("width", 2)
+        .attr("height", margin.bottom - timelineMargin.bottom)
         .attr("opacity", 0.75)
 
       height += timelineFocusHeight;
