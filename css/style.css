@@ -7,8 +7,6 @@ body {
   margin: 0;
   padding: 0;
 
-  cursor: default;
-
   -webkit-touch-callout: none !important;
   -webkit-user-select: none !important;
   -khtml-user-select: none !important;
