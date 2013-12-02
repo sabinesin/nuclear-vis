@@ -116,7 +116,8 @@ $(document).ready(function() {
     .defer(d3.csv, "data/France.csv")
     .defer(d3.csv, "data/Unknown.csv")
     .defer(d3.csv, "data/Treaties.csv")
-    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, france, unknown, treaties) {
+    .defer(d3.csv, "data/accidents.csv")
+    .await(function ready(errors, world, usa, uk, ussr, india, northkorea, pakistan, china, france, unknown, treaties, accidents) {
       if (errors) {
         console.log("Could not draw data due to error in retrieving data.");
         console.error(errors);
@@ -466,7 +467,7 @@ $(document).ready(function() {
         .attr("y", function(d) { return margin.bottom - timelineMargin.bottom - y(d["detonations"]); })
         .attr("width", width / (y.domain()[1] - y.domain()[0]))
         .attr("height", function(d) { return y(d["detonations"]); });
-
+      
       timeline.append("g")
         .attr("class", "brush")
         .call(d3.svg.brush().x(x)
@@ -545,7 +546,7 @@ $(document).ready(function() {
       }
 
       // Treaties text boxes
-      var treatyMarksHeight = 60;
+      var treatyMarksHeight = 70;
       totalHeight += treatyMarksHeight;
       height += margin.bottom;
 
@@ -609,7 +610,28 @@ $(document).ready(function() {
 
               $(".modal#treaty").modal();
             })
+            
+      // Chernobyl and Fukushima
+      timeline.selectAll("path")
+        .data(accidents)
+      .enter().append("path")
+        .attr("transform", function(d) { return "translate(" + x(parseDate(d["YEAR"])) + "," + (margin.bottom - timelineMargin.bottom) / 2 + ")"; })
+        .attr("d", d3.svg.symbol().type(d3.svg.symbolTypes[2]).size(100))
+        .style("fill", "#F7FE2E")
+        .style("stroke", "#000")
+        .style("stroke-width", "1px") 
+            .on("mouseover", function() {d3.select(this).style("background-color", "#d8d8d8").style("cursor", "pointer");})
+            .on("mouseout", function() {d3.select(this).style("background-color", "#F7FE2E");})
+            .on("click", function(d) {
+              $(".modal#treaty .modal-title span#date").text(d["YEAR"]);
+              $(".modal#treaty .modal-title span#name").text(d["NAME"]);
 
+              $(".modal#treaty .modal-body p#description").text(d["DESCRIPTION"]);
+              $(".modal#treaty .modal-body span#link").html("<a href=\"" + d["WEBSITE"] + "\">" + d["NAME"] + " on Wikipedia</a>");
+
+              $(".modal#treaty").modal();
+            })
+            
       // Focus Timeline
       var x2 = d3.time.scale()
         .range([timelineMargin.left, width - timelineMargin.right - timelineMargin.left]);
