@@ -84,7 +84,6 @@ rect.bar {
 
 .d3-tip {
   line-height: 1;
-  font-weight: bold;
   padding: 12px;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
@@ -113,4 +112,20 @@ rect.bar {
 
 .d3-tip p:last-child {
   margin: 0;
+}
+
+.selected{
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.mouseover{
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.deselected{
+  pointer-events: none;
+  opacity: 0.4;
 }

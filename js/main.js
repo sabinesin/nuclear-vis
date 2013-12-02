@@ -96,10 +96,10 @@ $(document).ready(function() {
       var series = d["SERIES"] ? d["SERIES"] : "Not Available";
       var name = d["NAME"] ? d["NAME"] : "Not Available";
 
-      return "<p><strong>Year:</strong> <span style='color:white'>" + year + "</span></p>" +
-          "<p><strong>Series:</strong> <span style='color:white'>" + series + "</span></p>" +
-          "<p><strong>Name:</strong> <span style='color:white'>" + name + "</span></p>" + 
-          "<p><strong>Country:</strong> <span style='color:white'>" + d["country"] + "</span></p>";
+      return "<p>Year: <span style='color:white; font-weight: bold;'>" + year + "</span></p>" +
+          "<p>Series: <span style='color:white; font-weight: bold;'>" + series + "</span></p>" +
+          "<p>Name: <span style='color:white; font-weight: bold;'>" + name + "</span></p>" + 
+          "<p>Country: <span style='color:white; font-weight: bold;'>" + d["country"] + "</span></p>";
   });
 
   svg.call(tip);
@@ -218,12 +218,38 @@ $(document).ready(function() {
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
         .attr("r", 0)
         .attr("opacity", 0.5)
-        .on("mouseover", tip.show)
-        .on("mouseout", tip.hide)
+        .on("mouseover", function(d) {
+            tip.show(d);
+            d3.select(this).classed("mouseover", true);
+            d3.select(this).style("cursor", "pointer");
+          })
+        .on("mouseout", function(d) {
+            tip.hide(d);
+            d3.select(this).classed("mouseover", false);
+          })
       .transition()
         .duration(1000)
         .attr("r", detonationYieldRadius);
 
+      // Clicking on overlapping detonations to switch to those tooltips underneath
+      var sdepth = 0;
+      mapGroup.selectAll(".detonation.shown").on("click", function() {
+        if($(".selected").length > 0) {
+          if($(".mouseover").length > 0) {
+            sdepth += 1;
+            d3.select(".selected")
+              .classed("deselected", true)
+              .classed("selected", false)
+              .classed("sdepth" + sdepth, true);
+            d3.select(".mouseover").classed("selected", true);
+          }
+        }
+        else if($(".mouseover").length > 0){
+          if($(".mouseover").length > 0)
+            d3.select(".mouseover").classed("selected", true);
+        }
+      });
+       
       // Cursor indicator over map
       d3.select(".overlay").style("cursor", "zoom-in")
         .on("mousedown", function() {d3.select(this).style("cursor", "-moz-grabbing").style("cursor", "-webkit-grabbing").style("cursor", "grabbing");})
@@ -655,4 +681,7 @@ $(document).ready(function() {
 
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
   }
+  
+
+        
 });
