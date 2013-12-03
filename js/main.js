@@ -215,6 +215,7 @@ $(document).ready(function() {
         .data(function(d) { return d["data"]; })
       .enter().append("circle")
         .attr("class", "detonation shown")
+        .attr("id", function(d,i,j) { return data[j]["name"]; })
         .attr("cx", function(d) { return projection([d["LONG"], d["LAT"]])[0]; })
         .attr("cy", function(d) { return projection([d["LONG"], d["LAT"]])[1]; })
         .attr("r", 0)
@@ -246,8 +247,7 @@ $(document).ready(function() {
           }
         }
         else if($(".mouseover").length > 0){
-          if($(".mouseover").length > 0)
-            d3.select(".mouseover").classed("selected", true);
+          d3.select(".mouseover").classed("selected", true);
         }
       });
        
@@ -376,11 +376,12 @@ $(document).ready(function() {
         .attr("height", mapMargin.top)
         .style("fill", function(d) { return countryColors(d["name"]); });
 
-      legendItem.append("text")
-        .attr("x", mapMargin.top + mapMargin.top / 2)
+      var legendNames = legendItem.append("text")
+        .attr("class", function(d) { return d["name"]; })
+        .attr("x", mapMargin.top + mapMargin.top / 2 - 4)
         .attr("y", mapMargin.top)
-        .text(function(d) { return d["name"]; });
-
+        .text(function(d) { return d["name"] + ", " + countryDetonationTotal(d["name"]); });
+      
       // Draw timeline
       var detonations = d3.selectAll(".detonation");
 
@@ -489,7 +490,7 @@ $(document).ready(function() {
 
           return s[0] <= year && year <= s[1];
         });
-
+      
         detonations.classed("shown", function(d) {
             var year = d["formattedDate"];
 
@@ -502,6 +503,12 @@ $(document).ready(function() {
 
               return present ? detonationYieldRadius(d) : 0.0;
           });
+          
+        // Update legend with running totals for each country's number of detonations showing
+        legendNames.each(function(d) {		
+            var n = d3.select(this).attr("class")
+            d3.select(this).text(function(d) { return n + ", " + countryDetonationTotal(n); }); 
+          })
       }
 
       function brushend() {
@@ -704,6 +711,9 @@ $(document).ready(function() {
     mapGroup.attr("transform", "translate(" + d3.event.translate + ")scale(" + d3.event.scale + ")");
   }
   
+  function countryDetonationTotal(country){
+    return $('#' + country + '.detonation.shown').length;
+  }
 
         
 });
