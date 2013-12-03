@@ -32,6 +32,12 @@ a:hover {
   padding-bottom: 5px;
 }
 
+#source {
+  padding-top: 5px;
+  font-size: 6pt;
+  text-align: right;
+}
+
 .background {
   fill: #fff;
 }
