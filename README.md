@@ -1,6 +1,9 @@
 # Nuclear Detonations Information Visualization
 This is an visualization of nuclear detonations around the world for CS 4460 at the Georgia Institute of Technology.
 
+## How To Use / Installation
+Simply open index.html in a current web browser to see and interact with the visualization. No set-up is required since external libraries and necessary files are already contained within this project.
+
 ## Data
 ### Nuclear
 The data was extracted from [Johnston's Archive](http://www.johnstonsarchive.net/nuclear/tests/) and converted to CSV format.
